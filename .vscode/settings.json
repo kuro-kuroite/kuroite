@@ -1,0 +1,61 @@
+{
+  "editor.renderWhitespace": "all",
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "Ricty Diminished, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "files.autoSaveDelay": 5000,
+  "workbench.iconTheme": "material-icon-theme",
+  "window.zoomLevel": 0,
+  "svg.preview.background": "transparent",
+  "svg.preview.mode": "svg",
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSaveMode": "file",
+  "editor.snippetSuggestions": "top",
+  "editor.formatOnSave": false,
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "textlint.autoFixOnSave": true,
+  "tslint.enable": false,
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "jsonc"
+  ],
+  "eslint.packageManager": "yarn",
+  "stylelint.packageManager": "yarn",
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "postcss": "css"
+  },
+  "emmet.syntaxProfiles": {
+    "postcss": "css"
+  }
+}

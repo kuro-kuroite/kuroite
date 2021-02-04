@@ -27,3 +27,6 @@ typings/**/*
 
 # .vscode
 !.vscode/
+
+# .devcontainer
+!.devcontainer/

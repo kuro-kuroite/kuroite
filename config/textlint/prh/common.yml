@@ -1,0 +1,8 @@
+version: 1
+
+rules:
+  - pattern: /tomato/gi
+    expected: tomato
+    specs:
+      - from: TOMATO
+        to: tomato
