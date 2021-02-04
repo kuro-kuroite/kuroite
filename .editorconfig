@@ -1,0 +1,26 @@
+# editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+max_line_length = 80
+trim_trailing_whitespace = true
+
+[*.t]
+insert_final_newline = false
+
+# https://prettier.io/docs/en/api.html#prettierresolveconfigfilepath--options
+# [*.json]
+# insert_final_newline = false
+
+# https://prettier.io/docs/en/api.html#prettierresolveconfigfilepath--options
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false
+
+[COMMIT_EDITMSG]
+max_line_length = off

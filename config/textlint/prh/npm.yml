@@ -1,0 +1,510 @@
+version: 1
+
+rules:
+  - pattern: /(?!-)gatsby(?!-)([\s\.]?js)?/gi
+    expected: Gatsby.js
+    specs:
+      - from: gatsby.js
+        to: Gatsby.js
+      - from: gatsby
+        to: Gatsby.js
+      - from: GATSBY
+        to: Gatsby.js
+
+  - pattern: /ecma(\s)*script/gi
+    expected: ECMAScript
+    specs:
+      - from: EcmaScript
+        to: ECMAScript
+      - from: ecma script
+        to: ECMAScript
+      - from: ECMASCRIPT
+        to: ECMAScript
+
+  - pattern: /babel([\s\.]?js)?/gi
+    expected: Babel
+    specs:
+      - from: babel
+        to: Babel
+      - from: babel.js
+        to: Babel
+      - from: babelJs
+        to: Babel
+
+  - pattern: /webpack([\s\.]?js)?/gi
+    expected: webpack
+    specs:
+      - from: Webpack
+        to: webpack
+      - from: Webpack.js
+        to: webpack
+      - from: WebpackJS
+        to: webpack
+
+  - pattern: /npm[\s\-]?script(s)?/gi
+    expected: npm-scripts
+    specs:
+      - from: NpmScripts
+        to: npm-scripts
+      - from: npm script
+        to: npm-scripts
+      - from: NPM SCRIPTS
+        to: npm-scripts
+
+  - pattern: /node([\s\.]?js)?/gi
+    expected: Node.js
+    specs:
+      - from: NodeJS
+        to: Node.js
+      - from: node.js
+        to: Node.js
+      - from: NODE JS
+        to: Node.js
+
+  - pattern: /(\b)npm(\b)/gi
+    expected: npm
+    specs:
+      - from: NPM
+        to: npm
+
+  # NOTE: yarn cliと区別できないため
+  # - pattern: /(\b)yarn(\b)/gi
+  #   expected: Yarn
+  #   specs:
+  #     - from: yarn
+  #       to:   Yarn
+
+  - pattern: /(\b)(?<!\.)json(\b)/gi
+    expected: JSON
+    specs:
+      - from: .json
+        to: .json
+      - from: json
+        to: JSON
+
+  - pattern: /(\b)(?<!\.)js(\b)/gi
+    expected: JS
+    specs:
+      - from: .js
+        to: .js
+      - from: js
+        to: JS
+
+  - pattern: /(\b)(?<!\.)ts(\b)/gi
+    expected: TS
+    specs:
+      - from: .ts
+        to: .ts
+      - from: ts
+        to: TS
+
+  - pattern: /(?<!-)react(?!-)([\s\.]?js)?/gi
+    expected: React
+    specs:
+      - from: ReactJS
+        to: React
+      - from: react.js
+        to: React
+      - from: REACT JS
+        to: React
+      - from: -react
+        to: -react
+      - from: react-
+        to: react-
+
+  - pattern: /(?<!-)redux(?!-)([\s\.]?js)?/gi
+    expected: Redux
+    specs:
+      - from: ReduxJS
+        to: Redux
+      - from: redux.js
+        to: Redux
+      - from: Redux JS
+        to: Redux
+      - from: -redux
+        to: -redux
+      - from: redux-
+        to: redux-
+
+  - pattern: /(?<!-)redux[\s-]?toolkit(?!-)/gi
+    expected: Redux Toolkit
+    specs:
+      - from: ReduxToolkit
+        to: Redux Toolkit
+      - from: redux toolkit
+        to: Redux Toolkit
+      - from: REDUXTOOLKIT
+        to: Redux Toolkit
+      - from: -redux-toolkit
+        to: -redux-toolkit
+      - from: redux-toolkit-
+        to: redux-toolkit-
+
+  - pattern: /next([\s\.]?js)/gi
+    expected: Next.js
+    specs:
+      - from: NextJS
+        to: Next.js
+      - from: next.js
+        to: Next.js
+      - from: NEXT JS
+        to: Next.js
+
+  - pattern: /(?<!-)post[\-\s]?(?!-)css(?!-)/gi
+    expected: PostCSS
+    specs:
+      - from: PostCss
+        to: PostCSS
+      - from: postcss
+        to: PostCSS
+      - from: POST CSS
+        to: PostCSS
+      - from: -postcss
+        to: -postcss
+      - from: -post-css
+        to: -post-css
+      - from: postcss-
+        to: postcss-
+      - from: post-css-
+        to: post-css-
+
+  - pattern: /(?<!-)css[\-\s]?(?!-)modules(?!-)/gi
+    expected: CSS Modules
+    specs:
+      - from: CssModules
+        to: CSS Modules
+      - from: css modules
+        to: CSS Modules
+      - from: CSS MODULES
+        to: CSS Modules
+      - from: -cssmodules
+        to: -cssmodules
+      - from: -css-modules
+        to: -css-modules
+      - from: cssmodules-
+        to: cssmodules-
+      - from: css-modules-
+        to: css-modules-
+
+  - pattern: /css[\-\s]?module(?!s)/gi
+    expected: CSS Modules
+    specs:
+      - from: css module
+        to: CSS Modules
+
+  - pattern: /styled[\-\s]?component(s)?/gi
+    expected: styled-components
+    specs:
+      - from: styledComponents
+        to: styled-components
+      - from: styled component
+        to: styled-components
+      - from: STYLED COMPONENT
+        to: styled-components
+
+  - pattern: /(?<!-)tailwind[\-\s]?(?!-)css(?!-)/gi
+    expected: Tailwind CSS
+    specs:
+      - from: TailwindCss
+        to: Tailwind CSS
+      - from: tailwindcss
+        to: Tailwind CSS
+      - from: TAILWIND CSS
+        to: Tailwind CSS
+      - from: -tailwindcss
+        to: -tailwindcss
+      - from: -tailwind-css
+        to: -tailwind-css
+      - from: tailwindcss-
+        to: tailwindcss-
+      - from: tailwind-css-
+        to: tailwind-css-
+
+  - pattern: /(?<!-)tailwind(?!((\s)css)|-)/gi
+    expected: Tailwind CSS
+    specs:
+      - from: Tailwind
+        to: Tailwind CSS
+      - from: -tailwind
+        to: -tailwind
+      - from: tailwind-
+        to: tailwind-
+
+  - pattern: /(?<!-)eslint(?!-)/gi
+    expected: ESLint
+    specs:
+      - from: eslint
+        to: ESLint
+      - from: -eslint
+        to: -eslint
+      - from: eslint-
+        to: eslint-
+
+  - pattern: /(?<!-)prettier(?!-)/gi
+    expected: Prettier
+    specs:
+      - from: prettier
+        to: Prettier
+      - from: -prettier
+        to: -prettier
+      - from: prettier-
+        to: prettier-
+
+  - pattern: /editor[\s]?config/gi
+    expected: EditorConfig
+    specs:
+      - from: editorConfig
+        to: EditorConfig
+      - from: editor config
+        to: EditorConfig
+
+  - pattern: /(?<!-)style(\s)*lint(?!-)/gi
+    expected: stylelint
+    specs:
+      - from: StyleLint
+        to: stylelint
+      - from: style lint
+        to: stylelint
+      - from: STYLELINT
+        to: stylelint
+      - from: -stylelint
+        to: -stylelint
+      - from: stylelint-
+        to: stylelint-
+
+  - pattern: /(?<!-)commit(\s)*lint(?!-)/gi
+    expected: commitlint
+    specs:
+      - from: CommitLint
+        to: commitlint
+      - from: commit lint
+        to: commitlint
+      - from: COMMITLINT
+        to: commitlint
+      - from: -commitlint
+        to: -commitlint
+      - from: commitlint-
+        to: commitlint-
+
+  - pattern: /(?<!-)text(\s)*lint(?!-)/gi
+    expected: textlint
+    specs:
+      - from: TextLint
+        to: textlint
+      - from: text lint
+        to: textlint
+      - from: TEXTLINT
+        to: textlint
+      - from: -textlint
+        to: -textlint
+      - from: textlint-
+        to: textlint-
+
+  - pattern: /(?<!-)renovate(?!-)/gi
+    expected: Renovate
+    specs:
+      - from: renovate
+        to: Renovate
+
+  - pattern: /(\b)(?<!-)jest(?!-)(\b)/gi
+    expected: Jest
+    specs:
+      - from: jest
+        to: Jest
+      - from: -jest
+        to: -jest
+      - from: jest-
+        to: jest-
+
+  - pattern: /(?<!-)react(\s)?testing(\s)?library(?!-)/gi
+    expected: React Testing Library
+    specs:
+      - from: react testing library
+        to: React Testing Library
+
+  - pattern: /(?<!-)storybook(?!-)/gi
+    expected: Storybook
+    specs:
+      - from: storybook
+        to: Storybook
+      - from: -storybook
+        to: -storybook
+      - from: storybook-
+        to: storybook-
+
+  - pattern: /(?<!-)cypress(?!-)/gi
+    expected: Cypress
+    specs:
+      - from: cypress
+        to: Cypress
+      - from: -cypress
+        to: -cypress
+      - from: cypress-
+        to: cypress-
+
+  - pattern: /github(\s)*action(s)?/gi
+    expected: GitHub Actions
+    specs:
+      - from: GithubActions
+        to: GitHub Actions
+      - from: github action
+        to: GitHub Actions
+      - from: GITHUB ACTIONS
+        to: GitHub Actions
+
+  - pattern: /(?!-)netlify(?!-)/gi
+    expected: Netlify
+    specs:
+      - from: netlify
+        to: Netlify
+
+  - pattern: /(?!-)hygen(?!-)/gi
+    expected: Hygen
+    specs:
+      - from: hygen
+        to: Hygen
+
+  - pattern: /(?!-)patch[\s\-]?package(?!-)/gi
+    expected: patch-package
+    specs:
+      - from: patch package
+        to: patch-package
+      - from: patchPackage
+        to: patch-package
+
+  - pattern: /(\b)web(\b)/gi
+    expected: Web
+    specs:
+      - from: web
+        to: Web
+
+  - pattern: /(\b)ui(\b)/gi
+    expected: UI
+    specs:
+      - from: ui
+        to: UI
+
+  - pattern: /(\b)ssg(\b)/gi
+    expected: SSG
+    specs:
+      - from: ssg
+        to: SSG
+
+  - pattern: /(\b)ssr(\b)/gi
+    expected: SSR
+    specs:
+      - from: ssr
+        to: SSR
+
+  - pattern: /(\b)seo(\b)/gi
+    expected: SEO
+    specs:
+      - from: seo
+        to: SEO
+
+  - pattern: /(\b)(?<!-)i18n(?!-)(\b)/gi
+    expected: I18n
+    specs:
+      - from: i18n
+        to: I18n
+      - from: i18n-
+        to: i18n-
+      - from: -i18n
+        to: -i18n
+
+  - pattern: /(\b)spa(\b)/gi
+    expected: SPA
+    specs:
+      - from: spa
+        to: SPA
+
+  - pattern: /(\b)pwa(\b)/gi
+    expected: PWA
+    specs:
+      - from: pwa
+        to: PWA
+
+  - pattern: /(\b)ci(\b)/gi
+    expected: CI
+    specs:
+      - from: ci
+        to: CI
+
+  - pattern: /(\b)cd(\b)/gi
+    expected: CD
+    specs:
+      - from: cd
+        to: CD
+
+  - pattern: /(\b)svg(\b)/gi
+    expected: SVG
+    specs:
+      - from: svg
+        to: SVG
+
+  # NOTE: 一般動詞 go と区別できないため
+  # - pattern: /(\b)go(\b)/gi
+  #   expected: Go
+  #   specs:
+  #     - from: go
+  #       to:   Go
+
+  - pattern: /(\b)haskell(\b)/gi
+    expected: Haskell
+    specs:
+      - from: haskell
+        to: Haskell
+
+  - pattern: /(\b)(?<!-)elm((?!-)\b)/gi
+    expected: Elm
+    specs:
+      - from: elm
+        to: Elm
+      - from: -elm
+        to: -elm
+      - from: elm-
+        to: elm-
+
+  - pattern: /react(\s)?native/gi
+    expected: React Native
+    specs:
+      - from: reactNative
+        to: React Native
+      - from: react native
+        to: React Native
+
+  - pattern: /(\b)expo(\b)/gi
+    expected: Expo
+    specs:
+      - from: expo
+        to: Expo
+
+  - pattern: /(\b)swift(\b)/gi
+    expected: Swift
+    specs:
+      - from: swift
+        to: Swift
+
+  - pattern: /(\b)adt(\b)/gi
+    expected: ADT
+    specs:
+      - from: adt
+        to: ADT
+
+  - pattern: /(\b)qiita(\b)/gi
+    expected: Qiita
+    specs:
+      - from: qiita
+        to: Qiita
+
+  - pattern: /(\b)docs(\b)/gi
+    expected: Docs
+    specs:
+      - from: docs
+        to: Docs
+
+  - pattern: /(\b)readme(\b)/gi
+    expected: README
+    specs:
+      - from: readme
+        to: README

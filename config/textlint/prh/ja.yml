@@ -1,0 +1,8 @@
+version: 1
+
+rules:
+  - pattern: /,(\s)?/gi
+    expected: 、
+    specs:
+      - from: 私は,公園で歩いた
+        to: 私は、公園で歩いた

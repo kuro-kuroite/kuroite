@@ -1,0 +1,98 @@
+diff --git a/node_modules/cz-conventional-changelog-ja/commit-types.json b/node_modules/cz-conventional-changelog-ja/commit-types.json
+index 8954d56..d4cdc18 100644
+--- a/node_modules/cz-conventional-changelog-ja/commit-types.json
++++ b/node_modules/cz-conventional-changelog-ja/commit-types.json
+@@ -2,47 +2,69 @@
+   "types": {
+     "feat": {
+       "description": "新機能",
+-      "title": "機能"
++      "title": "機能",
++      "emoji": "✨",
++      "code": ":sparkles:"
+     },
+     "fix": {
+       "description": "バグ修正",
+-      "title": "バグ修正"
++      "title": "バグ修正",
++      "emoji": "🔥",
++      "code": ":fire:"
+     },
+     "docs": {
+       "description": "ドキュメントのみの変更",
+-      "title": "ドキュメント"
++      "title": "ドキュメント",
++      "emoji": "📖",
++      "code": ":book:"
+     },
+     "style": {
+       "description": "フォーマットの変更（コードの動作に影響しないスペース、フォーマット、セミコロンなど）",
+-      "title": "スタイル"
++      "title": "スタイル",
++      "emoji": "👀",
++      "code": ":eyes:"
+     },
+     "refactor": {
+       "description": "リファクタリングのための変更（機能追加やバグ修正を含まない）",
+-      "title": "リファクタ"
++      "title": "リファクタ",
++      "emoji": "♻️",
++      "code": ":recycle:"
+     },
+     "perf": {
+       "description": "パフォーマンスの改善のための変更",
+-      "title": "パフォーマンス改善"
++      "title": "パフォーマンス改善",
++      "emoji": "🚀",
++      "code": ":rocket:"
+     },
+     "test": {
+       "description": "不足テストの追加や既存テストの修正",
+-      "title": "テスト"
++      "title": "テスト",
++      "emoji": "🚨",
++      "code": ":rotating_light:"
+     },
+     "build": {
+       "description": "ビルドシステムや外部依存に関する変更（スコープ例: gulp, broccoli, npm）",
+-      "title": "ビルド"
++      "title": "ビルド",
++      "emoji": "🔧",
++      "code": ":wrench:"
+     },
+     "ci": {
+       "description": "CI用の設定やスクリプトに関する変更（スコープ例: Travis, Circle, BrowserStack, SauceLabs)",
+-      "title": "CI"
++      "title": "CI",
++      "emoji": "🤖",
++      "code": ":octocat:"
+     },
+     "chore": {
+       "description": "その他の変更（ソースやテストの変更を含まない）",
+-      "title": "雑務"
++      "title": "雑務",
++      "emoji": "❓",
++      "code": ":question:"
+     },
+     "revert": {
+       "description": "以前のコミットに復帰",
+-      "title": "復帰"
++      "title": "復帰",
++      "emoji": "🔙",
++      "code": ":back:"
+     }
+   }
+ }
+diff --git a/node_modules/cz-conventional-changelog-ja/engine.js b/node_modules/cz-conventional-changelog-ja/engine.js
+index 00d8d84..d789b9c 100644
+--- a/node_modules/cz-conventional-changelog-ja/engine.js
++++ b/node_modules/cz-conventional-changelog-ja/engine.js
+@@ -116,7 +116,7 @@ module.exports = function (options) {
+         scope = scope ? '(' + answers.scope.trim() + ')' : '';
+ 
+         // Hard limit this line
+-        var head = (answers.type + scope + ': ' + answers.subject.trim()).slice(0, maxLineWidth);
++        var head = (answers.type + scope + ': ' + types[answers.type].code + ' ' + answers.subject.trim()).slice(0, maxLineWidth);
+ 
+         // Wrap these lines at 100 characters
+         var body = wrap(answers.body, wrapOptions);
