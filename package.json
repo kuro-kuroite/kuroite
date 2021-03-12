@@ -14,7 +14,7 @@
     "clean": "gatsby clean",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "postinstall": "typesync",
+    "postinstall": "npx patch-package && npx typesync",
     "serve": "gatsby serve",
     "start": "npm run develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
@@ -50,6 +50,8 @@
     "@types/react-dom": "^17.0.0",
     "@types/react-helmet": "^6.1.0",
     "npm-check-updates": "^11.1.1",
+    "patch-package": "^6.2.2",
+    "postinstall-postinstall": "^2.1.0",
     "prettier": "2.2.1",
     "typesync": "^0.8.0"
   }
