@@ -1,4 +1,4 @@
-> .5% and last 2 versions and not dead and not IE 11 and not and_uc 12.12 and not samsung 12.0, chrome 84, ios_saf 12.4
+> 0.5% and last 2 versions and not dead and not IE 11 and not and_uc 12.12 and not samsung 12.0 and not ios_saf 12.4 not op_mini all and not samsung 13.0, chrome 86
 
 # FYI: `npx browserslist --config=".browserslistrc"`(> 0.5%, last 2 versions, Firefox ESR, not dead)
 # and_chr 86

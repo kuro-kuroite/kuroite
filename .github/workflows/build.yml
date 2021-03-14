@@ -1,0 +1,89 @@
+name: build
+on:
+  workflow_run:
+    workflows:
+      - lint
+    branches:
+      - main
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    # HACK: Branch protection rule && & > Require linear history
+    # startsWith(github.event.workflow_run.head_commit.message, 'Merge pull request') &&
+    if: >
+      github.event.workflow_run.conclusion == 'success' &&
+      contains(github.event.workflow_run.head_commit.message, '[skip ci]') == false
+    environment:
+      name: production
+    steps:
+      - name: Install Zsh
+        run: |
+          sudo apt install zsh
+      # install
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.SEMANTIC_RELEASE_GITHUB_TOKEN }}
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: Get Yarn Cache Directory Path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Install npm
+        run: |
+          yarn --frozen-lockfile
+      - name: Create Env File
+        run: |
+          # FYI: https://teratail.com/questions/318264#reply-442858
+          touch .env.development .env.production
+          echo SITE_TITLE=${{ secrets.SITE_TITLE }} >> .env.development >> .env.production
+          echo SITE_AUTHOR_NAME=${{ secrets.SITE_AUTHOR_NAME }} >> .env.development >> .env.production
+          echo SITE_AUTHOR_SUMMARY=${{ secrets.SITE_AUTHOR_SUMMARY }} >> .env.development >> .env.production
+          echo SITE_DESCRIPTION=${{ secrets.SITE_DESCRIPTION }} >> .env.development >> .env.production
+          echo SITE_URL=${{ secrets.SITE_URL }} >> .env.development >> .env.production
+          echo ACCOUNT_GITHUB=${{ secrets.ACCOUNT_GITHUB }} >> .env.development >> .env.production
+          echo ACCOUNT_TWITTER=${{ secrets.ACCOUNT_TWITTER }} >> .env.development >> .env.production
+          echo GA_TRACKING_ID=${{ secrets.GA_TRACKING_ID }} >> .env.production
+      # deploy
+      - name: Build a Project
+        run: |
+          npm run build
+      - name: Create a Release
+        run: |
+          npm run release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Deploy to Production
+        run: |
+          npm run deploy
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      - name: Create Coverage
+        run: |
+          npx jest --ci --coverage
+      # - name: Upload Test Coverage as Artifact
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: coverage
+      #     path: coverage
+      #   run: |
+      #     echo 'Upload Test Coverage as Artifact'
+      - name: Upload Test Coverage to Codecov
+        run: |
+          npm run ci:upload:coverage
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
