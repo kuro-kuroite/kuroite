@@ -1,0 +1,73 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":timezone(Asia/Tokyo)",
+    "group:allNonMajor",
+    ":separateMajorReleases",
+    ":combinePatchMinorReleases",
+    ":ignoreUnstable",
+    ":prImmediately",
+    ":semanticCommits",
+    ":semanticPrefixChore",
+    ":updateNotScheduled",
+    ":automergeRequireAllStatusChecks",
+    ":automergeMinor",
+    ":automergePr",
+    ":rebaseStalePrs",
+    ":disableRateLimiting",
+    ":dependencyDashboard",
+    ":enableVulnerabilityAlertsWithLabel(security)",
+    ":labels(renovate,maintenance-bot)"
+  ],
+  "baseBranches": [
+    "main"
+  ],
+  "stabilityDays": 3,
+  "dependencyDashboardAutoclose": true,
+  "enabledManagers": [
+    "npm",
+    "dockerfile",
+    "docker-compose",
+    "github-actions",
+    "regex"
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": [
+        "^config/docker/[^/]+\\.sh$"
+      ],
+      "matchStrings": [
+        "datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sexport .*?_VERSION=(?<currentValue>.*)\\s"
+      ],
+      "versioningTemplate": "{{#if versioning}}{{versioning}}{{else}}semver{{/if}}"
+    }
+  ],
+  "npm": {
+    "extends": [
+      "group:monorepos",
+      "group:definitelyTyped",
+      "group:jsUnitTestNonMajor",
+      "github>hatena/renovate-config:groupLinters",
+      ":ignoreModulesAndTests",
+      "helpers:disableTypesNodeMajor"
+    ],
+    "rangeStrategy": "bump",
+    "postUpdateOptions": [
+      "yarnDedupeHighest"
+    ],
+    "lockFileMaintenance": {
+      "enabled": true,
+      "recreateClosed": true,
+      "branchTopic": "lock-file-maintenance",
+      "commitMessageAction": "Lock file maintenance",
+      "prBodyDefinitions": {
+        "Change": "All locks refreshed"
+      },
+      "rebaseWhen": "behind-base-branch",
+      "schedule": [
+        "at any time"
+      ]
+    }
+  }
+}

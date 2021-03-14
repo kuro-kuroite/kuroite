@@ -1,0 +1,27 @@
+name: issue
+on:
+  workflow_run:
+    workflows:
+      - build
+    branches:
+      - main
+    types:
+      - completed
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    # HACK: Branch protection rule && & > Require linear history
+    # startsWith(github.event.workflow_run.head_commit.message, 'Merge pull request') &&
+    if: >
+      github.event.workflow_run.conclusion == 'failure' &&
+      contains(github.event.workflow_run.head_commit.message, '[skip ci]') == false
+    steps:
+      - name: Install Zsh
+        run: |
+          sudo apt install zsh
+      - name: Create Issue if the Workflows was Failed
+        run: |
+          npm run ci:create:issue --workflow ${{ github.event.repository.html_url }}/actions/runs/${{ github.run_id }} --commit ${{ github.event.repository.html_url }}/commits/${{ github.sha }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

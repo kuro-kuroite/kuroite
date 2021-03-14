@@ -1,0 +1,124 @@
+name: lint
+on:
+  push:
+    branches:
+      - '**'
+    tags-ignore:
+      - 'v*'
+      - 'v*.*.*'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    if: contains(github.event.head_commit.message, '[skip ci]') == false
+    steps:
+      - name: Install Zsh
+        run: |
+          sudo apt install zsh
+      # install
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: Get Yarn Cache Directory Path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Install npm
+        run: |
+          yarn --frozen-lockfile
+      - name: Check Type
+        run: |
+          npm run ci:check:type
+      - name: Check Code Format
+        run: |
+          npm run ci:check:format
+      # lint-mince
+      - name: Lint Config
+        run: |
+          npm run ci:check:config
+      - name: Lint Commit
+        run: |
+          echo 'Lint Commit'
+          # FIXME: Check semantic-release commit body-max-line-length
+          # npm run ci:check:commit
+      - name: Lint Markdown
+        run: |
+          npm run ci:check:md
+  test:
+    runs-on: ubuntu-latest
+    if: contains(github.event.head_commit.message, '[skip ci]') == false
+    environment:
+      name: development
+    steps:
+      - name: Install Zsh
+        run: |
+          sudo apt install zsh
+      # install
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: Get Yarn Cache Directory Path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Install npm
+        run: |
+          yarn --frozen-lockfile
+      - name: Create Env File
+        run: |
+          # FYI: https://teratail.com/questions/318264#reply-442858
+          touch .env.development .env.production
+          echo SITE_TITLE=${{ secrets.SITE_TITLE }} >> .env.development >> .env.production
+          echo SITE_AUTHOR_NAME=${{ secrets.SITE_AUTHOR_NAME }} >> .env.development >> .env.production
+          echo SITE_AUTHOR_SUMMARY=${{ secrets.SITE_AUTHOR_SUMMARY }} >> .env.development >> .env.production
+          echo SITE_DESCRIPTION=${{ secrets.SITE_DESCRIPTION }} >> .env.development >> .env.production
+          echo SITE_URL=${{ secrets.SITE_URL }} >> .env.development >> .env.production
+          echo ACCOUNT_GITHUB=${{ secrets.ACCOUNT_GITHUB }} >> .env.development >> .env.production
+          echo ACCOUNT_TWITTER=${{ secrets.ACCOUNT_TWITTER }} >> .env.development >> .env.production
+          echo GA_TRACKING_ID=${{ secrets.GA_TRACKING_ID }} >> .env.production
+      - name: Run Unit and Snapshot Test with Coverage
+        run: |
+          echo 'Run Unit and Snapshot Test with Coverage'
+          # FIXME: Check Code Coverage
+          # npm run ci:test:unit
+          npx jest --ci --coverage
+      - name: Run Styleguide's Accessibility and Visual Regression Test
+        run: |
+          echo "Run Styleguide's Accessibility and Visual Regression Test"
+          # FIXME: Check regression. (Docker 環境と CI 環境でレンダリング内容に差が出るため)
+          # FIXME: Check A11y
+          # npm run ci:test:styleguide
+      - name: Run E2E and Snapshot Test
+        uses: cypress-io/github-action@v2
+        with:
+          browser: chrome
+          install: false
+          command: |
+            echo "Run E2E and Snapshot Test"
+            # FIXME: Check snapshot. (Docker 環境と CI 環境でレンダリング内容に差が出るため)
+            # FIXME: Check A11y
+            # npm run ci:test:e2e
+      - name: Run SEO Test
+        run: |
+          echo 'Run SEO Test'
+          # FIXME: 全ページの url を動的に指定(from sitemap.xml or recursive)
+          # FIXME: Check lighthouse
+          # npm run ci:test:seo
