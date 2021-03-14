@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    # command: "zsh -c 'yarn install --check-files --no-cache && npx gatsby develop -- -H=$HOST'"
+    # command: "zsh -c 'yarn install --check-files --frozen-lockfile && npx gatsby develop -- -H=$HOST'"
+    # FIXME: move this into postCreateCommand in devcontainer.json
+    # command: "zsh -c 'yarn install --frozen-lockfile --no-cache'"
+    working_dir: /code
+    volumes:
+      # FYI: https://zenn.dev/sarisia/articles/0c1db052d09921
+      - type: bind
+        source: .
+        target: /code
+      # FYI: https://hfuji.hatenablog.jp/entry/2019/06/01/102617
+      # FYI: https://docs.docker.jp/docker-for-mac/osxfs-caching.html#consistentcacheddelegated
+      # NOTE: 開発中に使用。npm の追加、削除、変更に追従するため
+      # - ./node_modules:/code/node_modules:cached
+      # FYI: https://tkkm.tokyo/post-495/
+      # FYI: https://tech.medpeer.co.jp/entry/2019/10/30/110000
+      # NOTE: 検証中に使用。npm install を高速にするため
+      - /code/node_modules
+    ports:
+      - 8000:8000
+      - 9000:9000
+      - 6006:6006
+    # NOTE: for `npx gatsby develop -- -H=$HOST` in web command
+    # env_file:
+    #   - ./.env.development
+    environment:
+      - HOST=0.0.0.0
+    tty: true
+    stdin_open: true

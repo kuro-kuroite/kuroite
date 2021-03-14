@@ -162,3 +162,9 @@ public
 .pnp.*
 
 
+# custom
+
+# dotenv
+.env*.local
+
+
