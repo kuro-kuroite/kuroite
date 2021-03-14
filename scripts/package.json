@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "scripts",
+  "version": "0.1.0",
+  "license": "MIT",
+  "bin": {
+    "scripts": "./build/cli.js"
+  },
+  "files": [
+    "build"
+  ]
+}

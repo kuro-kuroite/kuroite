@@ -1,2 +1,9 @@
+# pastel
+node_modules/
+build/
+
 # tsc.lint.sh
 src/sh/.tsconfig.lint.json
+
+# npm link
+package-lock.json
