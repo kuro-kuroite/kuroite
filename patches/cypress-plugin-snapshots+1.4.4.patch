@@ -1,0 +1,24 @@
+diff --git a/node_modules/cypress-plugin-snapshots/types/index.d.ts b/node_modules/cypress-plugin-snapshots/types/index.d.ts
+index 0e008bc..e071000 100644
+--- a/node_modules/cypress-plugin-snapshots/types/index.d.ts
++++ b/node_modules/cypress-plugin-snapshots/types/index.d.ts
+@@ -17,11 +17,13 @@ declare namespace Cypress {
+       name: string
+     }>): Chainable<null>;
+ 
+-    toMatchImageSnapshot(options?: Partial<{
+-      createDiffImage: boolean,
+-      threshold: number,
+-      thresholdType: "percent" | "pixels",
+-      name: string
+-    }> & Partial<ScreenshotDefaultsOptions>): Chainable<null>;
++    // HACK: toMatchImageSnapshot() を使用しないため、コメントアウト。
++    // NOTE: Cannot find name 'ScreenshotDefaultsOptions'.
++    // toMatchImageSnapshot(options?: Partial<{
++    //   createDiffImage: boolean,
++    //   threshold: number,
++    //   thresholdType: "percent" | "pixels",
++    //   name: string
++    // }> & Partial<ScreenshotDefaultsOptions>): Chainable<null>;
+   }
+ }

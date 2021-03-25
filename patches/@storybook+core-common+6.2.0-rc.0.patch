@@ -1,0 +1,15 @@
+diff --git a/node_modules/@storybook/core-common/dist/cjs/utils/babel.js b/node_modules/@storybook/core-common/dist/cjs/utils/babel.js
+index d92e445..143f84d 100644
+--- a/node_modules/@storybook/core-common/dist/cjs/utils/babel.js
++++ b/node_modules/@storybook/core-common/dist/cjs/utils/babel.js
+@@ -30,7 +30,9 @@ require.resolve('@babel/plugin-proposal-optional-chaining'), require.resolve('@b
+   absoluteImports: require.resolve('core-js'),
+   // eslint-disable-next-line global-require
+   version: require('core-js/package.json').version
+-}]];
++}],
++// NOTE: gatsby の GraphQL クエリエラーをなくすため
++require.resolve('babel-plugin-remove-graphql-queries')];
+ var presets = [[require.resolve('@babel/preset-env'), {
+   shippedProposals: true
+ }], require.resolve('@babel/preset-typescript')];

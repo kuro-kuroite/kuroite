@@ -1,0 +1,20 @@
+diff --git a/node_modules/cypress-axe/dist/index.js b/node_modules/cypress-axe/dist/index.js
+index 6e39e23..0ec7b72 100644
+--- a/node_modules/cypress-axe/dist/index.js
++++ b/node_modules/cypress-axe/dist/index.js
+@@ -80,7 +80,14 @@ var checkA11y = function (context, options, violationCallback, skipFailures) {
+     })
+         .then(function (violations) {
+         if (!skipFailures) {
+-            assert.equal(violations.length, 0, violations.length + " accessibility violation" + (violations.length === 1 ? '' : 's') + " " + (violations.length === 1 ? 'was' : 'were') + " detected");
++            // NOTE: `cypress run` で、どの要素にアクセシビリティエラーが発生したのかを、log 出力するため
++            assert.equal(violations.length, 0, violations.length + " accessibility violation" + (violations.length === 1 ? '' : 's') + " " + (violations.length === 1 ? 'was' : 'were') + " detected" + '\n(\n' + violations.map(function (v) {
++              var selectors = v.nodes
++              .reduce(function (acc, node) { return acc.concat(node.target); }, [])
++              .join(', ');
++
++              return JSON.stringify(selectors)
++            }).join('\n') + '\n)\n');
+         }
+         else if (violations.length) {
+             Cypress.log({
