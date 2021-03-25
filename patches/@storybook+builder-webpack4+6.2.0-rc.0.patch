@@ -1,0 +1,15 @@
+diff --git a/node_modules/@storybook/builder-webpack4/dist/cjs/preview/babel-loader-preview.js b/node_modules/@storybook/builder-webpack4/dist/cjs/preview/babel-loader-preview.js
+index 1eb7a75..81238ac 100644
+--- a/node_modules/@storybook/builder-webpack4/dist/cjs/preview/babel-loader-preview.js
++++ b/node_modules/@storybook/builder-webpack4/dist/cjs/preview/babel-loader-preview.js
+@@ -17,7 +17,9 @@ var createBabelLoader = function (options, framework) {
+       options: options
+     }],
+     include: [(0, _coreCommon.getProjectRoot)()],
+-    exclude: /node_modules/
++    // NOTE: Gatsbyには、トランスパイルされていないES6コードが含まれているため
++    // FYI: https://www.gatsbyjs.com/docs/visual-testing-with-storybook/
++    exclude: /node_modules\/(?!(gatsby)\/)/
+   };
+ };
+ 

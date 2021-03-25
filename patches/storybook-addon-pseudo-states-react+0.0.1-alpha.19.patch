@@ -1,0 +1,61 @@
+diff --git a/node_modules/storybook-addon-pseudo-states-react/dist/react/react.js b/node_modules/storybook-addon-pseudo-states-react/dist/react/react.js
+index c779ea5..df33747 100644
+--- a/node_modules/storybook-addon-pseudo-states-react/dist/react/react.js
++++ b/node_modules/storybook-addon-pseudo-states-react/dist/react/react.js
+@@ -74,7 +74,8 @@ function pseudoStateFn(getStory, context, settings) {
+         if (parameters.pseudos) {
+             var _loop_1 = function (pstateRaw) {
+                 var pstate = utils_1.sanitizePseudoName(pstateRaw);
+-                var container = document.querySelector(".pseudo-states-addon__story--" + pstate + " .pseudo-states-addon__story__container");
++                // NOTE: 全てのcontainer(Normal, ...)に対して、applyPseudoStateToHostを実行するため
++                var containers = document.querySelectorAll(".pseudo-states-addon__story--" + pstate + " .pseudo-states-addon__story__container");
+                 var applyPseudoStateToHost = function (containerTmp, selectorTmp) {
+                     var _a, _b, _c, _d, _e;
+                     var host;
+@@ -90,25 +91,37 @@ function pseudoStateFn(getStory, context, settings) {
+                             applyPseudoStateToHost(containerTmp, s);
+                         }
+                     }
+-                    var moduleClass = [''];
+-                    if ((_a = host) === null || _a === void 0 ? void 0 : _a.classList[0]) {
+-                        moduleClass = (_b = host) === null || _b === void 0 ? void 0 : _b.classList[0].match(/(.+?)?__/);
+-                    }
+-                    if (moduleClass && ((_c = moduleClass) === null || _c === void 0 ? void 0 : _c.length) >= 1) {
++
++                    // NOTE: 全てのclassに対して, __\:hover等を追加するため
++                    var moduleClass = [];
++                    host === null || host === void 0 ? void 0 : host.classList.forEach(i => {
++                      moduleClass.push(i.match(/(.+?)?__/));
++                    });
++
++                    if (moduleClass.length >= 1 && moduleClass[0] && ((_c = moduleClass[0]) === null || _c === void 0 ? void 0 : _c.length) >= 1) {
+                         var subPseudoStates = utils_1.getMixedPseudoStates(pstateRaw);
+                         if (subPseudoStates.length >= 1) {
+                             for (var _g = 0, subPseudoStates_1 = subPseudoStates; _g < subPseudoStates_1.length; _g++) {
+                                 var s = subPseudoStates_1[_g];
+-                                (_d = host) === null || _d === void 0 ? void 0 : _d.classList.add(moduleClass[1] + "__" + parameters.prefix + s.trim());
++                                // NOTE: 全てのclassに対して, __\:hover等を追加
++                                (_d = host) === null || _d === void 0 ? void 0 : moduleClass.map((mClass) => {
++                                  _d.classList.add(mClass[1] + "__" + parameters.prefix + s.trim());
++                                }).join(' ');
+                             }
+                         }
+                         else {
+-                            (_e = host) === null || _e === void 0 ? void 0 : _e.classList.add(moduleClass[1] + "__" + parameters.prefix + pstate);
++                            // NOTE: 全てのclassに対して, __\:hover等を追加
++                            (_e = host) === null || _e === void 0 ? void 0 : moduleClass.map((mClass) => {
++                              _e.classList.add(mClass[1] + "__" + parameters.prefix + pstate);
++                            }).join(' ');
+                         }
+                     }
+                 };
+-                if (container) {
+-                    applyPseudoStateToHost(container, selector);
++                if (containers.length !== 0) {
++                    // NOTE: 全てのcontainer(Normal, ...)に対して、applyPseudoStateToHostを実行
++                    containers.forEach(container => {
++                      applyPseudoStateToHost(container, selector);
++                    });
+                 }
+             };
+             for (var _i = 0, _a = parameters.pseudos; _i < _a.length; _i++) {

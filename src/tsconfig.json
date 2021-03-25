@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "typeRoots": [
+      "../node_modules"
+    ],
+    "types": [
+      "@types/node",
+      "@types/jest",
+      "@types/testing-library__jest-dom"
+    ],
+    "module": "ESNext"
+  },
+  "include": [
+    "./**/*.spec.ts",
+    "./**/*.spec.tsx"
+  ],
+  "typeAcquisition": {
+    "include": [
+      "@types/jest",
+      "@types/testing-library__jest-dom"
+    ]
+  }
+}

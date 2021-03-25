@@ -1,0 +1,15 @@
+diff --git a/node_modules/@storybook/addon-storyshots/dist/ts3.9/frameworks/configure.js b/node_modules/@storybook/addon-storyshots/dist/ts3.9/frameworks/configure.js
+index 9ccf525..669c488 100644
+--- a/node_modules/@storybook/addon-storyshots/dist/ts3.9/frameworks/configure.js
++++ b/node_modules/@storybook/addon-storyshots/dist/ts3.9/frameworks/configure.js
+@@ -51,7 +51,9 @@ function getConfigPathParts(input) {
+             output.preview = preview;
+         }
+         if (main) {
+-            var _a = jest.requireActual(main).stories, stories = _a === void 0 ? [] : _a;
++            // NOTE: add default
++            //       to avoid storyshots found 0 stories(`npm run jest`)
++            var _a = jest.requireActual(main).default.stories, stories = _a === void 0 ? [] : _a;
+             output.stories = stories.map(function (pattern) {
+                 var _a = core_common_1.toRequireContext(pattern), basePath = _a.path, recursive = _a.recursive, match = _a.match;
+                 var regex = new RegExp(match);

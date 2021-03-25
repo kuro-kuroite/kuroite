@@ -1,0 +1,24 @@
+diff --git a/node_modules/storycap/lib/node/capturing-browser.js b/node_modules/storycap/lib/node/capturing-browser.js
+index b20c87e..2c62ac8 100644
+--- a/node_modules/storycap/lib/node/capturing-browser.js
++++ b/node_modules/storycap/lib/node/capturing-browser.js
+@@ -321,8 +321,18 @@ class CapturingBrowser extends storycrawler_1.StoryPreviewBrowser {
+             yield this.page.evaluate(() => new Promise(res => window.requestIdleCallback(res, { timeout: 3000 })));
+             // Get PNG image buffer
+             const buffer = yield this.page.screenshot({
+-                fullPage: emittedScreenshotOptions.fullPage,
++                // NOTE: clip を使用するため
++                fullPage: false,
+                 omitBackground: emittedScreenshotOptions.omitBackground,
++                // NOTE: viewport width の offset を切り取るため、clip で widthを指定
++                // FYI: https://github.com/puppeteer/puppeteer/issues/2423#issuecomment-590738707
++                clip: {
++                  x: 0,
++                  y: 0,
++                  width: this.viewport.width,
++                  height: this.viewport.height,
++                  scale: 1,
++                },
+             });
+             // We should reset elements state(e.g. focusing, hovering) for future screenshot for this story.
+             yield this.resetIfTouched();

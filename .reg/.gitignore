@@ -1,0 +1,5 @@
+storybook/actual/
+storybook/diff/
+
+storybook/reg.json
+storybook/report.html

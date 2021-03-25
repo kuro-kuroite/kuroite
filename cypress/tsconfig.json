@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "typeRoots": [
+      "../node_modules"
+    ],
+    "types": [
+      "@types/node",
+      "cypress",
+      "cypress-axe",
+      "@testing-library/cypress",
+      "cypress-plugin-snapshots"
+    ],
+    "module": "ESNext"
+  },
+  "include": [
+    "./**/*.spec.ts",
+    "./**/*.spec.tsx"
+  ],
+  "typeAcquisition": {
+    "include": [
+      "cypress",
+      "cypress-axe",
+      "@testing-library/cypress",
+      "cypress-plugin-snapshots"
+    ]
+  }
+}
