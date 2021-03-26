@@ -1,0 +1,9 @@
+/*
+- Container
+  - ~~Header~~
+  - ~~Main~~
+  - ~~Footer~~ */
+
+.Container {
+  composes: container from '../../css/base/molecules/layout/style.module.css';
+}

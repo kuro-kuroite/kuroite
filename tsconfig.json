@@ -23,7 +23,11 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "jsx": "react"
+    "jsx": "react",
+    "typeRoots": [
+      "node_modules/@types",
+      "./typings"
+    ]
   },
   "include": [
     "./src/**/*.ts",

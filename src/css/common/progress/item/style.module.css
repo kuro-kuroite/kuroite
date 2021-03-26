@@ -1,0 +1,22 @@
+/*
+- background
+  - item
+
+- default */
+
+.default {
+  top: 2px;
+}
+
+.background {
+  composes: default;
+  @apply sticky bg-text bg-opacity-sm w-full z-10;
+
+  height: 3px;
+}
+
+.item {
+  composes: background;
+
+  @apply bg-opacity-100;
+}

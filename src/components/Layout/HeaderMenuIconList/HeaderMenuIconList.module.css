@@ -1,0 +1,12 @@
+/*
+- List
+
+- InvisibleSm */
+
+.List {
+  composes: navList from '../../../css/base/molecules/header/style.module.css';
+}
+
+.InvisibleSm {
+  composes: invisibleSm from '../../../css/domain/layout/header/menu/style.module.css';
+}

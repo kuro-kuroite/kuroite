@@ -1,0 +1,20 @@
+/*
+- nav
+  - list
+    - link */
+
+.nav {
+  composes: nav from '../../../../base/molecules/footer/style.module.css';
+  composes: navGapX from '../../../../base/molecules/nav/style.module.css';
+
+  @apply flex justify-end;
+  @apply w-full;
+}
+
+.list {
+  composes: navList from '../../../../base/molecules/footer/style.module.css';
+}
+
+.link {
+  composes: navLink from '../../../../base/molecules/footer/style.module.css';
+}

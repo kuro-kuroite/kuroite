@@ -1,0 +1,73 @@
+/*
+- button | primary | outlinePrimary | normal
+
+- linkResetBase
+- buttonResetBase
+- base */
+
+.linkResetBase {
+  @apply no-underline;
+}
+
+/* https://moderncss.dev/css-button-styling-guide/ */
+.buttonResetBase {
+  @apply p-0 bg-transparent border-none cursor-pointer;
+
+  font-family: inherit;
+
+  &:focus {
+    @apply outline-none;
+  }
+
+  /* TODO:  */
+  &:focus-visible {
+    @apply outline-primary;
+  }
+}
+
+.base {
+  composes: linkResetBase;
+  composes: buttonResetBase;
+}
+
+.button {
+  composes: base;
+
+  @apply inline-flex items-center justify-center;
+
+  @apply text-base font-medium bg-primary border border-solid border-transparent;
+
+  padding: 1em 1.5em 1.125em;
+
+  /* HACK: Elements must have sufficient color contrast */
+  color: #000;
+  border-radius: 0.25em;
+
+  &:hover {
+    @apply bg-opacity-md;
+  }
+}
+
+.primary {
+  composes: button;
+}
+
+.normal {
+  composes: button;
+
+  @apply text-background bg-text border-transparent;
+
+  &:hover {
+    @apply text-opacity-md bg-opacity-md;
+  }
+}
+
+.outlineNormal {
+  composes: button;
+
+  @apply text-text bg-background border-text;
+
+  &:hover {
+    @apply text-opacity-md bg-opacity-md border-opacity-md;
+  }
+}

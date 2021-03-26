@@ -1,0 +1,32 @@
+/*
+- container
+  - header
+  - main
+  - footer */
+
+.container {
+  composes: fluidFixedContainer from '../../particles/fluid-fixed-container/style.module.css';
+  composes: selection from '../../particles/selection/style.module.css';
+
+  @apply text-text bg-background;
+
+  /* HACK: make footer bottom */
+  @apply grid min-h-screen;
+
+  grid-template-rows: auto 1fr auto;
+
+  /* HACK: grid 要素を画面内に収めるため */
+  grid-template-columns: 100%;
+}
+
+/* stylelint-disable-next-line block-no-empty */
+.header {
+}
+
+/* stylelint-disable-next-line block-no-empty */
+.main {
+}
+
+/* stylelint-disable-next-line block-no-empty */
+.footer {
+}

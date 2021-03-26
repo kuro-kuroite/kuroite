@@ -1,0 +1,14 @@
+diff --git a/node_modules/mdast-util-to-hast/lib/footer.js b/node_modules/mdast-util-to-hast/lib/footer.js
+index 3b5619b..a2bb283 100644
+--- a/node_modules/mdast-util-to-hast/lib/footer.js
++++ b/node_modules/mdast-util-to-hast/lib/footer.js
+@@ -27,7 +27,8 @@ function generateFootnotes(h) {
+         type: 'link',
+         url: '#fnref-' + def.identifier,
+         data: {hProperties: {className: ['footnote-backref']}},
+-        children: [{type: 'text', value: '↩'}]
++        // NOTE: &#x21a9; を png -> svg 化 -> svgの属性を編集
++        children: [{type: 'html', value: `<svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 1638 1638" stroke="currentColor" fill="currentColor" stroke-width="0" height="1em" width="1em" style="display: inline;" aria-label="link to ${`#fnref-${def.identifier}`}"><path d="M1129 160.2v69.5l23.8.7c35.9 1 56.3 3.7 82.7 11.1 50.1 14 90.5 38.3 130 77.9 37.6 37.8 62.9 80.7 76.3 129.1 7.5 27 10.4 50.5 10.4 83 0 48-7.8 85.4-26.2 126.5-20.3 45.1-61.4 93.2-106 124.1-31.6 21.9-69.5 37.8-106.6 44.8-31.1 5.9 0 5.4-401.1 5.8L445 833V497.5L242.5 700 40 902.5l202.2 202.3L444.5 1307l.3-167.5.2-167.4 369.8-.4c402.6-.3 376.3 0 411.7-5.7 104.5-17 194.3-69.7 267.2-157 48.1-57.5 80.1-128 92.2-203.1 7.3-45.1 7.2-105-.3-150.4-12.7-76.7-43-142.2-94.4-204.5-12.1-14.6-44.1-46.6-59.7-59.6-53-44.2-112.1-74-175.8-88.5-31.1-7.1-61.4-10.5-100.9-11.6l-25.8-.6v69.5z"/></svg>`}]
+       }),
+       position: def.position
+     }

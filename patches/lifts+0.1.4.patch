@@ -1,0 +1,33 @@
+diff --git a/node_modules/lifts/dist/Switch.d.ts b/node_modules/lifts/dist/Switch.d.ts
+index 3763418..8018162 100644
+--- a/node_modules/lifts/dist/Switch.d.ts
++++ b/node_modules/lifts/dist/Switch.d.ts
+@@ -1 +1,2 @@
+ export declare const Switch: <E extends string | number | symbol>(exp: E) => <T, U>(caseMap: { [K in E]: () => T; }, default_: () => U) => T | U;
++export declare const Case: <E extends string | number | symbol>(exp: E) => <T, U>(caseMap: { [K in E]: () => T; }, default_: U) => T | U;
+diff --git a/node_modules/lifts/dist/Switch.js b/node_modules/lifts/dist/Switch.js
+index 52d025f..1e1d074 100644
+--- a/node_modules/lifts/dist/Switch.js
++++ b/node_modules/lifts/dist/Switch.js
+@@ -1,6 +1,6 @@
+ "use strict";
+ Object.defineProperty(exports, "__esModule", { value: true });
+-exports.Switch = void 0;
++exports.Case = exports.Switch = void 0;
+ exports.Switch = (exp) => {
+     return (caseMap, default_) => {
+         if (exp in caseMap) {
+@@ -11,3 +11,13 @@ exports.Switch = (exp) => {
+         }
+     };
+ };
++exports.Case = (exp) => {
++    return (caseMap, default_) => {
++        if (exp in caseMap) {
++            return caseMap[exp]();
++        }
++        else {
++            return default_;
++        }
++    };
++};

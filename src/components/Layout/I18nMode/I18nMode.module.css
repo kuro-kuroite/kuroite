@@ -1,0 +1,21 @@
+/*
+- I18nMode
+  - Checkbox
+  - Icon */
+
+.I18nMode {
+  composes: toggleIcon from '../../../css/case/toggle/icon/style.module.css';
+}
+
+.Checkbox {
+  composes: checkbox from '../../../css/case/toggle/icon/style.module.css';
+}
+
+.Icon {
+  composes: icon from '../../../css/case/toggle/icon/style.module.css';
+
+  &:hover {
+    /* HACK: 絵文字('=,画像)であるため */
+    filter: opacity(75%);
+  }
+}

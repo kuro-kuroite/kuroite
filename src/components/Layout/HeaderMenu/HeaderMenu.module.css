@@ -1,0 +1,10 @@
+/*
+- Menu
+  - ~~PageList~~
+    - ~~Link~~
+  - ~~IconList~~
+    - ~~Link~~ */
+
+.Menu {
+  composes: menu from '../../../css/domain/layout/header/menu/style.module.css';
+}

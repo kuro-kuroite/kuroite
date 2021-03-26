@@ -1,0 +1,21 @@
+/*
+- footer
+  - container
+    - notice */
+
+.footer {
+  composes: footer from '../../../base/molecules/footer/style.module.css';
+
+  @apply flex justify-center;
+}
+
+.container {
+  @apply flex flex-col items-start;
+  @apply w-full;
+}
+
+.notice {
+  composes: notice from '../../../base/molecules/footer/style.module.css';
+
+  @apply pt-3;
+}

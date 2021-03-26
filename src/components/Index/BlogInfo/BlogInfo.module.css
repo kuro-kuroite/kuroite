@@ -1,0 +1,6 @@
+/*
+- BlogInfo */
+
+.BlogInfo {
+  composes: info from '../../../css/domain/blogs/item/info/style.module.css';
+}

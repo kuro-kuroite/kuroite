@@ -1,0 +1,24 @@
+/*
+- Blog
+  - Title
+  - ~~Info~~
+  - Container
+    - ~~Toc~~
+    - Body
+    - ~~Footer~~ */
+
+.Blog {
+  composes: item from '../../css/domain/blogs/item/style.module.css';
+}
+
+.Title {
+  composes: title from '../../css/domain/blog/page/style.module.css';
+}
+
+.Container {
+  composes: container from '../../css/domain/blog/page/style.module.css';
+}
+
+.Body {
+  composes: body from '../../css/domain/blog/page/style.module.css';
+}

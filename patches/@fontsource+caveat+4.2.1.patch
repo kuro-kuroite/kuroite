@@ -1,0 +1,14 @@
+diff --git a/node_modules/@fontsource/caveat/latin-400.css b/node_modules/@fontsource/caveat/latin-400.css
+index c813604..a6f8534 100644
+--- a/node_modules/@fontsource/caveat/latin-400.css
++++ b/node_modules/@fontsource/caveat/latin-400.css
+@@ -4,6 +4,8 @@
+   font-style: normal;
+   font-display: swap;
+   font-weight: 400;
+-  src: url('./files/caveat-latin-400-normal.woff2') format('woff2'), url('./files/caveat-latin-400-normal.woff') format('woff');
++  /* NOTE: font の容量を減らすため */
++  /* FYI: https://caniuse.com/?search=woff2 */
++  src: url('./files/caveat-latin-400-normal.woff2') format('woff2');
+   
+ }

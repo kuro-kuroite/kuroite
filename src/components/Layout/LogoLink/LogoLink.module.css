@@ -1,0 +1,11 @@
+/*
+- Banner
+  - Icon */
+
+.Banner {
+  composes: banner from '../../../css/domain/layout/header/style.module.css';
+}
+
+.Icon {
+  composes: icon from '../../../css/base/molecules/header/style.module.css';
+}

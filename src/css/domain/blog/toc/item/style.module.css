@@ -1,0 +1,22 @@
+/*
+- wrappedNav */
+
+.wrappedNav {
+  composes: wrappedNav from '../../../../common/toc/item/style.module.css';
+}
+
+@screen lg {
+  .wrappedNav {
+    @apply block order-1;
+
+    @apply pt-4 pb-4 pl-4;
+
+    @apply sticky;
+
+    top: var(--header-height, '2px');
+    flex: 1;
+
+    /* NOTE: sticky needs not 100% height */
+    height: fit-content;
+  }
+}

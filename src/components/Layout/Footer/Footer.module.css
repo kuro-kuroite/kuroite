@@ -1,0 +1,13 @@
+/*
+- Footer
+  - Container
+    - ~~Nav~~
+    - ~~Notice~~ */
+
+.Footer {
+  composes: footer from '../../../css/domain/layout/footer/style.module.css';
+}
+
+.Container {
+  composes: container from '../../../css/domain/layout/footer/style.module.css';
+}

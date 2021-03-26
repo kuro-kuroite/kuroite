@@ -1,0 +1,33 @@
+/*
+- menu
+  - ~~list~~
+    - ~~link~~
+
+- InvisibleSm (for Item) */
+
+.menu {
+  composes: menu from '../../../../base/molecules/header/style.module.css';
+  composes: navGapX from '../../../../base/molecules/nav/style.module.css';
+}
+
+.invisibleSm {
+  @apply sr-only;
+}
+
+@media (max-width: 428px) {
+  .invisibleSm {
+    /* FIXME(flex-space-polyfill): to remove space-x */
+    & + :not(template) {
+      @apply ml-0 !important;
+    }
+  }
+}
+
+@screen md {
+  .invisibleSm {
+    @apply not-sr-only;
+
+    /* HACK: for removing sr-only */
+    @apply h-full;
+  }
+}

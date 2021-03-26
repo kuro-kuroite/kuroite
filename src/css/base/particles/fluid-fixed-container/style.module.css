@@ -1,0 +1,18 @@
+/*
+- fluidFixedContainer */
+
+:root {
+  --content-width: 1140px;
+  --side-space-width: 16px;
+}
+
+@screen md {
+  :root {
+    --side-space-width: 24px;
+  }
+}
+
+/* NOTE: do not use padding-x */
+.fluidFixedContainer {
+  padding: 0 max(calc(50% - var(--content-width) / 2), var(--side-space-width));
+}

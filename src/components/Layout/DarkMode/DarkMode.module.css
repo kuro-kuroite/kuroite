@@ -1,0 +1,21 @@
+/*
+- Link
+  - DarkMode
+    - Checkbox
+    - Icon */
+
+.Link {
+  composes: navIconLink from '../../../css/base/molecules/header/style.module.css';
+}
+
+.DarkMode {
+  composes: toggleIcon from '../../../css/case/toggle/icon/style.module.css';
+}
+
+.Checkbox {
+  composes: checkbox from '../../../css/case/toggle/icon/style.module.css';
+}
+
+.Icon {
+  composes: icon from '../../../css/case/toggle/icon/style.module.css';
+}

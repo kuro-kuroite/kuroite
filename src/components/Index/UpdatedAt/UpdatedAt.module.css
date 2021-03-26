@@ -1,0 +1,11 @@
+/*
+- UpdatedAt
+  - WithIcon */
+
+.UpdatedAt {
+  composes: text from '../../../css/common/icon/text/style.module.css';
+}
+
+.WithIcon {
+  composes: icon from '../../../css/common/icon/text/style.module.css';
+}

@@ -1,0 +1,18 @@
+/*
+- background
+  - item */
+
+.background {
+  composes: background from '../../../../common/progress/item/style.module.css';
+}
+
+@screen md {
+  .background {
+    top: var(--header-height, '2px');
+  }
+}
+
+.item {
+  composes: item from '../../../../common/progress/item/style.module.css';
+  composes: background;
+}

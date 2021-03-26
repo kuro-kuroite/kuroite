@@ -1,0 +1,37 @@
+/*
+- toggleIcon
+  - checkbox
+  - icon */
+
+.toggleIcon {
+  composes: alignTextCenter from '../../../base/particles/align-text/style.module.css';
+
+  /* HACK: ダブルクリックしたときに、::selection のスタイルが反映されないようにするため in Safari */
+
+  /* FYI: https://stackoverflow.com/q/21720247 */
+  @apply select-none;
+
+  &:focus-within {
+    @apply outline-none;
+  }
+}
+
+.checkbox {
+  @apply sr-only;
+
+  &:focus {
+    @apply outline-none;
+  }
+}
+
+.icon {
+  /* NOTE: for cursor-pointer */
+  composes: base from '../../../base/atoms/button/style.module.css';
+
+  /* HACK: outlineのために, .DarkModeと同じサイズにする */
+  @apply flex h-full;
+}
+
+.checkbox:focus-visible + .icon {
+  @apply outline-primary;
+}

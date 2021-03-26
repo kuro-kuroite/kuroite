@@ -1,0 +1,18 @@
+/*
+- ~~NotFound~~
+  - Title
+  - Description
+  - Link
+ */
+
+.Title {
+  composes: title from '../../css/domain/not-found/page/style.module.css';
+}
+
+.Description {
+  composes: description from '../../css/domain/not-found/page/style.module.css';
+}
+
+.Link {
+  composes: link from '../../css/domain/not-found/page/style.module.css';
+}

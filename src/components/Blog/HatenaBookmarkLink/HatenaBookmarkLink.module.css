@@ -1,0 +1,6 @@
+/*
+- HatenaBookmarkLink */
+
+.HatenaBookmarkLink {
+  composes: navLink from '../../../css/domain/blog/footer/style.module.css';
+}

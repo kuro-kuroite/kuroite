@@ -1,0 +1,19 @@
+/*
+- text
+  - icon
+  - string */
+
+.text {
+  @apply flex items-center;
+
+  @apply mr-1;
+}
+
+.icon {
+  min-width: 1em;
+  margin-right: 0.1rem;
+}
+
+/* stylelint-disable-next-line block-no-empty */
+.string {
+}

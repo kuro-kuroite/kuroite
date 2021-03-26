@@ -1,0 +1,46 @@
+import { Key as CommonKey } from './common';
+import { Key as About__FooterKey } from './components/About/Footer';
+import { Key as Blog__ClipboardLinkKey } from './components/Blog/ClipboardLink';
+import { Key as Blog__FooterKey } from './components/Blog/Footer';
+import { Key as Blog__FooterInfoKey } from './components/Blog/FooterInfo';
+import { Key as Blog__HatenaBookmarkLinkKey } from './components/Blog/HatenaBookmarkLink';
+import { Key as Blog__TocKey } from './components/Blog/Toc';
+import { Key as Blog__TocIconKey } from './components/Blog/TocIcon';
+import { Key as Blog__TwitterLinkKey } from './components/Blog/TwitterLink';
+import { Key as IndexKey } from './components/Index';
+import { Key as Index__BlogInfoKey } from './components/Index/BlogInfo';
+import { Key as Index__BlogItemKey } from './components/Index/BlogItem';
+import { Key as Index__TagIconListKey } from './components/Index/TagIconList';
+import { Key as Layout__DarkModeKey } from './components/Layout/DarkMode';
+import { Key as Layout__FooterNavKey } from './components/Layout/FooterNav';
+import { Key as Layout__GitHubLinkKey } from './components/Layout/GitHubLink';
+import { Key as Layout__HeaderNavKey } from './components/Layout/HeaderNav';
+import { Key as Layout__I18nModeKey } from './components/Layout/I18nMode';
+import { Key as Layout__RssFeedLinkKey } from './components/Layout/RssFeedLink';
+import { Key as NotFoundKey } from './components/NotFound';
+import { Key as TagKey } from './components/Tag';
+
+export type TKeys = {
+  common: CommonKey;
+  'components/about/footer': About__FooterKey;
+  'components/blog/clipboardLink': Blog__ClipboardLinkKey;
+  'components/blog/footer': Blog__FooterKey;
+  'components/blog/footerInfo': Blog__FooterInfoKey;
+  'components/blog/hatenaBookmarkLink': Blog__HatenaBookmarkLinkKey;
+  'components/blog/toc': Blog__TocKey;
+  'components/blog/tocIcon': Blog__TocIconKey;
+  'components/blog/twitterLink': Blog__TwitterLinkKey;
+
+  'components/index': IndexKey;
+  'components/index/blogInfo': Index__BlogInfoKey;
+  'components/index/blogItem': Index__BlogItemKey;
+  'components/index/tagIconList': Index__TagIconListKey;
+  'components/layout/darkMode': Layout__DarkModeKey;
+  'components/layout/footerNav': Layout__FooterNavKey;
+  'components/layout/gitHubLink': Layout__GitHubLinkKey;
+  'components/layout/headerNav': Layout__HeaderNavKey;
+  'components/layout/i18nMode': Layout__I18nModeKey;
+  'components/layout/rssFeedLink': Layout__RssFeedLinkKey;
+  'components/notFound': NotFoundKey;
+  'components/tag': TagKey;
+};

@@ -1,0 +1,20 @@
+diff --git a/node_modules/postcss-scrollbar/dist/index.js b/node_modules/postcss-scrollbar/dist/index.js
+index ceee721..ba30518 100644
+--- a/node_modules/postcss-scrollbar/dist/index.js
++++ b/node_modules/postcss-scrollbar/dist/index.js
+@@ -97,6 +97,15 @@ var index = postcss.plugin(name, (options = defaults) => (css, result) => {
+       prop: 'height',
+       value: widthMap[keyword]
+     }));
++    // FYI: https://hacknote.jp/archives/36376/
++    newRule.append(postcss.decl({
++      prop: 'display',
++      value: 'none'
++    }));
++    newRule.append(postcss.decl({
++      prop: '-webkit-appearance',
++      value: 'none'
++    }));
+     root.insertBefore(parent, newRule);
+     let value = options.edgeAutohide ? '-ms-autohiding-scrollbar' : keyword === 'none' ? 'none' : 'auto';
+     parent.insertBefore(decl, {

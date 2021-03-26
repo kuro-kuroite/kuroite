@@ -1,0 +1,21 @@
+/*
+- FooterInfo
+  - Pager
+    - PagerList
+      - PagerLink */
+
+.FooterInfo {
+  composes: info from '../../../css/domain/blog/footer/info/style.module.css';
+}
+
+.Pager {
+  composes: nav from '../../../css/domain/blog/footer/info/style.module.css';
+}
+
+.PagerList {
+  composes: navList from '../../../css/domain/blog/footer/info/style.module.css';
+}
+
+.PagerLink {
+  composes: navLink from '../../../css/domain/blog/footer/info/style.module.css';
+}

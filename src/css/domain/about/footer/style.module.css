@@ -1,0 +1,21 @@
+/*
+- footer
+  - nav
+    - navList
+      - navLink */
+
+.footer {
+  composes: footer from '../../blog/footer/style.module.css';
+}
+
+.nav {
+  composes: nav from '../../blog/footer/style.module.css';
+}
+
+.navList {
+  composes: navList from '../../blog/footer/style.module.css';
+}
+
+.navLink {
+  composes: navLink from '../../blog/footer/style.module.css';
+}

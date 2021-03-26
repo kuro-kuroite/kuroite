@@ -1,0 +1,34 @@
+/*
+- WrappedNav
+  - Blind | WrappedBlind
+  - Container
+    - Title
+    - Toc | WrappedToc */
+
+.WrappedNav {
+  composes: wrappedNav from '../../../css/domain/blog/toc/item/style.module.css';
+}
+
+.Blind {
+  composes: blind from '../../../css/common/toc/item/style.module.css';
+}
+
+.WrappedBlind {
+  composes: wrappedBlind from '../../../css/common/toc/item/style.module.css';
+}
+
+.Container {
+  composes: container from '../../../css/common/toc/item/style.module.css';
+}
+
+.Title {
+  composes: title from '../../../css/common/toc/item/style.module.css';
+}
+
+.Toc {
+  composes: item from '../../../css/common/toc/item/style.module.css';
+}
+
+.WrappedToc {
+  composes: wrappedItem from '../../../css/common/toc/item/style.module.css';
+}

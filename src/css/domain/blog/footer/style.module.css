@@ -1,0 +1,25 @@
+/*
+- footer
+  - nav
+    - navList
+      - navLink */
+
+.footer {
+  @apply mt-0;
+  @apply pt-8;
+}
+
+.nav {
+  @apply pb-4;
+}
+
+.navList {
+  composes: navList from '../../../base/molecules/nav/style.module.css';
+  composes: navGapX from '../../../base/molecules/nav/style.module.css';
+}
+
+.navLink {
+  composes: link from '../../../common/icon/link/style.module.css';
+
+  @apply text-3xl;
+}

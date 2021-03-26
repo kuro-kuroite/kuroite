@@ -1,0 +1,14 @@
+diff --git a/node_modules/gatsby/dist/utils/webpack-utils.js b/node_modules/gatsby/dist/utils/webpack-utils.js
+index 32f3db1..b0f54e8 100644
+--- a/node_modules/gatsby/dist/utils/webpack-utils.js
++++ b/node_modules/gatsby/dist/utils/webpack-utils.js
+@@ -121,7 +121,8 @@ const createWebpackUtils = (stage, program) => {
+           sourceMap: !PRODUCTION,
+           camelCase: `dashesOnly`,
+           // https://github.com/webpack-contrib/css-loader/issues/406
+-          localIdentName: `[name]--[local]--[hash:base64:5]`,
++          // NOTE: css class 難読化
++          localIdentName: !PRODUCTION ? `[name]--[local]--[hash:base64:5]` : `css-[hash:base64:7]`,
+           ...options
+         }
+       };

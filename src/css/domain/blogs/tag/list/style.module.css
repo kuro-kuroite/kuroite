@@ -1,0 +1,8 @@
+/*
+- list */
+
+.list {
+  composes: list from '../../../../common/tag/list/style.module.css';
+
+  @apply pl-1;
+}

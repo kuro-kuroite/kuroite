@@ -1,0 +1,131 @@
+/*
+- wrappedNav
+  - blind | wrappedBlind
+  - container
+    - title
+    - item | wrappedItem
+
+- wrapTransition  */
+
+.wrapTransition {
+  @apply duration-75 ease-out;
+
+  transition-duration: 0.2s;
+  transition-property: top;
+}
+
+.wrappedNav {
+  @apply bg-background;
+}
+
+.blind {
+  @apply hidden;
+}
+
+.wrappedBlind {
+  composes: wrapTransition;
+  @apply fixed block w-screen h-screen z-10;
+  @apply bg-background bg-opacity-lg;
+  @apply border-none;
+
+  @apply top-0 left-0;
+}
+
+/* stylelint-disable-next-line block-no-empty */
+.container {
+}
+
+.title {
+  @apply text-2xl;
+
+  /* HACK: 目次(h1)をtableOfContentsの中に移動できないため */
+  @apply sr-only;
+}
+
+@screen lg {
+  .title {
+    @apply not-sr-only;
+  }
+}
+
+.default {
+  @apply left-0;
+
+  --toc-item-height: 45%;
+
+  top: 100%;
+}
+
+.item {
+  composes: wrapTransition;
+  composes: default;
+  @apply block fixed overflow-y-auto w-full px-8 py-4 z-20 bg-background;
+
+  @apply border-0 border-t border-solid rounded-t-lg border-text border-opacity-sm;
+
+  height: var(--toc-item-height);
+
+  & ul,
+  & li,
+  & p {
+    /* HACK: remark.cssのli:not([class]) > ul:not([class]), li:not([class]) > ol:not([class])を上書きするため */
+    margin: 0 !important;
+    padding: 0 !important;
+
+    /* NOTE: ul:not([class]) > li in remark.css の優先度が高いため */
+    @apply align-line-height-sm !important;
+
+    &::after {
+      @apply align-line-height-after !important;
+    }
+
+    &::before {
+      @apply align-line-height-before !important;
+    }
+  }
+
+  & > ul {
+    /* HACK: remark.cssのli:not([class]) > ul:not([class]), li:not([class]) > ol:not([class])を上書きするため */
+    @apply -ml-4 !important;
+  }
+
+  & li {
+    /* HACK: padding: 0 !important;を上書きし、インデントを表現 */
+    padding-left: 1rem !important;
+
+    &::before {
+      /* HACK: for a11y */
+      position: absolute !important;
+      content: '\200B' !important;
+    }
+  }
+
+  & a {
+    @apply block h-full pb-2;
+    @apply text-text no-underline;
+
+    /* HACK: Elements must have sufficient color contrast */
+    @apply bg-background;
+
+    &:hover {
+      @apply text-primary;
+    }
+
+    &:active {
+      @apply text-opacity-md;
+    }
+  }
+}
+
+@screen lg {
+  .item {
+    @apply static;
+    @apply border-0;
+    @apply px-0;
+  }
+}
+
+.wrappedItem {
+  composes: item;
+  top: calc(100% - var(--toc-item-height));
+}

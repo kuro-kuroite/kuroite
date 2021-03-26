@@ -1,0 +1,7 @@
+/*
+- link */
+
+.link {
+  composes: navLink from '../../../base/molecules/nav/style.module.css';
+  min-width: 1em;
+}
