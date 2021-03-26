@@ -1,0 +1,16 @@
+/*
+- Nav
+  - List
+    - Link */
+
+.Nav {
+  composes: nav from '../../../css/domain/layout/footer/nav/style.module.css';
+}
+
+.List {
+  composes: list from '../../../css/domain/layout/footer/nav/style.module.css';
+}
+
+.Link {
+  composes: link from '../../../css/domain/layout/footer/nav/style.module.css';
+}

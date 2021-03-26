@@ -1,0 +1,131 @@
+/* https://github.com/jensimmons/cssremedy/blob/master/css/quotes.css */
+:root:lang(en),
+:not(:lang(en)) > :lang(en) {
+  quotes: '\201c''\201d''\2018''\2019';
+} /* “ ” ‘ ’ */
+
+:root:lang(ja),
+:not(:lang(ja)) > :lang(ja) {
+  quotes: '\300c''\300d''\300e''\300f';
+} /* 「 」 『 』 */
+
+/* customise */
+
+html {
+  /* https://coliss.com/articles/build-websites/operation/css/fixed-headers-on-page-links-and-overlapping-content.html */
+  scroll-padding-top: 10px; /* 固定ヘッダの高さ分 + 10px */
+}
+
+@screen md {
+  html {
+    scroll-padding-top: 90px; /* 固定ヘッダの高さ分 + 10px */
+  }
+}
+
+body {
+  @apply bg-background;
+
+  /* NOTE: p, h[1-6]それぞれで指定するため，初期値を1に戻す */
+  line-height: 1;
+
+  /* HACK: https://stackoverflow.com/a/16346763 */
+  @apply antialiased;
+}
+
+p {
+  @apply text-text;
+
+  @apply align-line-height-md;
+  &::before {
+    @apply align-line-height-before;
+  }
+
+  &::after {
+    @apply align-line-height-after;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-title;
+
+  @apply align-line-height-md;
+  &::before {
+    @apply align-line-height-before;
+  }
+
+  &::after {
+    @apply align-line-height-after;
+  }
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-opacity-lg;
+}
+
+input {
+  &:focus {
+    @apply outline-primary;
+  }
+}
+
+label {
+  &:focus-within {
+    @apply outline-primary;
+  }
+}
+
+/* https://caniuse.com/?search=focus-visible */
+
+/* https://nelo.is/writing/styling-better-focus-states/#%EF%B8%8F-bonus-tip-a-better-alternative-to-outline */
+
+a,
+button,
+summary {
+  /* FIXME: ally.cssで反映できていないため */
+  &:focus {
+    @apply outline-none;
+  }
+
+  /* NOTE: tabで移動したとき、反応する
+            クリックしたとき、反応しない */
+  &:focus-visible {
+    @apply outline-primary;
+  }
+}
+
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+details {
+  @apply cursor-pointer;
+}
+
+/* HACK: 詳細度を小さくする for space between in tailwind */
+
+/* HACK: コメントアウト for remark.css */
+
+/* ul,
+ol {
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  padding-left: 40px;
+}
+
+ol ul,
+ul ol,
+ul ul,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0
+} */

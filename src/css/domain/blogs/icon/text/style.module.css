@@ -1,0 +1,15 @@
+/*
+- createdAt */
+
+.createdAt {
+  composes: text from '../../../../common/icon/text/style.module.css';
+
+  @apply sr-only;
+}
+
+@screen md {
+  .createdAt {
+    @apply not-sr-only;
+    @apply mr-1;
+  }
+}

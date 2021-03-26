@@ -1,0 +1,48 @@
+/* NOTE: for tailwind-theming */
+@tailwind base;
+@tailwind components;
+
+/* NOTE: for @apply */
+@tailwind utilities;
+
+/* FIXME(@layer utilities): @layer utilities not working */
+/* stylelint-disable-next-line at-rule-no-unknown */
+@layer utilities {
+  /* purgecss start ignore */
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  .align-line-height-sm {
+    --line-height-width: calc(1 + 1 / 7);
+
+    line-height: var(--line-height-width);
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  .align-line-height-md {
+    --line-height-width: calc(1.414);
+
+    line-height: var(--line-height-width);
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  .align-line-height-before {
+    /* HACK: inline-block の場合、余計なスペースが発生したため */
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top: calc((1 - var(--line-height-width)) * 0.5em);
+    content: '';
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  .align-line-height-after {
+    /* HACK: inline-block の場合、余計なスペースが発生したため */
+    display: block;
+    width: 0;
+    height: 0;
+    margin-bottom: calc((1 - var(--line-height-width)) * 0.5em);
+    content: '';
+  }
+
+  /* purgecss end ignore */
+}

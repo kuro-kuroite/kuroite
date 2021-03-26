@@ -1,0 +1,49 @@
+/*
+- ~~page~~
+  - title
+  - ~~info~~
+  - container
+    - ~~toc~~
+    - body
+    - ~~footer~~ */
+
+.title {
+  composes: title from '../../blogs/item/style.module.css';
+
+  /* HACK: Elements must have sufficient color contrast */
+  @apply bg-background;
+}
+
+@screen md {
+  .title {
+    /* FIXME: !important (css 記述順で、composes: title が優先されるため) */
+    @apply text-4xl pb-6 !important;
+  }
+}
+
+@screen lg {
+  .container {
+    @apply flex;
+  }
+}
+
+.body {
+  @apply mt-0;
+}
+
+@screen md {
+  .body {
+    @apply py-4;
+  }
+}
+
+@screen lg {
+  .body {
+    flex: 3;
+
+    /* HACK: 目次が狭くなるのを防止するため */
+
+    /* FYI: https://hottigram.com/flexbox-overflow/ */
+    min-width: 0;
+  }
+}

@@ -1,0 +1,14 @@
+diff --git a/node_modules/shiki/dist/renderer.js b/node_modules/shiki/dist/renderer.js
+index 92cbf0a..96f3b5c 100644
+--- a/node_modules/shiki/dist/renderer.js
++++ b/node_modules/shiki/dist/renderer.js
+@@ -12,7 +12,8 @@ function renderToHtml(lines, options) {
+     html += "<code>";
+     lines.forEach(function (l) {
+         if (l.length === 0) {
+-            html += "\n";
++            // NOTE: 空行を <br /> で表現するため
++            html += "<span class=\"line\"><span><br /></span></span>\n"
+         }
+         else {
+             html += "<span class=\"line\">";

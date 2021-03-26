@@ -1,0 +1,34 @@
+/* FIXME: 反映できていない */
+*:focus:not(:focus-visible),
+*::before:focus:not(:focus-visible),
+*::after:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* https://coliss.com/articles/build-websites/operation/css/a-modern-css-reset.html */
+
+/* 見たくない人用に、すべてのアニメーションとトランジションを削除 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* https://github.com/jensimmons/cssremedy/blob/master/css/reminders.css */
+
+/* 各ブラウザは、現在のリストのmargin, paddingと一致していますか？
+  See: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation  */
+nav ul {
+  list-style: none;
+}
+
+nav li::before {
+  position: absolute;
+
+  /* display: block;
+    height: 0; */
+  content: '\200B'; /* NOTE: zero width space for a11y */
+}

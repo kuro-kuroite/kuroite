@@ -1,0 +1,18 @@
+/*
+- iconLink */
+
+.iconLink {
+  /* HACK: height を 1em にするため */
+  font-weight: 500;
+  font-size: calc(1em - 2px);
+
+  @apply text-background no-underline;
+
+  /* NOTE: <PureTagList /> の text-text と対応 */
+  @apply bg-text rounded-md;
+  @apply px-2;
+
+  &:hover {
+    @apply bg-opacity-md;
+  }
+}

@@ -165,6 +165,7 @@ public
 # custom
 
 # dotenv
-.env*.local
-
+.env.*
+.env.*.local
+!.env.*.example
 

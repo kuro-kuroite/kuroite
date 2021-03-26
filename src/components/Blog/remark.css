@@ -1,0 +1,202 @@
+/* FIXME(remark): remark.css の改良 */
+
+h1:not([class]),
+h2:not([class]),
+h3:not([class]),
+h4:not([class]),
+h5:not([class]),
+h6:not([class]) {
+  @apply my-0 pt-8 pb-1;
+}
+
+h1:not([class]) {
+  @apply border-solid border-0 border-b border-text text-text;
+  @apply pb-3;
+}
+
+p:not([class]) {
+  @apply pt-4;
+}
+
+a:not([class]),
+a[class='focus-visible'],
+a[class=''] {
+  @apply text-link text-opacity-100;
+
+  &:visited {
+    @apply text-purple;
+  }
+
+  &:hover {
+    @apply text-opacity-lg;
+  }
+}
+
+ul:not([class]),
+ol:not([class]) {
+  @apply my-0 pt-4 pl-5;
+
+  & p {
+    @apply pt-0;
+    @apply align-line-height-md;
+    &::before {
+      @apply align-line-height-before;
+    }
+
+    &::after {
+      @apply align-line-height-after;
+    }
+  }
+
+  & > li {
+    @apply align-line-height-md;
+    &::before {
+      @apply align-line-height-before;
+    }
+
+    &::after {
+      @apply align-line-height-after;
+    }
+
+    &:not(:first-child) {
+      @apply pt-2;
+    }
+  }
+}
+
+/* FYI: https://www.granfairs.com/blog/staff/css-ol-styling-with-counter */
+ol:not([class]) {
+  counter-reset: ol-item;
+  /* stylelint-disable-next-line no-descending-specificity */
+  & > li {
+    counter-increment: ol-item;
+    &::marker {
+      content: counter(ol-item) '. ';
+    }
+  }
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+li:not([class]) {
+  & > ul:not([class]),
+  & > ol:not([class]) {
+    @apply pt-2 pb-2;
+  }
+}
+
+details:not([class]) {
+  @apply pt-4;
+}
+
+pre {
+  /* NOTE: ホワイトスペース保持・自動改行 */
+
+  /* @apply whitespace-pre-wrap p-4;
+  word-wrap: break-word; */
+
+  /* FIXME: no padding right https://note.com/takamoso/n/n587c4ea3dc7c */
+  @apply overflow-x-auto p-4 whitespace-pre rounded;
+
+  @apply mt-4 mb-0;
+
+  & > code {
+    @apply flex flex-col space-y-1;
+  }
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+:not(pre) {
+  & > code {
+    @apply text-background bg-text px-1 rounded-sm;
+  }
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.gatsby-code-title {
+  @apply relative inline-block p-1 ml-4 text-xs text-gray-800 bg-black-400 rounded-b;
+
+  /* NOTE: pt-1 + text-xs + -mt-1 */
+  top: 1rem;
+
+  & + pre {
+    @apply my-0 -mt-1;
+    @apply pt-8;
+  }
+}
+
+.gist {
+  @apply mt-4;
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  & p {
+    color: #333;
+  }
+}
+
+blockquote:not([class]) {
+  @apply mt-4 py-4 pl-4;
+  @apply border-solid border-0 border-l-4 border-text text-text border-opacity-md;
+
+  & > p {
+    @apply whitespace-pre-wrap;
+
+    &:first-child {
+      @apply pt-0;
+    }
+  }
+
+  & > cite {
+    @apply block text-text text-opacity-lg pr-4;
+
+    text-align: right;
+  }
+
+  & > pre {
+    @apply my-0;
+  }
+}
+
+/* stylelint-disable selector-class-pattern */
+.footnote-ref,
+.footnote-backref {
+  /* stylelint-enable selector-class-pattern */
+
+  @apply no-underline text-link;
+
+  &:visited {
+    @apply text-purple;
+  }
+  &:hover {
+    @apply text-opacity-lg;
+  }
+}
+
+.footnotes {
+  & > ol > li[id] {
+    & > p {
+      @apply inline-block pt-0;
+    }
+  }
+}
+
+.headerAnchor[href] {
+  @apply sr-only;
+
+  /* NOTE: anchor を入れる場合、コメントを外す */
+
+  &.before {
+    @apply static text-text pr-2;
+
+    & > svg {
+      @apply inline-block visible align-middle fill-current;
+    }
+
+    &:hover {
+      @apply text-primary;
+    }
+
+    &:active {
+      @apply text-opacity-md;
+    }
+  }
+}

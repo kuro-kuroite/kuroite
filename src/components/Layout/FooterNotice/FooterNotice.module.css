@@ -1,0 +1,11 @@
+/*
+- Notice
+  - Account */
+
+.Notice {
+  composes: notice from '../../../css/domain/layout/footer/style.module.css';
+}
+
+.Account {
+  composes: account from '../../../css/base/molecules/footer/style.module.css';
+}

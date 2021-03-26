@@ -1,0 +1,11 @@
+/*
+- Background
+  - ProgressBar */
+
+.Background {
+  composes: background from '../../../css/domain/blog/progress/item/style.module.css';
+}
+
+.ProgressBar {
+  composes: item from '../../../css/domain/blog/progress/item/style.module.css';
+}

@@ -1,0 +1,81 @@
+/*
+- nav
+  - navList
+    - navLink
+- sideNav
+
+- navGapX
+
+- navResetBase
+- navLinkResetBase
+- navBase
+- navLinkBase */
+
+.navResetBase {
+  /* NOTE: a11y.cssで上書き済み */
+
+  /* composes: listStyleNone from 'src/components/layout/a11y.css'; */
+
+  font-family: inherit;
+}
+
+.navLinkResetBase {
+  /* @apply flex p-0;
+
+  font-family: inherit;
+
+  @apply no-underline bg-transparent border-none; */
+
+  composes: base from '../../atoms/button/style.module.css';
+}
+
+.navBase {
+  composes: navResetBase;
+}
+
+.navLinkBase {
+  composes: navLinkResetBase;
+
+  @apply flex cursor-pointer;
+}
+
+.nav {
+  composes: navBase;
+
+  @apply bg-background;
+}
+
+.navList {
+  /* NOTE: a11y.cssで上書き済み */
+
+  /* composes: listStyleNone from 'src/components/layout/a11y.css'; */
+}
+
+.navLink {
+  composes: navLinkBase;
+  composes: alignTextCenterCrossAxis from '../../particles/align-text/style.module.css';
+
+  @apply text-text;
+
+  &:hover {
+    @apply text-primary;
+  }
+
+  &:active {
+    @apply text-opacity-md;
+  }
+}
+
+/* stylelint-disable-next-line block-no-empty */
+.sideNav {
+}
+
+.navGapX {
+  @apply flex space-x-3;
+}
+
+@screen md {
+  .navGapX {
+    @apply flex space-x-4;
+  }
+}

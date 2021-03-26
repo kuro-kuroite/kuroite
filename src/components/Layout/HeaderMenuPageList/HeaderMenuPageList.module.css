@@ -1,0 +1,6 @@
+/*
+- List */
+
+.List {
+  composes: navList from '../../../css/base/molecules/header/style.module.css';
+}

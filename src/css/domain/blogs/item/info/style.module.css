@@ -1,0 +1,7 @@
+/*
+- info */
+
+.info {
+  @apply mt-0;
+  @apply flex text-text text-xs;
+}

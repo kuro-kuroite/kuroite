@@ -1,0 +1,6 @@
+/*
+- Link */
+
+.Link {
+  composes: navLink from '../../../css/base/molecules/header/style.module.css';
+}

@@ -1,0 +1,72 @@
+/*
+- header
+  - nav
+    - banner
+      - icon
+      - ::after(is brand)
+    - ~~brand~~
+    - menu
+      - navList
+        - navLink | navIconLink */
+
+.header {
+  @apply text-xl;
+}
+
+@screen md {
+  .header {
+    @apply sticky top-0 z-50 bg-background;
+  }
+}
+
+.nav {
+  composes: nav from '../nav/style.module.css';
+
+  @apply flex;
+}
+
+.banner {
+  composes: alignTextCenterCrossAxis from '../../particles/align-text/style.module.css';
+
+  @apply no-underline text-primary;
+
+  @apply flex;
+
+  /* HACK: ブランド名を表示 */
+  &::after {
+    @apply pl-1;
+
+    content: attr(data-brand);
+  }
+
+  &:hover {
+    /* HACK: SVG('=,画像)であるため */
+    @apply opacity-lg;
+  }
+}
+
+.icon {
+  min-width: 1em;
+
+  /* NOTE: 画像の大きさを抑えるため */
+  max-width: 1em;
+}
+
+.menu {
+  @apply flex flex-1 justify-end;
+}
+
+.navList {
+  composes: navList from '../nav/style.module.css';
+  composes: navGapX from '../nav/style.module.css';
+}
+
+.navLink {
+  composes: navLink from '../nav/style.module.css';
+  composes: alignTextCenter from '../../particles/align-text/style.module.css';
+}
+
+.navIconLink {
+  composes: icon;
+  composes: navLink;
+}

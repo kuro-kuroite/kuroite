@@ -1,0 +1,6 @@
+/*
+- TocIcon */
+
+.TocIcon {
+  composes: button from '../../../css/common/toc/button/style.module.css';
+}

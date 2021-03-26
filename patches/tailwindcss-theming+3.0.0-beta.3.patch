@@ -1,0 +1,17 @@
+diff --git a/node_modules/tailwindcss-theming/dist/theme/color.js b/node_modules/tailwindcss-theming/dist/theme/color.js
+index 780433d..e0b8686 100644
+--- a/node_modules/tailwindcss-theming/dist/theme/color.js
++++ b/node_modules/tailwindcss-theming/dist/theme/color.js
+@@ -131,7 +131,11 @@ class VariableColor extends Color {
+         // opacity utilities instead of being hardcoded in its value
+         const alpha = parseFloat(this.getValue().a.toFixed(8));
+         const colorVariable = `var(${this.getCssVariableName()})`;
+-        return `rgba(${colorVariable}, ${alpha})`;
++        // NOTE: @apply bg-background bg-opacity-lg のように使用するため
++        //        --{text,bg,..}-{text, background}, --{text,bg,..}-opacity-{lg,md,sm,..}を宣言
++        //        https://github.com/tailwindlabs/tailwindcss/pull/1676#issuecomment-650599705
++        //        https://github.com/tailwindlabs/tailwindcss/pull/1676#issuecomment-650802104
++        return ({ opacityVariable }) => `rgba(${colorVariable}, var(${opacityVariable}, 1))`
+     }
+     /**
+      * Get the CSS color variable name generated in the final CSS.

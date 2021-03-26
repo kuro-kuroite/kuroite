@@ -1,0 +1,6 @@
+/*
+- TagIcon */
+
+.TagIcon {
+  composes: iconLink from '../../../css/common/tag/link/style.module.css';
+}

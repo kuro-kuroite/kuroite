@@ -1,0 +1,21 @@
+/*
+- alignTextCenterCrossAxis | alignTextCenter | alignTextCenterMainAxis */
+
+/* FYI: 小要素に指定すること */
+
+.alignTextCenterCrossAxis {
+  /* FYI: https://qiita.com/atayim/items/4f364d28ca90d10710e7 */
+
+  /* HACK: h-full for items-center */
+  @apply flex items-center h-full;
+}
+
+.alignTextCenterMainAxis {
+  /* HACK: w-full for justify-center */
+  @apply flex justify-center w-full;
+}
+
+.alignTextCenter {
+  composes: alignTextCenterMainAxis;
+  composes: alignTextCenterCrossAxis;
+}

@@ -1,0 +1,14 @@
+diff --git a/node_modules/remark-parse/lib/tokenize/list.js b/node_modules/remark-parse/lib/tokenize/list.js
+index 8cdefdc..c059624 100644
+--- a/node_modules/remark-parse/lib/tokenize/list.js
++++ b/node_modules/remark-parse/lib/tokenize/list.js
+@@ -27,7 +27,8 @@ var looseListItemExpression = /\n\n(?!\s*$)/
+ var taskItemExpression = /^\[([ \t]|x|X)][ \t]/
+ var bulletExpression = /^([ \t]*)([*+-]|\d+[.)])( {1,4}(?! )| |\t|$|(?=\n))([^\n]*)/
+ var pedanticBulletExpression = /^([ \t]*)([*+-]|\d+[.)])([ \t]+)/
+-var initialIndentExpression = /^( {1,4}|\t)?/gm
++// NOTE: 2 space indent
++var initialIndentExpression = /^( {1,2}|\t)?/gm
+
+ function list(eat, value, silent) {
+   var self = this

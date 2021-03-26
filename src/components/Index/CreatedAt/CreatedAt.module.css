@@ -1,0 +1,11 @@
+/*
+- CreatedAt
+  - WithIcon */
+
+.CreatedAt {
+  composes: createdAt from '../../../css/domain/blogs/icon/text/style.module.css';
+}
+
+.WithIcon {
+  composes: icon from '../../../css/common/icon/text/style.module.css';
+}

@@ -1,0 +1,52 @@
+/*
+- info
+  - ~~bio~~
+  - nav
+    - navList
+      - navLink */
+
+.info {
+  @apply pt-8;
+  @apply border-solid border-0 border-t border-text border-opacity-md;
+}
+
+.nav {
+  composes: nav from '../../../../base/molecules/nav/style.module.css';
+}
+
+.navList {
+  composes: navList from '../../../../base/molecules/nav/style.module.css';
+
+  @apply flex flex-col items-start list-none space-y-2;
+
+  /* NOTE: next link を右側に移動 */
+  & > :last-child {
+    @apply self-end;
+  }
+}
+
+@screen md {
+  .navList {
+    @apply flex flex-row flex-wrap justify-between;
+
+    /* FIXME(flex-space-polyfill): to remove space-y-2 */
+    @apply space-y-0;
+  }
+}
+
+.navLink {
+  composes: navLinkBase from '../../../../base/molecules/nav/style.module.css';
+
+  @apply text-link underline;
+
+  /* HACK: for text-purple */
+  @apply text-opacity-100;
+
+  &:visited {
+    @apply text-purple;
+  }
+
+  &:hover {
+    @apply text-opacity-lg;
+  }
+}

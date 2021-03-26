@@ -1,0 +1,9 @@
+/*
+- selection */
+
+.selection {
+  /* FYI: https://developer.mozilla.org/ja/docs/Web/CSS/::selection */
+  & ::selection {
+    @apply text-text bg-primary;
+  }
+}

@@ -1,0 +1,28 @@
+/*
+- button
+
+- default */
+
+.default {
+  @apply bottom-0 right-0 mr-4 mb-4;
+}
+
+.button {
+  composes: base from '../../../base/atoms/button/style.module.css';
+  composes: default;
+
+  @apply text-background bg-text rounded-full h-16 w-16 text-4xl;
+
+  @apply flex fixed z-50;
+  @apply justify-center items-center;
+
+  &:hover {
+    @apply text-opacity-md bg-opacity-md;
+  }
+}
+
+@screen lg {
+  .button {
+    @apply hidden;
+  }
+}

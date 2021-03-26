@@ -1,0 +1,17 @@
+/*
+- TagIconList
+  - WithIcon
+  - IconList
+    - ~~TagIcon~~ */
+
+.TagIconList {
+  composes: list from '../../../css/domain/blogs/tag/list/style.module.css';
+}
+
+.WithIcon {
+  composes: icon from '../../../css/common/tag/list/style.module.css';
+}
+
+.IconList {
+  composes: linkList from '../../../css/common/tag/list/style.module.css';
+}

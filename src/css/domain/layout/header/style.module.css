@@ -1,0 +1,24 @@
+/*
+- banner */
+
+/* HACK(`gatsby build` error): add `import 'fontsource-caveat';` in gatsby-{browser,ssr}.ts */
+
+/* @font-face {
+  font-family: Caveat;
+  src: url('fontsource-caveat');
+} */
+
+:root {
+  --header-height: 5rem;
+}
+
+.banner {
+  composes: banner from '../../../base/molecules/header/style.module.css';
+
+  @apply font-banner;
+}
+
+.nav {
+  composes: nav from '../../../base/molecules/header/style.module.css';
+  height: var(--header-height);
+}

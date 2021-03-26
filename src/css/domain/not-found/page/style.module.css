@@ -1,0 +1,20 @@
+/*
+- ~~page~~
+  - title
+  - description
+  - link
+ */
+
+.title {
+  composes: title from '../../blog/page/style.module.css';
+}
+
+.description {
+  @apply pt-0;
+}
+
+.link {
+  composes: navLink from '../../blog/footer/info/style.module.css';
+
+  @apply pt-16;
+}

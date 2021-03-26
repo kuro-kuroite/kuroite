@@ -1,0 +1,68 @@
+/*
+- alignLineHeight | alignLineHeightMd | alignLineHeightSm
+
+- :root
+- base */
+
+:root {
+  --line-height-width-sm: calc(1 + 1 / 7);
+  --line-height-width-md: calc(1.414);
+  --line-height-width: var(--line-height-width-md);
+
+  /* --line-height-width-md: calc(1 + 1 / 2.828); */
+}
+
+.base {
+  &::before {
+    /* NOTE: https://infoteck-life.com/a0079-css-inline-block-gap/ */
+    display: block;
+    width: 0;
+    height: 0;
+    content: '';
+  }
+
+  &::after {
+    display: block;
+    width: 0;
+    height: 0;
+    content: '';
+  }
+}
+
+/* align top bottom */
+.alignLineHeightSm {
+  composes: base;
+  line-height: var(--line-height-width-sm);
+  &::before {
+    margin-top: calc((1 - var(--line-height-width-sm)) * 0.5em);
+  }
+
+  &::after {
+    margin-bottom: calc((1 - var(--line-height-width-sm)) * 0.5em);
+  }
+}
+
+.alignLineHeightMd {
+  composes: base;
+  line-height: var(--line-height-width-md);
+  &::before {
+    margin-top: calc((1 - var(--line-height-width-md)) * 0.5em);
+  }
+
+  &::after {
+    margin-bottom: calc((1 - var(--line-height-width-md)) * 0.5em);
+  }
+}
+
+.alignLineHeight {
+  /* NOTE: don't use ::before, ::after */
+  composes: base;
+  line-height: var(--line-height-width);
+  &::before {
+    margin-top: calc((1 - var(--line-height-width)) * 0.5em);
+  }
+
+  &::after {
+    margin-bottom: calc((1 - var(--line-height-width)) * 0.5em);
+  }
+}

@@ -1,0 +1,14 @@
+/*
+- Nav
+  - ~~Banner~~
+    - ~~Logo~~
+      - ::after(is Brand)
+  - ~~Menu~~
+    - ~~PageList~~
+      - ~~Link~~
+    - ~~IconList~~
+      - ~~Link~~ */
+
+.Nav {
+  composes: nav from '../../../css/domain/layout/header/style.module.css';
+}

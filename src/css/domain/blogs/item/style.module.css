@@ -1,0 +1,48 @@
+/*
+- item
+  - link
+    - ~~cover~~
+    - title
+    - description */
+
+/* stylelint-disable-next-line block-no-empty */
+.item {
+}
+
+.link {
+  @apply block no-underline max-w-full;
+}
+
+/* stylelint-disable-next-line block-no-empty */
+.cover {
+}
+
+.title {
+  @apply my-0;
+  @apply text-title text-xl pb-4;
+}
+
+/* stylelint-disable-next-line no-duplicate-selectors */
+.link {
+  &:visited .title,
+  &:hover .title,
+  &:focus-visible .title {
+    @apply text-opacity-md;
+  }
+}
+
+.description {
+  @apply mb-2;
+  @apply text-sm;
+
+  /* FYI: https://coliss.com/articles/build-websites/operation/css/css-line-clamp-property.html */
+  display: -webkit-box;
+
+  /* HACK: py-1px for overflow */
+
+  padding-top: 1px;
+  padding-bottom: 1px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}

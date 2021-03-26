@@ -1,0 +1,15 @@
+/*
+- list
+  - item */
+
+.list {
+  composes: navList from '../../../base/molecules/nav/style.module.css';
+}
+
+.item {
+  @apply py-3;
+
+  &:not(:first-child) {
+    @apply border-solid border-0 border-t border-text border-opacity-md;
+  }
+}

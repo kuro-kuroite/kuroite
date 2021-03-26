@@ -1,0 +1,17 @@
+/*
+- Footer
+  - Nav
+    - NavList
+      - NavLink */
+
+.Footer {
+  composes: footer from '../../../css/domain/blog/footer/style.module.css';
+}
+
+.Nav {
+  composes: nav from '../../../css/domain/blog/footer/style.module.css';
+}
+
+.NavList {
+  composes: navList from '../../../css/domain/blog/footer/style.module.css';
+}

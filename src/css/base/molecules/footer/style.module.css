@@ -1,0 +1,40 @@
+/*
+- footer
+  - nav
+    - menu
+      - navList
+        - navLink
+  - notice
+    - account */
+
+.footer {
+  @apply py-4;
+}
+
+.nav {
+  composes: nav from '../nav/style.module.css';
+}
+
+/* stylelint-disable-next-line block-no-empty */
+.menu {
+}
+
+.navList {
+  composes: navList from '../nav/style.module.css';
+}
+
+.navLink {
+  composes: navLink from '../nav/style.module.css';
+}
+
+.notice {
+  composes: alignTextCenterMainAxis from '../../particles/align-text/style.module.css';
+}
+
+.account {
+  @apply text-text no-underline ml-2;
+
+  &:hover {
+    @apply text-opacity-lg;
+  }
+}

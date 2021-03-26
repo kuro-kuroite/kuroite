@@ -1,0 +1,31 @@
+/*
+- list
+  - icon
+  - linkList
+    - ~~iconLink~~ */
+
+.list {
+  @apply flex flex-nowrap overflow-x-auto overflow-y-hidden;
+
+  scrollbar-width: none;
+}
+
+.icon {
+  composes: icon from '../../icon/text/style.module.css';
+
+  /* NOTE: <PureTagLink /> の bg-text と対応 */
+  @apply text-text;
+
+  /* NOTE: SVG 画像が小さくならないようにするため、marginを使用 */
+  @apply mr-1;
+}
+
+.linkList {
+  composes: list;
+
+  /* HACK: overflow-y-hidden で、タグの height の一部が隠れないようにするため。アルファベットの文字には、アセンダラインやディセンダラインの高さがある。1em が、これらの高さを含んでいないため。つまり、height 1em と、アルファベットの height は正確に一致しない。 */
+
+  /* FYI: https://stackoverflow.com/a/10183902 */
+  line-height: 1.1;
+  @apply flex space-x-1;
+}
