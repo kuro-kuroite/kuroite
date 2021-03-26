@@ -1,0 +1,19 @@
+<!-- FYI: https://github.com/textlint/media/blob/gh-pages/icon/colored/textlint-icon_128x128.png -->
+<!-- FYI: https://github.com/textlint/media/issues/4#issue-547220520 -->
+<!-- NOTE: https://jakearchibald.github.io/svgomg/ -->
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 917 917">
+  <path fill="#fff" d="M0 0h917v917H0z"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M458.5 917C711.72 917 917 711.72 917 458.5S711.72 0 458.5 0 0 205.28 0 458.5 205.28 917 458.5 917z" fill="#F4F4F4"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M318.47 318.47h-112.4v392.46h504.86v-112.4H318.47V318.47z" fill="url(#paint0_linear)"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M206.07 206.07h504.86v112.4H515.17v392.46H401.83V318.47H206.07v-112.4z" fill="url(#paint1_linear)"/>
+  <defs>
+    <linearGradient id="paint0_linear" x1="710.93" y1="710.93" x2="710.93" y2="318.47" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F28B95"/>
+      <stop offset="1" stop-color="#F34C6F"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="206.07" y1="206.07" x2="206.07" y2="710.93" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#28EBF8"/>
+      <stop offset="1" stop-color="#3C84B0"/>
+    </linearGradient>
+  </defs>
+</svg>
