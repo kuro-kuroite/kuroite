@@ -1,0 +1,22 @@
+/*
+- BlogItem
+  - BlogLink
+    - Title
+    - Description
+  - ~~Info~~ */
+
+.BlogItem {
+  composes: item from '../../../css/domain/blogs/item/style.module.css';
+}
+
+.BlogLink {
+  composes: link from '../../../css/domain/blogs/item/style.module.css';
+}
+
+.Title {
+  composes: title from '../../../css/domain/blogs/item/style.module.css';
+}
+
+.Description {
+  composes: description from '../../../css/domain/blogs/item/style.module.css';
+}

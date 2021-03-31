@@ -2739,8 +2739,8 @@ type SitePageContextFilterInput = {
 };
 
 type SitePageContextNext = {
-  readonly frontmatter: Maybe<SitePageContextNextFrontmatter>;
   readonly fields: Maybe<SitePageContextNextFields>;
+  readonly frontmatter: Maybe<SitePageContextNextFrontmatter>;
 };
 
 type SitePageContextNextFields = {
@@ -2752,8 +2752,8 @@ type SitePageContextNextFieldsFilterInput = {
 };
 
 type SitePageContextNextFilterInput = {
-  readonly frontmatter: Maybe<SitePageContextNextFrontmatterFilterInput>;
   readonly fields: Maybe<SitePageContextNextFieldsFilterInput>;
+  readonly frontmatter: Maybe<SitePageContextNextFrontmatterFilterInput>;
 };
 
 type SitePageContextNextFrontmatter = {
@@ -2765,8 +2765,8 @@ type SitePageContextNextFrontmatterFilterInput = {
 };
 
 type SitePageContextPrevious = {
-  readonly fields: Maybe<SitePageContextPreviousFields>;
   readonly frontmatter: Maybe<SitePageContextPreviousFrontmatter>;
+  readonly fields: Maybe<SitePageContextPreviousFields>;
 };
 
 type SitePageContextPreviousFields = {
@@ -2778,8 +2778,8 @@ type SitePageContextPreviousFieldsFilterInput = {
 };
 
 type SitePageContextPreviousFilterInput = {
-  readonly fields: Maybe<SitePageContextPreviousFieldsFilterInput>;
   readonly frontmatter: Maybe<SitePageContextPreviousFrontmatterFilterInput>;
+  readonly fields: Maybe<SitePageContextPreviousFieldsFilterInput>;
 };
 
 type SitePageContextPreviousFrontmatter = {
@@ -2889,10 +2889,10 @@ type SitePageFieldsEnum =
   | 'internal.owner'
   | 'internal.type'
   | 'isCreatedByStatefulCreatePages'
-  | 'context.next.frontmatter.title'
   | 'context.next.fields.slug'
-  | 'context.previous.fields.slug'
+  | 'context.next.frontmatter.title'
   | 'context.previous.frontmatter.title'
+  | 'context.previous.fields.slug'
   | 'context.slug'
   | 'pluginCreator.id'
   | 'pluginCreator.parent.id'
@@ -3587,6 +3587,14 @@ type WebPOptions = {
   readonly quality: Maybe<Scalars['Int']>;
 };
 
+type BlogListQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type BlogListQuery = { readonly allMarkdownRemark: { readonly edges: ReadonlyArray<{ readonly node: (
+        Pick<MarkdownRemark, 'excerpt'>
+        & { readonly fields: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'createdAt' | 'updatedAt' | 'description' | 'category' | 'tags'>> }
+      ) }> } };
+
 type LayoutQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -3602,27 +3610,6 @@ type SeoQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
       Pick<SiteSiteMetadata, 'title' | 'siteUrl' | 'description'>
       & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'twitter'>> }
     )> }> };
-
-type PagesQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type PagesQuery = { readonly posts: { readonly edges: ReadonlyArray<{ readonly next: Maybe<{ readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title'>>, readonly fields: Maybe<Pick<MarkdownRemarkFields, 'slug'>> }>, readonly previous: Maybe<{ readonly fields: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title'>> }>, readonly node: { readonly fields: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title'>> } }> } };
-
-type RssSiteQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type RssSiteQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
-      Pick<SiteSiteMetadata, 'title' | 'description' | 'siteUrl'>
-      & { site_url: SiteSiteMetadata['siteUrl'] }
-    )> }> };
-
-type RssQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type RssQuery = { readonly allMarkdownRemark: { readonly edges: ReadonlyArray<{ readonly node: (
-        Pick<MarkdownRemark, 'excerpt' | 'html'>
-        & { readonly fields: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'updatedAt' | 'createdAt' | 'description'>> }
-      ) }> } };
 
 type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 
@@ -3674,6 +3661,14 @@ type GatsbyImageSharpSizes_noBase64Fragment = Pick<ImageSharpSizes, 'aspectRatio
 
 type GatsbyImageSharpSizes_withWebp_noBase64Fragment = Pick<ImageSharpSizes, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
 
+type RssSiteQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type RssSiteQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
+      Pick<SiteSiteMetadata, 'title' | 'description' | 'siteUrl'>
+      & { site_url: SiteSiteMetadata['siteUrl'] }
+    )> }> };
+
 type BlogPostBySlugQueryVariables = Exact<{
   slug: Scalars['String'];
 }>;
@@ -3683,5 +3678,18 @@ type BlogPostBySlugQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe
     Pick<MarkdownRemark, 'id' | 'excerpt' | 'html' | 'tableOfContents'>
     & { readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'createdAt' | 'updatedAt' | 'description' | 'tags' | 'userId'>>, readonly fields: Maybe<Pick<MarkdownRemarkFields, 'slug'>> }
   )> };
+
+type PagesQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type PagesQuery = { readonly posts: { readonly edges: ReadonlyArray<{ readonly next: Maybe<{ readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title'>>, readonly fields: Maybe<Pick<MarkdownRemarkFields, 'slug'>> }>, readonly previous: Maybe<{ readonly fields: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title'>> }>, readonly node: { readonly fields: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title'>> } }> } };
+
+type RssQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type RssQuery = { readonly allMarkdownRemark: { readonly edges: ReadonlyArray<{ readonly node: (
+        Pick<MarkdownRemark, 'excerpt' | 'html'>
+        & { readonly fields: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'updatedAt' | 'createdAt' | 'description'>> }
+      ) }> } };
 
 }

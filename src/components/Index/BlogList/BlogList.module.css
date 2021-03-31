@@ -1,0 +1,11 @@
+/*
+- List
+  - Item */
+
+.List {
+  composes: list from '../../../css/domain/blogs/list/style.module.css';
+}
+
+.Item {
+  composes: item from '../../../css/domain/blogs/list/style.module.css';
+}
