@@ -1,5 +1,5 @@
 diff --git a/node_modules/@storybook/core-common/dist/cjs/utils/babel.js b/node_modules/@storybook/core-common/dist/cjs/utils/babel.js
-index d92e445..143f84d 100644
+index d92e445..b198e75 100644
 --- a/node_modules/@storybook/core-common/dist/cjs/utils/babel.js
 +++ b/node_modules/@storybook/core-common/dist/cjs/utils/babel.js
 @@ -30,7 +30,9 @@ require.resolve('@babel/plugin-proposal-optional-chaining'), require.resolve('@b

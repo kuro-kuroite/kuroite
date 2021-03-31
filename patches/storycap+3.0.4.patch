@@ -1,11 +1,11 @@
 diff --git a/node_modules/storycap/lib/node/capturing-browser.js b/node_modules/storycap/lib/node/capturing-browser.js
-index b20c87e..2c62ac8 100644
+index 31da8b2..661a730 100644
 --- a/node_modules/storycap/lib/node/capturing-browser.js
 +++ b/node_modules/storycap/lib/node/capturing-browser.js
 @@ -321,8 +321,18 @@ class CapturingBrowser extends storycrawler_1.StoryPreviewBrowser {
              yield this.page.evaluate(() => new Promise(res => window.requestIdleCallback(res, { timeout: 3000 })));
              // Get PNG image buffer
-             const buffer = yield this.page.screenshot({
+             const rawBuffer = yield this.page.screenshot({
 -                fullPage: emittedScreenshotOptions.fullPage,
 +                // NOTE: clip を使用するため
 +                fullPage: false,
@@ -20,5 +20,5 @@ index b20c87e..2c62ac8 100644
 +                  scale: 1,
 +                },
              });
-             // We should reset elements state(e.g. focusing, hovering) for future screenshot for this story.
-             yield this.resetIfTouched();
+             let buffer = null;
+             if (Buffer.isBuffer(rawBuffer)) {
