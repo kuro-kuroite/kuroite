@@ -1,0 +1,590 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots components/Index/BlogList Blog List 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <ul
+        className="List"
+      >
+        <li
+          className="Item"
+        >
+          <article>
+            <a
+              aria-label="/react-typescript/ へのリンク"
+              className="BlogLink"
+              href="/react-typescript/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              <h1
+                className="Title"
+              >
+                React TypeScript
+              </h1>
+              <p
+                className="Description"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "description",
+                  }
+                }
+              />
+            </a>
+            <small
+              aria-label="ブログ info"
+              className="BlogInfo"
+            >
+              <span
+                className="UpdatedAt"
+              >
+                <svg
+                  className="WithIcon"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79 2.73 2.71 7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58 3.51-3.47 9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"
+                  />
+                </svg>
+                08/24/2020
+              </span>
+              <span
+                className="CreatedAt"
+              >
+                (
+                <svg
+                  className="WithIcon"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12.9 6.858l4.242 4.243L7.242 21H3v-4.243l9.9-9.9zm1.414-1.414l2.121-2.122a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414l-2.122 2.121-4.242-4.242z"
+                    />
+                  </g>
+                </svg>
+                08/22/2020
+                )
+              </span>
+              <nav
+                aria-label="React TypeScript タグナビゲーション"
+                className="TagIconList"
+              >
+                <svg
+                  className="WithIcon"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 512 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"
+                  />
+                </svg>
+                <ul
+                  className="IconList"
+                >
+                  <li>
+                    <a
+                      className="TagIcon"
+                      href="/tags/React/"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                    >
+                      React
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="TagIcon"
+                      href="/tags/TypeScript/"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                    >
+                      TypeScript
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </small>
+          </article>
+        </li>
+        <li
+          className="Item"
+        >
+          <article>
+            <a
+              aria-label="/react-gatsby/ へのリンク"
+              className="BlogLink"
+              href="/react-gatsby/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              <h1
+                className="Title"
+              >
+                React Gatsby
+              </h1>
+              <p
+                className="Description"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "description",
+                  }
+                }
+              />
+            </a>
+            <small
+              aria-label="ブログ info"
+              className="BlogInfo"
+            >
+              <span
+                className="UpdatedAt"
+              >
+                <svg
+                  className="WithIcon"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79 2.73 2.71 7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58 3.51-3.47 9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"
+                  />
+                </svg>
+                08/28/2020
+              </span>
+              <span
+                className="CreatedAt"
+              >
+                (
+                <svg
+                  className="WithIcon"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12.9 6.858l4.242 4.243L7.242 21H3v-4.243l9.9-9.9zm1.414-1.414l2.121-2.122a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414l-2.122 2.121-4.242-4.242z"
+                    />
+                  </g>
+                </svg>
+                08/25/2020
+                )
+              </span>
+              <nav
+                aria-label="React Gatsby タグナビゲーション"
+                className="TagIconList"
+              >
+                <svg
+                  className="WithIcon"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 512 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"
+                  />
+                </svg>
+                <ul
+                  className="IconList"
+                >
+                  <li>
+                    <a
+                      className="TagIcon"
+                      href="/tags/React/"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                    >
+                      React
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="TagIcon"
+                      href="/tags/Gatsby/"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                    >
+                      Gatsby
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </small>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <ul
+        className="List"
+      >
+        <li
+          className="Item"
+        >
+          <article>
+            <a
+              aria-label="/react-typescript/ へのリンク"
+              className="BlogLink"
+              href="/react-typescript/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              <h1
+                className="Title"
+              >
+                React TypeScript
+              </h1>
+              <p
+                className="Description"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "description",
+                  }
+                }
+              />
+            </a>
+            <small
+              aria-label="ブログ info"
+              className="BlogInfo"
+            >
+              <span
+                className="UpdatedAt"
+              >
+                <svg
+                  className="WithIcon"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79 2.73 2.71 7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58 3.51-3.47 9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"
+                  />
+                </svg>
+                08/24/2020
+              </span>
+              <span
+                className="CreatedAt"
+              >
+                (
+                <svg
+                  className="WithIcon"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12.9 6.858l4.242 4.243L7.242 21H3v-4.243l9.9-9.9zm1.414-1.414l2.121-2.122a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414l-2.122 2.121-4.242-4.242z"
+                    />
+                  </g>
+                </svg>
+                08/22/2020
+                )
+              </span>
+              <nav
+                aria-label="React TypeScript タグナビゲーション"
+                className="TagIconList"
+              >
+                <svg
+                  className="WithIcon"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 512 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"
+                  />
+                </svg>
+                <ul
+                  className="IconList"
+                >
+                  <li>
+                    <a
+                      className="TagIcon"
+                      href="/tags/React/"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                    >
+                      React
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="TagIcon"
+                      href="/tags/TypeScript/"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                    >
+                      TypeScript
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </small>
+          </article>
+        </li>
+        <li
+          className="Item"
+        >
+          <article>
+            <a
+              aria-label="/react-gatsby/ へのリンク"
+              className="BlogLink"
+              href="/react-gatsby/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              <h1
+                className="Title"
+              >
+                React Gatsby
+              </h1>
+              <p
+                className="Description"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "description",
+                  }
+                }
+              />
+            </a>
+            <small
+              aria-label="ブログ info"
+              className="BlogInfo"
+            >
+              <span
+                className="UpdatedAt"
+              >
+                <svg
+                  className="WithIcon"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79 2.73 2.71 7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58 3.51-3.47 9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"
+                  />
+                </svg>
+                08/28/2020
+              </span>
+              <span
+                className="CreatedAt"
+              >
+                (
+                <svg
+                  className="WithIcon"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12.9 6.858l4.242 4.243L7.242 21H3v-4.243l9.9-9.9zm1.414-1.414l2.121-2.122a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414l-2.122 2.121-4.242-4.242z"
+                    />
+                  </g>
+                </svg>
+                08/25/2020
+                )
+              </span>
+              <nav
+                aria-label="React Gatsby タグナビゲーション"
+                className="TagIconList"
+              >
+                <svg
+                  className="WithIcon"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 512 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"
+                  />
+                </svg>
+                <ul
+                  className="IconList"
+                >
+                  <li>
+                    <a
+                      className="TagIcon"
+                      href="/tags/React/"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                    >
+                      React
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="TagIcon"
+                      href="/tags/Gatsby/"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                    >
+                      Gatsby
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </small>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </body>
+</div>
+`;
