@@ -1,0 +1,324 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots css/common/tag/link Tag Link 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="pseudo-states-addon__container"
+      >
+        <div
+          className="pseudo-states-addon__story pseudo-states-addon__story--Normal"
+        >
+          <div
+            className="pseudo-states-addon__story__header"
+          >
+            Normal:
+          </div>
+          <div
+            className="pseudo-states-addon__story__container"
+          >
+            <a
+              className="iconLink"
+              href="/tags/React/"
+            >
+              React
+            </a>
+          </div>
+        </div>
+        <div
+          className="pseudo-states-addon__story pseudo-states-addon__story--focus"
+        >
+          <div
+            className="pseudo-states-addon__story__header"
+          >
+            focus
+            :
+          </div>
+          <div
+            className="pseudo-states-addon__story__container"
+          >
+            <a
+              className="iconLink"
+              href="/tags/React/"
+            >
+              React
+            </a>
+          </div>
+        </div>
+        <div
+          className="pseudo-states-addon__story pseudo-states-addon__story--hover"
+        >
+          <div
+            className="pseudo-states-addon__story__header"
+          >
+            hover
+            :
+          </div>
+          <div
+            className="pseudo-states-addon__story__container"
+          >
+            <a
+              className="iconLink"
+              href="/tags/React/"
+            >
+              React
+            </a>
+          </div>
+        </div>
+        <div
+          className="pseudo-states-addon__story pseudo-states-addon__story--active"
+        >
+          <div
+            className="pseudo-states-addon__story__header"
+          >
+            active
+            :
+          </div>
+          <div
+            className="pseudo-states-addon__story__container"
+          >
+            <a
+              className="iconLink"
+              href="/tags/React/"
+            >
+              React
+            </a>
+          </div>
+        </div>
+        <div
+          className="pseudo-states-addon__story pseudo-states-addon__story--attr-disabled"
+        >
+          <div
+            className="pseudo-states-addon__story__header"
+          >
+            disabled
+            :
+          </div>
+          <div
+            className="pseudo-states-addon__story__container"
+          >
+            <a
+              className="iconLink"
+              href="/tags/React/"
+            >
+              React
+            </a>
+          </div>
+        </div>
+        <div
+          className="pseudo-states-addon__story pseudo-states-addon__story--attr-readonly"
+        >
+          <div
+            className="pseudo-states-addon__story__header"
+          >
+            readonly
+            :
+          </div>
+          <div
+            className="pseudo-states-addon__story__container"
+          >
+            <a
+              className="iconLink"
+              href="/tags/React/"
+            >
+              React
+            </a>
+          </div>
+        </div>
+        <div
+          className="pseudo-states-addon__story pseudo-states-addon__story--attr-error"
+        >
+          <div
+            className="pseudo-states-addon__story__header"
+          >
+            error
+            :
+          </div>
+          <div
+            className="pseudo-states-addon__story__container"
+          >
+            <a
+              className="iconLink"
+              href="/tags/React/"
+            >
+              React
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="pseudo-states-addon__container"
+      >
+        <div
+          className="pseudo-states-addon__story pseudo-states-addon__story--Normal"
+        >
+          <div
+            className="pseudo-states-addon__story__header"
+          >
+            Normal:
+          </div>
+          <div
+            className="pseudo-states-addon__story__container"
+          >
+            <a
+              className="iconLink"
+              href="/tags/React/"
+            >
+              React
+            </a>
+          </div>
+        </div>
+        <div
+          className="pseudo-states-addon__story pseudo-states-addon__story--focus"
+        >
+          <div
+            className="pseudo-states-addon__story__header"
+          >
+            focus
+            :
+          </div>
+          <div
+            className="pseudo-states-addon__story__container"
+          >
+            <a
+              className="iconLink"
+              href="/tags/React/"
+            >
+              React
+            </a>
+          </div>
+        </div>
+        <div
+          className="pseudo-states-addon__story pseudo-states-addon__story--hover"
+        >
+          <div
+            className="pseudo-states-addon__story__header"
+          >
+            hover
+            :
+          </div>
+          <div
+            className="pseudo-states-addon__story__container"
+          >
+            <a
+              className="iconLink"
+              href="/tags/React/"
+            >
+              React
+            </a>
+          </div>
+        </div>
+        <div
+          className="pseudo-states-addon__story pseudo-states-addon__story--active"
+        >
+          <div
+            className="pseudo-states-addon__story__header"
+          >
+            active
+            :
+          </div>
+          <div
+            className="pseudo-states-addon__story__container"
+          >
+            <a
+              className="iconLink"
+              href="/tags/React/"
+            >
+              React
+            </a>
+          </div>
+        </div>
+        <div
+          className="pseudo-states-addon__story pseudo-states-addon__story--attr-disabled"
+        >
+          <div
+            className="pseudo-states-addon__story__header"
+          >
+            disabled
+            :
+          </div>
+          <div
+            className="pseudo-states-addon__story__container"
+          >
+            <a
+              className="iconLink"
+              href="/tags/React/"
+            >
+              React
+            </a>
+          </div>
+        </div>
+        <div
+          className="pseudo-states-addon__story pseudo-states-addon__story--attr-readonly"
+        >
+          <div
+            className="pseudo-states-addon__story__header"
+          >
+            readonly
+            :
+          </div>
+          <div
+            className="pseudo-states-addon__story__container"
+          >
+            <a
+              className="iconLink"
+              href="/tags/React/"
+            >
+              React
+            </a>
+          </div>
+        </div>
+        <div
+          className="pseudo-states-addon__story pseudo-states-addon__story--attr-error"
+        >
+          <div
+            className="pseudo-states-addon__story__header"
+          >
+            error
+            :
+          </div>
+          <div
+            className="pseudo-states-addon__story__container"
+          >
+            <a
+              className="iconLink"
+              href="/tags/React/"
+            >
+              React
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</div>
+`;

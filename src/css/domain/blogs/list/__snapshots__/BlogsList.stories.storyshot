@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots css/domain/blogs/list Blogs List 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <ul
+        className="list"
+      >
+        <li
+          className="item"
+        >
+          <article>
+            <a
+              aria-label="link to /react-typescript/"
+              className="link"
+              href="/react-typescript/"
+            >
+              <h1
+                className="title"
+              >
+                React TypeScript
+              </h1>
+              <p
+                className="description"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "description",
+                  }
+                }
+              />
+            </a>
+          </article>
+        </li>
+        <li
+          className="item"
+        >
+          <article>
+            <a
+              aria-label="link to /react-gatsby/"
+              className="link"
+              href="/react-gatsby/"
+            >
+              <h1
+                className="title"
+              >
+                React Gatsby
+              </h1>
+              <p
+                className="description"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "description",
+                  }
+                }
+              />
+            </a>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <ul
+        className="list"
+      >
+        <li
+          className="item"
+        >
+          <article>
+            <a
+              aria-label="link to /react-typescript/"
+              className="link"
+              href="/react-typescript/"
+            >
+              <h1
+                className="title"
+              >
+                React TypeScript
+              </h1>
+              <p
+                className="description"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "description",
+                  }
+                }
+              />
+            </a>
+          </article>
+        </li>
+        <li
+          className="item"
+        >
+          <article>
+            <a
+              aria-label="link to /react-gatsby/"
+              className="link"
+              href="/react-gatsby/"
+            >
+              <h1
+                className="title"
+              >
+                React Gatsby
+              </h1>
+              <p
+                className="description"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "description",
+                  }
+                }
+              />
+            </a>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </body>
+</div>
+`;

@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots components/Layout/Footer Footer 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <footer
+        className="Footer"
+        id="footer"
+      >
+        <div
+          className="Container"
+        >
+          <nav
+            aria-label="フッタナビゲーション"
+            className="Nav"
+          >
+            <ul
+              className="List"
+            >
+              <li>
+                <a
+                  className="Link"
+                  href="/privacy-policy/"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  プライバシーポリシー
+                </a>
+              </li>
+            </ul>
+            <ul
+              className="List"
+            >
+              <li>
+                <span
+                  className="Link"
+                >
+                  <label
+                    className="I18nMode"
+                  >
+                    <input
+                      aria-label="英語アイコン"
+                      className="Checkbox"
+                      data-testid="i18nModeCheckbox"
+                      onClick={[Function]}
+                      type="checkbox"
+                    />
+                    <span
+                      className="Icon"
+                    >
+                      🇺🇸
+                    </span>
+                  </label>
+                </span>
+              </li>
+            </ul>
+          </nav>
+          <small
+            className="Notice"
+          >
+            ©
+            2020-2021
+            <a
+              className="Account"
+              href="https://github.com/gitHubAccount/"
+            >
+              @
+              gitHubAccount
+            </a>
+          </small>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <footer
+        className="Footer"
+        id="footer"
+      >
+        <div
+          className="Container"
+        >
+          <nav
+            aria-label="フッタナビゲーション"
+            className="Nav"
+          >
+            <ul
+              className="List"
+            >
+              <li>
+                <a
+                  className="Link"
+                  href="/privacy-policy/"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  プライバシーポリシー
+                </a>
+              </li>
+            </ul>
+            <ul
+              className="List"
+            >
+              <li>
+                <span
+                  className="Link"
+                >
+                  <label
+                    className="I18nMode"
+                  >
+                    <input
+                      aria-label="英語アイコン"
+                      className="Checkbox"
+                      data-testid="i18nModeCheckbox"
+                      onClick={[Function]}
+                      type="checkbox"
+                    />
+                    <span
+                      className="Icon"
+                    >
+                      🇺🇸
+                    </span>
+                  </label>
+                </span>
+              </li>
+            </ul>
+          </nav>
+          <small
+            className="Notice"
+          >
+            ©
+            2020-2021
+            <a
+              className="Account"
+              href="https://github.com/gitHubAccount/"
+            >
+              @
+              gitHubAccount
+            </a>
+          </small>
+        </div>
+      </footer>
+    </div>
+  </body>
+</div>
+`;

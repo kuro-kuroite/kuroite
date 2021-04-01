@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots css/base/molecules/layout Layout 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="container"
+        style={
+          Object {
+            "border": "1px solid red",
+          }
+        }
+      >
+        <header
+          style={
+            Object {
+              "border": "1px solid orange",
+            }
+          }
+        >
+          header
+        </header>
+        <main
+          style={
+            Object {
+              "border": "1px solid orange",
+            }
+          }
+        >
+          main
+        </main>
+        <footer
+          style={
+            Object {
+              "border": "1px solid orange",
+            }
+          }
+        >
+          footer
+        </footer>
+      </div>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="container"
+        style={
+          Object {
+            "border": "1px solid red",
+          }
+        }
+      >
+        <header
+          style={
+            Object {
+              "border": "1px solid orange",
+            }
+          }
+        >
+          header
+        </header>
+        <main
+          style={
+            Object {
+              "border": "1px solid orange",
+            }
+          }
+        >
+          main
+        </main>
+        <footer
+          style={
+            Object {
+              "border": "1px solid orange",
+            }
+          }
+        >
+          footer
+        </footer>
+      </div>
+    </div>
+  </body>
+</div>
+`;

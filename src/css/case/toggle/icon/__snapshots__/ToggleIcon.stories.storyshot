@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots css/case/toggle/icon Toggle Icon 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <label
+        className="toggleIcon"
+      >
+        <input
+          aria-label="off"
+          className="checkbox"
+          data-testid="toggleIconCheckbox"
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="icon"
+        >
+          off
+        </span>
+      </label>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <label
+        className="toggleIcon"
+      >
+        <input
+          aria-label="off"
+          className="checkbox"
+          data-testid="toggleIconCheckbox"
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="icon"
+        >
+          off
+        </span>
+      </label>
+    </div>
+  </body>
+</div>
+`;

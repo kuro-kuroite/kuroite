@@ -1,0 +1,290 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots components/Blog/FooterInfo Footer Info 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="FooterInfo"
+      >
+        <nav
+          aria-label="ブログページナビゲーション"
+          className="Pager"
+        >
+          <ul
+            className="PagerList"
+          >
+            <li>
+              <a
+                className="PagerLink"
+                href="/previous/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                rel="prev"
+              >
+                ← 
+                previous title
+              </a>
+            </li>
+            <li>
+              <a
+                className="PagerLink"
+                href="/next/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                rel="next"
+              >
+                next title
+                 →
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="FooterInfo"
+      >
+        <nav
+          aria-label="ブログページナビゲーション"
+          className="Pager"
+        >
+          <ul
+            className="PagerList"
+          >
+            <li>
+              <a
+                className="PagerLink"
+                href="/previous/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                rel="prev"
+              >
+                ← 
+                previous title
+              </a>
+            </li>
+            <li>
+              <a
+                className="PagerLink"
+                href="/next/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                rel="next"
+              >
+                next title
+                 →
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+</div>
+`;
+
+exports[`Storyshots components/Blog/FooterInfo Footer Next Info 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="FooterInfo"
+      >
+        <nav
+          aria-label="ブログページナビゲーション"
+          className="Pager"
+        >
+          <ul
+            className="PagerList"
+          >
+            <li />
+            <li>
+              <a
+                className="PagerLink"
+                href="/next/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                rel="next"
+              >
+                next title
+                 →
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="FooterInfo"
+      >
+        <nav
+          aria-label="ブログページナビゲーション"
+          className="Pager"
+        >
+          <ul
+            className="PagerList"
+          >
+            <li />
+            <li>
+              <a
+                className="PagerLink"
+                href="/next/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                rel="next"
+              >
+                next title
+                 →
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+</div>
+`;
+
+exports[`Storyshots components/Blog/FooterInfo Footer Previous Info 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="FooterInfo"
+      >
+        <nav
+          aria-label="ブログページナビゲーション"
+          className="Pager"
+        >
+          <ul
+            className="PagerList"
+          >
+            <li>
+              <a
+                className="PagerLink"
+                href="/previous/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                rel="prev"
+              >
+                ← 
+                previous title
+              </a>
+            </li>
+            <li />
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="FooterInfo"
+      >
+        <nav
+          aria-label="ブログページナビゲーション"
+          className="Pager"
+        >
+          <ul
+            className="PagerList"
+          >
+            <li>
+              <a
+                className="PagerLink"
+                href="/previous/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                rel="prev"
+              >
+                ← 
+                previous title
+              </a>
+            </li>
+            <li />
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+</div>
+`;

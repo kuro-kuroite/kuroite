@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots css/base/molecules/nav Nav 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <nav
+        className="nav"
+      >
+        <ul
+          className="navList"
+        >
+          <li>
+            <a
+              className="navLink"
+              href="https://en.wikipedia.org/wiki/Tomato"
+              onClick={[Function]}
+            >
+              tomato
+            </a>
+          </li>
+          <li>
+            <a
+              className="navLink"
+              href="https://en.wikipedia.org/wiki/Banana"
+              onClick={[Function]}
+            >
+              banana
+            </a>
+          </li>
+          <li>
+            <a
+              className="navLink"
+              href="https://en.wikipedia.org/wiki/Peach"
+              onClick={[Function]}
+            >
+              peach
+            </a>
+          </li>
+          <li>
+            <a
+              className="navLink"
+              href="https://en.wikipedia.org/wiki/Orange_(fruit)"
+              onClick={[Function]}
+            >
+              orange
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <nav
+        className="nav"
+      >
+        <ul
+          className="navList"
+        >
+          <li>
+            <a
+              className="navLink"
+              href="https://en.wikipedia.org/wiki/Tomato"
+              onClick={[Function]}
+            >
+              tomato
+            </a>
+          </li>
+          <li>
+            <a
+              className="navLink"
+              href="https://en.wikipedia.org/wiki/Banana"
+              onClick={[Function]}
+            >
+              banana
+            </a>
+          </li>
+          <li>
+            <a
+              className="navLink"
+              href="https://en.wikipedia.org/wiki/Peach"
+              onClick={[Function]}
+            >
+              peach
+            </a>
+          </li>
+          <li>
+            <a
+              className="navLink"
+              href="https://en.wikipedia.org/wiki/Orange_(fruit)"
+              onClick={[Function]}
+            >
+              orange
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</div>
+`;
