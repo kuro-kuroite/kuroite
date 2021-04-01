@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots components/Layout/I18nMode En Mode 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <label
+        className="I18nMode"
+      >
+        <input
+          aria-label="日本語アイコン"
+          className="Checkbox"
+          data-testid="i18nModeCheckbox"
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="Icon"
+        >
+          🇯🇵
+        </span>
+      </label>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <label
+        className="I18nMode"
+      >
+        <input
+          aria-label="日本語アイコン"
+          className="Checkbox"
+          data-testid="i18nModeCheckbox"
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="Icon"
+        >
+          🇯🇵
+        </span>
+      </label>
+    </div>
+  </body>
+</div>
+`;
+
+exports[`Storyshots components/Layout/I18nMode Ja Mode 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <label
+        className="I18nMode"
+      >
+        <input
+          aria-label="英語アイコン"
+          className="Checkbox"
+          data-testid="i18nModeCheckbox"
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="Icon"
+        >
+          🇺🇸
+        </span>
+      </label>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <label
+        className="I18nMode"
+      >
+        <input
+          aria-label="英語アイコン"
+          className="Checkbox"
+          data-testid="i18nModeCheckbox"
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="Icon"
+        >
+          🇺🇸
+        </span>
+      </label>
+    </div>
+  </body>
+</div>
+`;

@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots css/domain/blogs/item Blogs Item 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <article>
+        <a
+          aria-label="link to /gatsby/"
+          className="link"
+          href="/gatsby/"
+        >
+          <h1
+            className="title"
+          >
+            React Gatsby
+          </h1>
+          <p
+            className="description"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "description",
+              }
+            }
+          />
+        </a>
+      </article>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <article>
+        <a
+          aria-label="link to /gatsby/"
+          className="link"
+          href="/gatsby/"
+        >
+          <h1
+            className="title"
+          >
+            React Gatsby
+          </h1>
+          <p
+            className="description"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "description",
+              }
+            }
+          />
+        </a>
+      </article>
+    </div>
+  </body>
+</div>
+`;

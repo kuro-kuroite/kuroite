@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots css/domain/layout/footer/nav Footer Nav 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <nav
+        aria-label="footer navigation"
+        className="nav"
+      >
+        <ul
+          className="list"
+        >
+          <li>
+            <a
+              className="link"
+              href="/privacy-policy/"
+            >
+              Privacy Policy
+            </a>
+          </li>
+        </ul>
+        <ul
+          className="list"
+        >
+          <li>
+            <span
+              className="link"
+            >
+              <span
+                aria-label="Japanese icon"
+                role="img"
+              >
+                🇯🇵
+              </span>
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <nav
+        aria-label="footer navigation"
+        className="nav"
+      >
+        <ul
+          className="list"
+        >
+          <li>
+            <a
+              className="link"
+              href="/privacy-policy/"
+            >
+              Privacy Policy
+            </a>
+          </li>
+        </ul>
+        <ul
+          className="list"
+        >
+          <li>
+            <span
+              className="link"
+            >
+              <span
+                aria-label="Japanese icon"
+                role="img"
+              >
+                🇯🇵
+              </span>
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</div>
+`;

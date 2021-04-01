@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots css/base/particles/selection Selection 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="selection"
+      >
+        <div>
+          apply the selection style to the document you select when you drag it.
+        </div>
+      </div>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="selection"
+      >
+        <div>
+          apply the selection style to the document you select when you drag it.
+        </div>
+      </div>
+    </div>
+  </body>
+</div>
+`;

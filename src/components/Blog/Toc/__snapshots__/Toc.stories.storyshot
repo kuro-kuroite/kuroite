@@ -1,0 +1,283 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots components/Blog/Toc Toc 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <nav
+        aria-label="目次コンテナ"
+        className="WrappedNav"
+      >
+        <button
+          aria-label="目次を隠す"
+          className="Blind"
+          onClick={[Function]}
+        />
+        <div
+          className="Container"
+        >
+          <h1
+            className="Title"
+          >
+            目次
+          </h1>
+          <nav
+            aria-label="目次ナビゲーション"
+            className="Toc"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<ul><li><p><a href=\\"/blog/hello-world/#h1-1\\">h1-1</a></p><ul><li><a href=\\"/blog/hello-world/#h2-1\\">h2-1</a></li><li><a href=\\"/blog/hello-world/#h2-2\\">h2-2</a></li><li><a href=\\"/blog/hello-world/#h2-3\\">h2-3</a></li></ul></li><li><p><a href=\\"/blog/hello-world/#h1-2\\">h1 2</a></p><ul><li><a href=\\"/blog/hello-world/#h2\\">h2</a></li></ul></li></ul>",
+              }
+            }
+          />
+          <button
+            aria-label="目次ボタン"
+            className="TocIcon"
+            onClick={[Function]}
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <nav
+        aria-label="目次コンテナ"
+        className="WrappedNav"
+      >
+        <button
+          aria-label="目次を隠す"
+          className="Blind"
+          onClick={[Function]}
+        />
+        <div
+          className="Container"
+        >
+          <h1
+            className="Title"
+          >
+            目次
+          </h1>
+          <nav
+            aria-label="目次ナビゲーション"
+            className="Toc"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<ul><li><p><a href=\\"/blog/hello-world/#h1-1\\">h1-1</a></p><ul><li><a href=\\"/blog/hello-world/#h2-1\\">h2-1</a></li><li><a href=\\"/blog/hello-world/#h2-2\\">h2-2</a></li><li><a href=\\"/blog/hello-world/#h2-3\\">h2-3</a></li></ul></li><li><p><a href=\\"/blog/hello-world/#h1-2\\">h1 2</a></p><ul><li><a href=\\"/blog/hello-world/#h2\\">h2</a></li></ul></li></ul>",
+              }
+            }
+          />
+          <button
+            aria-label="目次ボタン"
+            className="TocIcon"
+            onClick={[Function]}
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </body>
+</div>
+`;
+
+exports[`Storyshots components/Blog/Toc Wrapped Toc 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <nav
+        aria-label="目次コンテナ"
+        className="WrappedNav"
+      >
+        <button
+          aria-label="目次を隠す"
+          className="WrappedBlind"
+          onClick={[Function]}
+        />
+        <div
+          className="Container"
+        >
+          <h1
+            className="Title"
+          >
+            目次
+          </h1>
+          <nav
+            aria-label="目次ナビゲーション"
+            className="WrappedToc"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<ul><li><p><a href=\\"/blog/hello-world/#h1-1\\">h1-1</a></p><ul><li><a href=\\"/blog/hello-world/#h2-1\\">h2-1</a></li><li><a href=\\"/blog/hello-world/#h2-2\\">h2-2</a></li><li><a href=\\"/blog/hello-world/#h2-3\\">h2-3</a></li></ul></li><li><p><a href=\\"/blog/hello-world/#h1-2\\">h1 2</a></p><ul><li><a href=\\"/blog/hello-world/#h2\\">h2</a></li></ul></li></ul>",
+              }
+            }
+          />
+          <button
+            aria-label="目次ボタン"
+            className="TocIcon"
+            onClick={[Function]}
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <nav
+        aria-label="目次コンテナ"
+        className="WrappedNav"
+      >
+        <button
+          aria-label="目次を隠す"
+          className="WrappedBlind"
+          onClick={[Function]}
+        />
+        <div
+          className="Container"
+        >
+          <h1
+            className="Title"
+          >
+            目次
+          </h1>
+          <nav
+            aria-label="目次ナビゲーション"
+            className="WrappedToc"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<ul><li><p><a href=\\"/blog/hello-world/#h1-1\\">h1-1</a></p><ul><li><a href=\\"/blog/hello-world/#h2-1\\">h2-1</a></li><li><a href=\\"/blog/hello-world/#h2-2\\">h2-2</a></li><li><a href=\\"/blog/hello-world/#h2-3\\">h2-3</a></li></ul></li><li><p><a href=\\"/blog/hello-world/#h1-2\\">h1 2</a></p><ul><li><a href=\\"/blog/hello-world/#h2\\">h2</a></li></ul></li></ul>",
+              }
+            }
+          />
+          <button
+            aria-label="目次ボタン"
+            className="TocIcon"
+            onClick={[Function]}
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </body>
+</div>
+`;

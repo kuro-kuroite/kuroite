@@ -1,0 +1,310 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots css/base/particles/alignText Align Text Center 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        style={
+          Object {
+            "border": "1px solid red",
+            "height": "100%",
+            "padding": "1rem",
+            "width": "100%",
+          }
+        }
+      >
+        <h1
+          className="alignTextCenter"
+          style={
+            Object {
+              "border": "1px solid orange",
+              "padding": "1rem",
+            }
+          }
+        >
+          tomato
+        </h1>
+        <p
+          className="alignTextCenter"
+          style={
+            Object {
+              "border": "1px solid blue",
+              "padding": "1rem",
+            }
+          }
+        >
+          tomato
+        </p>
+      </div>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        style={
+          Object {
+            "border": "1px solid red",
+            "height": "100%",
+            "padding": "1rem",
+            "width": "100%",
+          }
+        }
+      >
+        <h1
+          className="alignTextCenter"
+          style={
+            Object {
+              "border": "1px solid orange",
+              "padding": "1rem",
+            }
+          }
+        >
+          tomato
+        </h1>
+        <p
+          className="alignTextCenter"
+          style={
+            Object {
+              "border": "1px solid blue",
+              "padding": "1rem",
+            }
+          }
+        >
+          tomato
+        </p>
+      </div>
+    </div>
+  </body>
+</div>
+`;
+
+exports[`Storyshots css/base/particles/alignText Align Text Center Cross Axis 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        style={
+          Object {
+            "border": "1px solid red",
+            "height": "100%",
+            "padding": "1rem",
+            "width": "100%",
+          }
+        }
+      >
+        <h1
+          className="alignTextCenterCrossAxis"
+          style={
+            Object {
+              "border": "1px solid orange",
+              "padding": "1rem",
+            }
+          }
+        >
+          tomato
+        </h1>
+        <p
+          className="alignTextCenterCrossAxis"
+          style={
+            Object {
+              "border": "1px solid blue",
+              "padding": "1rem",
+            }
+          }
+        >
+          tomato
+        </p>
+      </div>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        style={
+          Object {
+            "border": "1px solid red",
+            "height": "100%",
+            "padding": "1rem",
+            "width": "100%",
+          }
+        }
+      >
+        <h1
+          className="alignTextCenterCrossAxis"
+          style={
+            Object {
+              "border": "1px solid orange",
+              "padding": "1rem",
+            }
+          }
+        >
+          tomato
+        </h1>
+        <p
+          className="alignTextCenterCrossAxis"
+          style={
+            Object {
+              "border": "1px solid blue",
+              "padding": "1rem",
+            }
+          }
+        >
+          tomato
+        </p>
+      </div>
+    </div>
+  </body>
+</div>
+`;
+
+exports[`Storyshots css/base/particles/alignText Align Text Center Main Axis 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        style={
+          Object {
+            "border": "1px solid red",
+            "height": "100%",
+            "padding": "1rem",
+            "width": "100%",
+          }
+        }
+      >
+        <h1
+          className="alignTextCenterMainAxis"
+          style={
+            Object {
+              "border": "1px solid orange",
+              "padding": "1rem",
+            }
+          }
+        >
+          tomato
+        </h1>
+        <p
+          className="alignTextCenterMainAxis"
+          style={
+            Object {
+              "border": "1px solid blue",
+              "padding": "1rem",
+            }
+          }
+        >
+          tomato
+        </p>
+      </div>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        style={
+          Object {
+            "border": "1px solid red",
+            "height": "100%",
+            "padding": "1rem",
+            "width": "100%",
+          }
+        }
+      >
+        <h1
+          className="alignTextCenterMainAxis"
+          style={
+            Object {
+              "border": "1px solid orange",
+              "padding": "1rem",
+            }
+          }
+        >
+          tomato
+        </h1>
+        <p
+          className="alignTextCenterMainAxis"
+          style={
+            Object {
+              "border": "1px solid blue",
+              "padding": "1rem",
+            }
+          }
+        >
+          tomato
+        </p>
+      </div>
+    </div>
+  </body>
+</div>
+`;

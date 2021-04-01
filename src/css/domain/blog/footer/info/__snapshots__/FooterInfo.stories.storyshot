@@ -1,0 +1,274 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots css/domain/blog/footer/info Footer Info 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="info"
+      >
+        <nav
+          aria-label="blog pager navigation"
+          className="nav"
+        >
+          <ul
+            className="navList"
+          >
+            <li>
+              <a
+                className="navLink"
+                href="/previous/"
+                rel="prev"
+              >
+                ← 
+                previous title
+              </a>
+            </li>
+            <li>
+              <a
+                className="navLink"
+                href="/next/"
+                rel="next"
+              >
+                next title
+                 →
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="info"
+      >
+        <nav
+          aria-label="blog pager navigation"
+          className="nav"
+        >
+          <ul
+            className="navList"
+          >
+            <li>
+              <a
+                className="navLink"
+                href="/previous/"
+                rel="prev"
+              >
+                ← 
+                previous title
+              </a>
+            </li>
+            <li>
+              <a
+                className="navLink"
+                href="/next/"
+                rel="next"
+              >
+                next title
+                 →
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+</div>
+`;
+
+exports[`Storyshots css/domain/blog/footer/info Footer Next Info 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="info"
+      >
+        <nav
+          aria-label="blog pager navigation"
+          className="nav"
+        >
+          <ul
+            className="navList"
+          >
+            <li />
+            <li>
+              <a
+                className="navLink"
+                href="/next/"
+                rel="next"
+              >
+                next title
+                 →
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="info"
+      >
+        <nav
+          aria-label="blog pager navigation"
+          className="nav"
+        >
+          <ul
+            className="navList"
+          >
+            <li />
+            <li>
+              <a
+                className="navLink"
+                href="/next/"
+                rel="next"
+              >
+                next title
+                 →
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+</div>
+`;
+
+exports[`Storyshots css/domain/blog/footer/info Footer Previous Info 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="info"
+      >
+        <nav
+          aria-label="blog pager navigation"
+          className="nav"
+        >
+          <ul
+            className="navList"
+          >
+            <li>
+              <a
+                className="navLink"
+                href="/previous/"
+                rel="prev"
+              >
+                ← 
+                previous title
+              </a>
+            </li>
+            <li />
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="info"
+      >
+        <nav
+          aria-label="blog pager navigation"
+          className="nav"
+        >
+          <ul
+            className="navList"
+          >
+            <li>
+              <a
+                className="navLink"
+                href="/previous/"
+                rel="prev"
+              >
+                ← 
+                previous title
+              </a>
+            </li>
+            <li />
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+</div>
+`;
