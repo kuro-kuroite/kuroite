@@ -52,6 +52,13 @@ const gatsbyConfig: GatsbyConfig = {
     },
     {
       options: {
+        name: 'about',
+        path: path.resolve('./content/about'),
+      },
+      resolve: 'gatsby-source-filesystem',
+    },
+    {
+      options: {
         name: 'assets',
         path: path.resolve('./content/assets'),
       },

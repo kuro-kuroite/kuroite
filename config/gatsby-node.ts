@@ -50,6 +50,18 @@ export const createPages: GatsbyNode['createPages'] = async ({
           }
         }
       }
+      about: markdownRemark(
+        frontmatter: { status: { ne: "draft" } }
+        fileAbsolutePath: { regex: "/content/about/" }
+      ) {
+        fields {
+          slug
+        }
+        frontmatter {
+          tags
+          title
+        }
+      }
     }
   `);
 
@@ -84,6 +96,28 @@ export const createPages: GatsbyNode['createPages'] = async ({
       },
       path: node.fields.slug,
     });
+  });
+
+  // NOTE: for about.tsx
+  if (!result.data?.about) {
+    return;
+  }
+
+  const about = result.data.about;
+  const aboutTemplate = path.resolve(`./src/templates/about.tsx`);
+
+  if (!about.fields?.slug) {
+    reporter.panicOnBuild('no slug');
+
+    return;
+  }
+
+  createPage({
+    component: aboutTemplate,
+    context: {
+      slug: about.fields.slug,
+    },
+    path: about.fields.slug,
   });
 };
 

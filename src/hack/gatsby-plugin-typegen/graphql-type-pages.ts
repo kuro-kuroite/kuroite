@@ -46,6 +46,18 @@ const useDummy = () => {
           }
         }
       }
+      about: markdownRemark(
+        frontmatter: { status: { ne: "draft" } }
+        fileAbsolutePath: { regex: "/content/about/" }
+      ) {
+        fields {
+          slug
+        }
+        frontmatter {
+          tags
+          title
+        }
+      }
     }
   `);
 };
