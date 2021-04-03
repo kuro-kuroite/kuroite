@@ -45,6 +45,9 @@ const useDummy = () => {
             }
           }
         }
+        tags: group(field: frontmatter___tags) {
+          fieldValue
+        }
       }
       about: markdownRemark(
         frontmatter: { status: { ne: "draft" } }

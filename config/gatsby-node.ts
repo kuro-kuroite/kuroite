@@ -49,6 +49,9 @@ export const createPages: GatsbyNode['createPages'] = async ({
             }
           }
         }
+        tags: group(field: frontmatter___tags) {
+          fieldValue
+        }
       }
       about: markdownRemark(
         frontmatter: { status: { ne: "draft" } }
@@ -118,6 +121,41 @@ export const createPages: GatsbyNode['createPages'] = async ({
       slug: about.fields.slug,
     },
     path: about.fields.slug,
+  });
+
+  // NOTE: for tag.tsx
+  if (!result.data?.posts?.tags) {
+    return;
+  }
+
+  if (!result.data?.about?.frontmatter?.tags) {
+    return;
+  }
+
+  const distinct = <T>(xs: T[]) => [...new Set(xs)];
+  // FYI: tags of posts and aboutの重複を削除し、{ fieldValue: string }型にする
+  const tags = distinct([
+    ...result.data.posts.tags.map(({ fieldValue: tag }) => tag),
+    ...result.data.about.frontmatter.tags,
+  ]).map((tag) => ({
+    fieldValue: tag,
+  }));
+  const tagTemplate = path.resolve(`./src/templates/tag.tsx`);
+
+  tags.forEach(({ fieldValue: tag }) => {
+    if (!tag) {
+      reporter.panicOnBuild('no tag');
+
+      return;
+    }
+
+    createPage({
+      component: tagTemplate,
+      context: {
+        tag: tag,
+      },
+      path: `/tags/${tag}/`,
+    });
   });
 };
 
