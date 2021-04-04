@@ -1,0 +1,1353 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots components/PrivacyPolicy Privacy Policy 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <main>
+        <article
+          className="PrivacyPolicy"
+        >
+          <div
+            className=""
+          >
+            <div
+              className="ProgressBar"
+              style={
+                Object {
+                  "width": "0%",
+                }
+              }
+            />
+          </div>
+          <h1
+            className="Title"
+          >
+            Privacy Policy
+          </h1>
+          <small
+            aria-label="ブログ info"
+            className="BlogInfo"
+          >
+            <span
+              className="UpdatedAt"
+            >
+              <svg
+                className="WithIcon"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79 2.73 2.71 7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58 3.51-3.47 9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"
+                />
+              </svg>
+              08/24/2020
+            </span>
+            <span
+              className="CreatedAt"
+            >
+              (
+              <svg
+                className="WithIcon"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M12.9 6.858l4.242 4.243L7.242 21H3v-4.243l9.9-9.9zm1.414-1.414l2.121-2.122a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414l-2.122 2.121-4.242-4.242z"
+                  />
+                </g>
+              </svg>
+              08/22/2020
+              )
+            </span>
+            <nav
+              aria-label="Privacy Policy タグナビゲーション"
+              className="TagIconList"
+            >
+              <svg
+                className="WithIcon"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"
+                />
+              </svg>
+              <ul
+                className="IconList"
+              >
+                <li>
+                  <a
+                    className="TagIcon"
+                    href="/tags/React/"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    React
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="TagIcon"
+                    href="/tags/TypeScript/"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    TypeScript
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </small>
+          <div
+            className="Container"
+          >
+            <nav
+              aria-label="目次コンテナ"
+              className="WrappedNav"
+            >
+              <button
+                aria-label="目次を隠す"
+                className="Blind"
+                onClick={[Function]}
+              />
+              <div
+                className="Container"
+              >
+                <h1
+                  className="Title"
+                >
+                  目次
+                </h1>
+                <nav
+                  aria-label="目次ナビゲーション"
+                  className="Toc"
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "<ul><li><p><a href=\\"/blog/hello-world/#h1-1\\">h1-1</a></p><ul><li><a href=\\"/blog/hello-world/#h2-1\\">h2-1</a></li><li><a href=\\"/blog/hello-world/#h2-2\\">h2-2</a></li><li><a href=\\"/blog/hello-world/#h2-3\\">h2-3</a></li></ul></li><li><p><a href=\\"/blog/hello-world/#h1-2\\">h1 2</a></p><ul><li><a href=\\"/blog/hello-world/#h2\\">h2</a></li></ul></li></ul>",
+                    }
+                  }
+                />
+                <button
+                  aria-label="目次ボタン"
+                  className="TocIcon"
+                  onClick={[Function]}
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    strokeWidth="0"
+                    style={
+                      Object {
+                        "color": undefined,
+                      }
+                    }
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </nav>
+            <section
+              className="Body"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div><h1>title</h1><p>hello world</p></div>",
+                }
+              }
+            />
+          </div>
+        </article>
+      </main>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <main>
+        <article
+          className="PrivacyPolicy"
+        >
+          <div
+            className=""
+          >
+            <div
+              className="ProgressBar"
+              style={
+                Object {
+                  "width": "0%",
+                }
+              }
+            />
+          </div>
+          <h1
+            className="Title"
+          >
+            Privacy Policy
+          </h1>
+          <small
+            aria-label="ブログ info"
+            className="BlogInfo"
+          >
+            <span
+              className="UpdatedAt"
+            >
+              <svg
+                className="WithIcon"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79 2.73 2.71 7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58 3.51-3.47 9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"
+                />
+              </svg>
+              08/24/2020
+            </span>
+            <span
+              className="CreatedAt"
+            >
+              (
+              <svg
+                className="WithIcon"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M12.9 6.858l4.242 4.243L7.242 21H3v-4.243l9.9-9.9zm1.414-1.414l2.121-2.122a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414l-2.122 2.121-4.242-4.242z"
+                  />
+                </g>
+              </svg>
+              08/22/2020
+              )
+            </span>
+            <nav
+              aria-label="Privacy Policy タグナビゲーション"
+              className="TagIconList"
+            >
+              <svg
+                className="WithIcon"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"
+                />
+              </svg>
+              <ul
+                className="IconList"
+              >
+                <li>
+                  <a
+                    className="TagIcon"
+                    href="/tags/React/"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    React
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="TagIcon"
+                    href="/tags/TypeScript/"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    TypeScript
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </small>
+          <div
+            className="Container"
+          >
+            <nav
+              aria-label="目次コンテナ"
+              className="WrappedNav"
+            >
+              <button
+                aria-label="目次を隠す"
+                className="Blind"
+                onClick={[Function]}
+              />
+              <div
+                className="Container"
+              >
+                <h1
+                  className="Title"
+                >
+                  目次
+                </h1>
+                <nav
+                  aria-label="目次ナビゲーション"
+                  className="Toc"
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "<ul><li><p><a href=\\"/blog/hello-world/#h1-1\\">h1-1</a></p><ul><li><a href=\\"/blog/hello-world/#h2-1\\">h2-1</a></li><li><a href=\\"/blog/hello-world/#h2-2\\">h2-2</a></li><li><a href=\\"/blog/hello-world/#h2-3\\">h2-3</a></li></ul></li><li><p><a href=\\"/blog/hello-world/#h1-2\\">h1 2</a></p><ul><li><a href=\\"/blog/hello-world/#h2\\">h2</a></li></ul></li></ul>",
+                    }
+                  }
+                />
+                <button
+                  aria-label="目次ボタン"
+                  className="TocIcon"
+                  onClick={[Function]}
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    strokeWidth="0"
+                    style={
+                      Object {
+                        "color": undefined,
+                      }
+                    }
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </nav>
+            <section
+              className="Body"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div><h1>title</h1><p>hello world</p></div>",
+                }
+              }
+            />
+          </div>
+        </article>
+      </main>
+    </div>
+  </body>
+</div>
+`;
+
+exports[`Storyshots components/PrivacyPolicy Privacy Policy Layout 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <body
+    data-theme="light"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="Container"
+      >
+        <header
+          className="Header"
+        >
+          <nav
+            aria-label="ヘッダナビゲーション"
+            className="Nav"
+          >
+            <a
+              aria-current="page"
+              aria-label="Gatsby Policy"
+              className="Banner"
+              data-brand="Gatsby Policy"
+              href="/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              style={Object {}}
+            >
+              <svg
+                aria-label="Kuroite"
+                className="Icon"
+                height="1em"
+                role="img"
+                viewBox="0 0 52 52"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  transform="translate(0,52) scale(0.1,-0.1)"
+                >
+                  <path
+                    d="M145 499c-95 -47 -145 -129 -145 -237l0 -67 98 -98 97 -97 66 0
+c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
+-130 135 -60 28 -173 29 -230 0z m197 -95c78 -40 113 -162 69 -241 -56 -99
+-185 -123 -268 -50 -64 56 -81 142 -43 217 44 86 152 119 242 74z"
+                    fill="#e44d26"
+                  />
+                  <circle
+                    cx="452%"
+                    cy="435%"
+                    fill="#dd3a0a"
+                    r="95"
+                  />
+                </g>
+              </svg>
+            </a>
+            <div
+              className="Menu"
+            >
+              <ul
+                className="List"
+              >
+                <li>
+                  <a
+                    aria-current="page"
+                    className="Link"
+                    href="/"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                    style={Object {}}
+                  >
+                    blog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="Link"
+                    href="/about/"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    about
+                  </a>
+                </li>
+              </ul>
+              <ul
+                className="List"
+              >
+                <li
+                  className="InvisibleSm"
+                >
+                  <a
+                    aria-label="RSSフィード"
+                    className="Link"
+                    href="/rss.xml"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="6.18"
+                        cy="17.82"
+                        r="2.18"
+                      />
+                      <path
+                        d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    aria-label="GitHubアカウントページ"
+                    className="Link"
+                    href="https://github.com/gitHubAccount/"
+                    rel="nofollow noopener noreferrer"
+                    target="_blank"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 16 16"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clipRule="evenodd"
+                        d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <span
+                    className="Link"
+                  >
+                    <label
+                      aria-label="ライトモードリンク"
+                      className="DarkMode"
+                    >
+                      <input
+                        aria-label="ライトモードアイコン"
+                        className="Checkbox"
+                        data-testid="darkModeCheckbox"
+                        onClick={[Function]}
+                        type="checkbox"
+                      />
+                      <svg
+                        className="Icon"
+                        fill="currentColor"
+                        height="1em"
+                        viewBox="0 0 20 20"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clipRule="evenodd"
+                          d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                    </label>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <main>
+          <article
+            className="PrivacyPolicy"
+          >
+            <div
+              className=""
+            >
+              <div
+                className="ProgressBar"
+                style={
+                  Object {
+                    "width": "0%",
+                  }
+                }
+              />
+            </div>
+            <h1
+              className="Title"
+            >
+              Privacy Policy
+            </h1>
+            <small
+              aria-label="ブログ info"
+              className="BlogInfo"
+            >
+              <span
+                className="UpdatedAt"
+              >
+                <svg
+                  className="WithIcon"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79 2.73 2.71 7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58 3.51-3.47 9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"
+                  />
+                </svg>
+                08/24/2020
+              </span>
+              <span
+                className="CreatedAt"
+              >
+                (
+                <svg
+                  className="WithIcon"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12.9 6.858l4.242 4.243L7.242 21H3v-4.243l9.9-9.9zm1.414-1.414l2.121-2.122a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414l-2.122 2.121-4.242-4.242z"
+                    />
+                  </g>
+                </svg>
+                08/22/2020
+                )
+              </span>
+              <nav
+                aria-label="Privacy Policy タグナビゲーション"
+                className="TagIconList"
+              >
+                <svg
+                  className="WithIcon"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 512 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"
+                  />
+                </svg>
+                <ul
+                  className="IconList"
+                >
+                  <li>
+                    <a
+                      className="TagIcon"
+                      href="/tags/React/"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                    >
+                      React
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="TagIcon"
+                      href="/tags/TypeScript/"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                    >
+                      TypeScript
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </small>
+            <div
+              className="Container"
+            >
+              <nav
+                aria-label="目次コンテナ"
+                className="WrappedNav"
+              >
+                <button
+                  aria-label="目次を隠す"
+                  className="Blind"
+                  onClick={[Function]}
+                />
+                <div
+                  className="Container"
+                >
+                  <h1
+                    className="Title"
+                  >
+                    目次
+                  </h1>
+                  <nav
+                    aria-label="目次ナビゲーション"
+                    className="Toc"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<ul><li><p><a href=\\"/blog/hello-world/#h1-1\\">h1-1</a></p><ul><li><a href=\\"/blog/hello-world/#h2-1\\">h2-1</a></li><li><a href=\\"/blog/hello-world/#h2-2\\">h2-2</a></li><li><a href=\\"/blog/hello-world/#h2-3\\">h2-3</a></li></ul></li><li><p><a href=\\"/blog/hello-world/#h1-2\\">h1 2</a></p><ul><li><a href=\\"/blog/hello-world/#h2\\">h2</a></li></ul></li></ul>",
+                      }
+                    }
+                  />
+                  <button
+                    aria-label="目次ボタン"
+                    className="TocIcon"
+                    onClick={[Function]}
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </nav>
+              <section
+                className="Body"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<div><h1>title</h1><p>hello world</p></div>",
+                  }
+                }
+              />
+            </div>
+          </article>
+        </main>
+        <footer
+          className="Footer"
+          id="footer"
+        >
+          <div
+            className="Container"
+          >
+            <nav
+              aria-label="フッタナビゲーション"
+              className="Nav"
+            >
+              <ul
+                className="List"
+              >
+                <li>
+                  <a
+                    className="Link"
+                    href="/privacy-policy/"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    プライバシーポリシー
+                  </a>
+                </li>
+              </ul>
+              <ul
+                className="List"
+              >
+                <li>
+                  <span
+                    className="Link"
+                  >
+                    <label
+                      className="I18nMode"
+                    >
+                      <input
+                        aria-label="英語アイコン"
+                        className="Checkbox"
+                        data-testid="i18nModeCheckbox"
+                        onClick={[Function]}
+                        type="checkbox"
+                      />
+                      <span
+                        className="Icon"
+                      >
+                        🇺🇸
+                      </span>
+                    </label>
+                  </span>
+                </li>
+              </ul>
+            </nav>
+            <small
+              className="Notice"
+            >
+              ©
+              2020-2021
+              <a
+                className="Account"
+                href="https://github.com/gitHubAccount/"
+              >
+                @
+                gitHubAccount
+              </a>
+            </small>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <body
+    data-theme="dark"
+    style={
+      Object {
+        "flexGrow": 1,
+        "height": "100vh",
+        "overflow": "auto",
+      }
+    }
+  >
+    <div>
+      <div
+        className="Container"
+      >
+        <header
+          className="Header"
+        >
+          <nav
+            aria-label="ヘッダナビゲーション"
+            className="Nav"
+          >
+            <a
+              aria-current="page"
+              aria-label="Gatsby Policy"
+              className="Banner"
+              data-brand="Gatsby Policy"
+              href="/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              style={Object {}}
+            >
+              <svg
+                aria-label="Kuroite"
+                className="Icon"
+                height="1em"
+                role="img"
+                viewBox="0 0 52 52"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  transform="translate(0,52) scale(0.1,-0.1)"
+                >
+                  <path
+                    d="M145 499c-95 -47 -145 -129 -145 -237l0 -67 98 -98 97 -97 66 0
+c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
+-130 135 -60 28 -173 29 -230 0z m197 -95c78 -40 113 -162 69 -241 -56 -99
+-185 -123 -268 -50 -64 56 -81 142 -43 217 44 86 152 119 242 74z"
+                    fill="#e44d26"
+                  />
+                  <circle
+                    cx="452%"
+                    cy="435%"
+                    fill="#dd3a0a"
+                    r="95"
+                  />
+                </g>
+              </svg>
+            </a>
+            <div
+              className="Menu"
+            >
+              <ul
+                className="List"
+              >
+                <li>
+                  <a
+                    aria-current="page"
+                    className="Link"
+                    href="/"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                    style={Object {}}
+                  >
+                    blog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="Link"
+                    href="/about/"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    about
+                  </a>
+                </li>
+              </ul>
+              <ul
+                className="List"
+              >
+                <li
+                  className="InvisibleSm"
+                >
+                  <a
+                    aria-label="RSSフィード"
+                    className="Link"
+                    href="/rss.xml"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="6.18"
+                        cy="17.82"
+                        r="2.18"
+                      />
+                      <path
+                        d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    aria-label="GitHubアカウントページ"
+                    className="Link"
+                    href="https://github.com/gitHubAccount/"
+                    rel="nofollow noopener noreferrer"
+                    target="_blank"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 16 16"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clipRule="evenodd"
+                        d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <span
+                    className="Link"
+                  >
+                    <label
+                      aria-label="ライトモードリンク"
+                      className="DarkMode"
+                    >
+                      <input
+                        aria-label="ライトモードアイコン"
+                        className="Checkbox"
+                        data-testid="darkModeCheckbox"
+                        onClick={[Function]}
+                        type="checkbox"
+                      />
+                      <svg
+                        className="Icon"
+                        fill="currentColor"
+                        height="1em"
+                        viewBox="0 0 20 20"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clipRule="evenodd"
+                          d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                    </label>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <main>
+          <article
+            className="PrivacyPolicy"
+          >
+            <div
+              className=""
+            >
+              <div
+                className="ProgressBar"
+                style={
+                  Object {
+                    "width": "0%",
+                  }
+                }
+              />
+            </div>
+            <h1
+              className="Title"
+            >
+              Privacy Policy
+            </h1>
+            <small
+              aria-label="ブログ info"
+              className="BlogInfo"
+            >
+              <span
+                className="UpdatedAt"
+              >
+                <svg
+                  className="WithIcon"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79 2.73 2.71 7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58 3.51-3.47 9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"
+                  />
+                </svg>
+                08/24/2020
+              </span>
+              <span
+                className="CreatedAt"
+              >
+                (
+                <svg
+                  className="WithIcon"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12.9 6.858l4.242 4.243L7.242 21H3v-4.243l9.9-9.9zm1.414-1.414l2.121-2.122a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414l-2.122 2.121-4.242-4.242z"
+                    />
+                  </g>
+                </svg>
+                08/22/2020
+                )
+              </span>
+              <nav
+                aria-label="Privacy Policy タグナビゲーション"
+                className="TagIconList"
+              >
+                <svg
+                  className="WithIcon"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 512 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"
+                  />
+                </svg>
+                <ul
+                  className="IconList"
+                >
+                  <li>
+                    <a
+                      className="TagIcon"
+                      href="/tags/React/"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                    >
+                      React
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="TagIcon"
+                      href="/tags/TypeScript/"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                    >
+                      TypeScript
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </small>
+            <div
+              className="Container"
+            >
+              <nav
+                aria-label="目次コンテナ"
+                className="WrappedNav"
+              >
+                <button
+                  aria-label="目次を隠す"
+                  className="Blind"
+                  onClick={[Function]}
+                />
+                <div
+                  className="Container"
+                >
+                  <h1
+                    className="Title"
+                  >
+                    目次
+                  </h1>
+                  <nav
+                    aria-label="目次ナビゲーション"
+                    className="Toc"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<ul><li><p><a href=\\"/blog/hello-world/#h1-1\\">h1-1</a></p><ul><li><a href=\\"/blog/hello-world/#h2-1\\">h2-1</a></li><li><a href=\\"/blog/hello-world/#h2-2\\">h2-2</a></li><li><a href=\\"/blog/hello-world/#h2-3\\">h2-3</a></li></ul></li><li><p><a href=\\"/blog/hello-world/#h1-2\\">h1 2</a></p><ul><li><a href=\\"/blog/hello-world/#h2\\">h2</a></li></ul></li></ul>",
+                      }
+                    }
+                  />
+                  <button
+                    aria-label="目次ボタン"
+                    className="TocIcon"
+                    onClick={[Function]}
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </nav>
+              <section
+                className="Body"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<div><h1>title</h1><p>hello world</p></div>",
+                  }
+                }
+              />
+            </div>
+          </article>
+        </main>
+        <footer
+          className="Footer"
+          id="footer"
+        >
+          <div
+            className="Container"
+          >
+            <nav
+              aria-label="フッタナビゲーション"
+              className="Nav"
+            >
+              <ul
+                className="List"
+              >
+                <li>
+                  <a
+                    className="Link"
+                    href="/privacy-policy/"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    プライバシーポリシー
+                  </a>
+                </li>
+              </ul>
+              <ul
+                className="List"
+              >
+                <li>
+                  <span
+                    className="Link"
+                  >
+                    <label
+                      className="I18nMode"
+                    >
+                      <input
+                        aria-label="英語アイコン"
+                        className="Checkbox"
+                        data-testid="i18nModeCheckbox"
+                        onClick={[Function]}
+                        type="checkbox"
+                      />
+                      <span
+                        className="Icon"
+                      >
+                        🇺🇸
+                      </span>
+                    </label>
+                  </span>
+                </li>
+              </ul>
+            </nav>
+            <small
+              className="Notice"
+            >
+              ©
+              2020-2021
+              <a
+                className="Account"
+                href="https://github.com/gitHubAccount/"
+              >
+                @
+                gitHubAccount
+              </a>
+            </small>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</div>
+`;
