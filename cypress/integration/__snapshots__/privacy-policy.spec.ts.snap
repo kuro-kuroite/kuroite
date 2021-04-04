@@ -1,0 +1,850 @@
+exports[`/about/ > ロードした時に，dark modeとlight modeのアクセシビリティを確認する #0`] = `
+<body data-theme="light">
+  <div id="___gatsby">
+    <div tabindex="-1" id="gatsby-focus-wrapper" style="outline: none;">
+      <div
+        class="Layout-module--Container--2G9pG style-module--container--3PyyC style-module--fluidFixedContainer--2yxvz style-module--selection--GwGAU"
+      >
+        <header
+          class="Header-module--Header--2RVH9 style-module--header--1Xeo8"
+        >
+          <nav
+            aria-label="ヘッダナビゲーション"
+            class="HeaderNav-module--Nav--2TeHa style-module--nav--HHN5D style-module--nav--2fXC0 style-module--nav--2RIKo style-module--navBase--HCXnn style-module--navResetBase--3SAPV"
+          >
+            <a
+              aria-label="Kuroite"
+              class="LogoLink-module--Banner--2dr1Y style-module--banner--1VzaQ style-module--banner--129Ru style-module--alignTextCenterCrossAxis--rB1De"
+              data-brand="Kuroite"
+              href="/"
+              ><svg
+                aria-label="Kuroite"
+                height="1em"
+                role="img"
+                viewBox="0 0 52 52"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+                class="LogoLink-module--Icon--1vBHx style-module--icon--36FQM"
+              >
+                <g transform="translate(0,52) scale(0.1,-0.1)">
+                  <path
+                    d="M145 499c-95 -47 -145 -129 -145 -237l0 -67 98 -98 97 -97 66 0
+c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
+-130 135 -60 28 -173 29 -230 0z m197 -95c78 -40 113 -162 69 -241 -56 -99
+-185 -123 -268 -50 -64 56 -81 142 -43 217 44 86 152 119 242 74z"
+                    fill="#e44d26"
+                  ></path>
+                  <circle cx="452%" cy="435%" fill="#dd3a0a" r="95"></circle>
+                </g></svg
+            ></a>
+            <div
+              class="HeaderMenu-module--Menu--2tYBj style-module--menu--2U_lf style-module--menu--lPjGj style-module--navGapX--29Fw0"
+            >
+              <ul
+                class="HeaderMenuPageList-module--List--2xFv1 style-module--navList--20xmI style-module--navList--OiCxZ style-module--navGapX--29Fw0"
+              >
+                <li>
+                  <a
+                    class="HeaderMenuPageItem-module--Link--3ZTg_ style-module--navLink--2pVl8 style-module--navLink--3hKW5 style-module--navLinkBase--2fj2N style-module--navLinkResetBase--3iJ7p style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi style-module--alignTextCenterCrossAxis--rB1De style-module--alignTextCenter--3QZzC style-module--alignTextCenterMainAxis--2L_MI style-module--alignTextCenterCrossAxis--rB1De"
+                    href="/"
+                    >blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="HeaderMenuPageItem-module--Link--3ZTg_ style-module--navLink--2pVl8 style-module--navLink--3hKW5 style-module--navLinkBase--2fj2N style-module--navLinkResetBase--3iJ7p style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi style-module--alignTextCenterCrossAxis--rB1De style-module--alignTextCenter--3QZzC style-module--alignTextCenterMainAxis--2L_MI style-module--alignTextCenterCrossAxis--rB1De"
+                    href="/about/"
+                    >about</a
+                  >
+                </li>
+              </ul>
+              <ul
+                class="HeaderMenuIconList-module--List--2X9Su style-module--navList--20xmI style-module--navList--OiCxZ style-module--navGapX--29Fw0"
+              >
+                <li
+                  class="HeaderMenuIconList-module--InvisibleSm--3h9As style-module--invisibleSm--1Jv-n"
+                >
+                  <a
+                    aria-label="RSSフィード"
+                    class="RssFeedLink-module--Link--2uMoE style-module--navIconLink--1yMim style-module--icon--36FQM style-module--navLink--2pVl8 style-module--navLink--3hKW5 style-module--navLinkBase--2fj2N style-module--navLinkResetBase--3iJ7p style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi style-module--alignTextCenterCrossAxis--rB1De style-module--alignTextCenter--3QZzC style-module--alignTextCenterMainAxis--2L_MI style-module--alignTextCenterCrossAxis--rB1De"
+                    href="/rss.xml"
+                    ><svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="6.18" cy="17.82" r="2.18"></circle>
+                      <path
+                        d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"
+                      ></path></svg
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    aria-label="GitHubアカウントページ"
+                    class="GitHubLink-module--Link--1XkgK style-module--navIconLink--1yMim style-module--icon--36FQM style-module--navLink--2pVl8 style-module--navLink--3hKW5 style-module--navLinkBase--2fj2N style-module--navLinkResetBase--3iJ7p style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi style-module--alignTextCenterCrossAxis--rB1De style-module--alignTextCenter--3QZzC style-module--alignTextCenterMainAxis--2L_MI style-module--alignTextCenterCrossAxis--rB1De"
+                    href="https://github.com/kuro-kuroite/"
+                    rel="nofollow noopener noreferrer"
+                    target="_blank"
+                    ><svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 16 16"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z"
+                      ></path></svg
+                  ></a>
+                </li>
+                <li>
+                  <span
+                    class="DarkMode-module--Link--2GBnz style-module--navIconLink--1yMim style-module--icon--36FQM style-module--navLink--2pVl8 style-module--navLink--3hKW5 style-module--navLinkBase--2fj2N style-module--navLinkResetBase--3iJ7p style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi style-module--alignTextCenterCrossAxis--rB1De style-module--alignTextCenter--3QZzC style-module--alignTextCenterMainAxis--2L_MI style-module--alignTextCenterCrossAxis--rB1De"
+                    ><label
+                      aria-label="ダークモードリンク"
+                      class="DarkMode-module--DarkMode--20ujG style-module--toggleIcon--2WGvE style-module--alignTextCenter--3QZzC style-module--alignTextCenterMainAxis--2L_MI style-module--alignTextCenterCrossAxis--rB1De"
+                      ><input
+                        aria-label="ダークモードアイコン"
+                        class="DarkMode-module--Checkbox--1iH8T style-module--checkbox--JlgzU"
+                        data-testid="darkModeCheckbox"
+                        type="checkbox"/><svg
+                        fill="currentColor"
+                        height="1em"
+                        viewBox="0 0 20 20"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="DarkMode-module--Icon--VVlyR style-module--icon--32Amx style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi"
+                      >
+                        <path
+                          d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                        ></path></svg></label
+                  ></span>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <main>
+          <article
+            class="PrivacyPolicy-module--PrivacyPolicy--1hIkR style-module--item--3o65B"
+          >
+            <div class="">
+              <div
+                class="ProgressBar-module--ProgressBar--1IFsK style-module--item--pVOHs style-module--item--2PYwb style-module--background--3Rp-P style-module--default--3DaCK style-module--background--1pzLA style-module--background--3Rp-P style-module--default--3DaCK"
+                style="width: 0%;"
+              ></div>
+            </div>
+            <h1
+              class="PrivacyPolicy-module--Title--2-Pzy style-module--title--2wnh2 style-module--title--1djjC"
+            >
+              プライバシーポリシー・免責事項
+            </h1>
+            <small
+              aria-label="ブログ info"
+              class="BlogInfo-module--BlogInfo--1qWaB style-module--info--27_J5"
+              ><span
+                class="UpdatedAt-module--UpdatedAt--gDdEt style-module--text--2dYga"
+                ><svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="UpdatedAt-module--WithIcon--1lN-I style-module--icon--1s7rL"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79 2.73 2.71 7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58 3.51-3.47 9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"
+                  ></path></svg
+                >05/01/2015</span
+              ><span
+                class="CreatedAt-module--CreatedAt--mkugj style-module--createdAt--2ZN8K style-module--text--2dYga"
+                >(<svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="CreatedAt-module--WithIcon--2l4OR style-module--icon--1s7rL"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path
+                      d="M12.9 6.858l4.242 4.243L7.242 21H3v-4.243l9.9-9.9zm1.414-1.414l2.121-2.122a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414l-2.122 2.121-4.242-4.242z"
+                    ></path>
+                  </g></svg
+                >05/01/2015)</span
+              >
+              <nav
+                aria-label="プライバシーポリシー・免責事項 タグナビゲーション"
+                class="TagIconList-module--TagIconList--1Rly_ style-module--list--2WXKP style-module--list--2rlgH"
+              >
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  class="TagIconList-module--WithIcon--JDhpK style-module--icon--1NrNW style-module--icon--1s7rL"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"
+                  ></path>
+                </svg>
+                <ul
+                  class="TagIconList-module--IconList--2nZPl style-module--linkList--3xVdB style-module--list--2rlgH"
+                >
+                  <li>
+                    <a
+                      class="TagIcon-module--TagIcon--1XXn1 style-module--iconLink--3K-F4"
+                      href="/tags/About/"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="TagIcon-module--TagIcon--1XXn1 style-module--iconLink--3K-F4"
+                      href="/tags/プライバシーポリシー/"
+                      >プライバシーポリシー</a
+                    >
+                  </li>
+                </ul>
+              </nav></small
+            >
+            <div
+              class="PrivacyPolicy-module--Container--2vkbE style-module--container--1N0GU"
+            >
+              <nav
+                aria-label="目次コンテナ"
+                class="Toc-module--WrappedNav--172uT style-module--wrappedNav--1mSxP style-module--wrappedNav--5Mw4_"
+              >
+                <button
+                  aria-label="目次を隠す"
+                  class="Toc-module--Blind--1yuyQ style-module--blind--D-1eZ"
+                ></button>
+                <div
+                  class="Toc-module--Container--2lR8p style-module--container--3jD1D"
+                >
+                  <h1
+                    class="Toc-module--Title--HXpvp style-module--title--Jo98H"
+                  >
+                    目次
+                  </h1>
+                  <nav
+                    aria-label="目次ナビゲーション"
+                    class="Toc-module--Toc--4Wa-t style-module--item--2_1Aq style-module--wrapTransition--2hKxr style-module--default--3NGIw"
+                  >
+                    <ul>
+                      <li>
+                        <ul>
+                          <li>
+                            <a
+                              href="#%E3%83%AA%E3%83%B3%E3%82%AF%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                              >リンクについて</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#%E8%91%97%E4%BD%9C%E6%A8%A9%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                              >著作権について</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#%E6%8E%B2%E8%BC%89%E5%86%85%E5%AE%B9%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                              >掲載内容について</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#%E5%85%8D%E8%B2%AC%E4%BA%8B%E9%A0%85"
+                              >免責事項</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p>
+                          <a
+                            href="#%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                            >個人情報について</a
+                          >
+                        </p>
+                        <ul>
+                          <li>
+                            <a
+                              href="#%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E3%81%AE%E5%88%A9%E7%94%A8%E7%9B%AE%E7%9A%84"
+                              >個人情報の利用目的</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E3%81%AE%E7%AC%AC%E4%B8%89%E8%80%85%E3%81%B8%E3%81%AE%E9%96%8B%E7%A4%BA"
+                              >個人情報の第三者への開示</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E3%81%AE%E9%96%8B%E7%A4%BA%E3%80%81%E8%A8%82%E6%AD%A3%E3%80%81%E8%BF%BD%E5%8A%A0%E3%80%81%E5%89%8A%E9%99%A4%E3%80%81%E5%88%A9%E7%94%A8%E5%81%9C%E6%AD%A2"
+                              >個人情報の開示、訂正、追加、削除、利用停止</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p>
+                          <a
+                            href="#%E5%BA%83%E5%91%8A%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                            >広告について</a
+                          >
+                        </p>
+                        <ul>
+                          <li>
+                            <a
+                              href="#google-adsense-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                              >Google AdSense について</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#amazon-%E3%82%A2%E3%82%BD%E3%82%B7%E3%82%A8%E3%82%A4%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                              >Amazon アソシエイトについて</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><a href="#%E3%81%9D%E3%81%AE%E4%BB%96">その他</a></p>
+                        <ul>
+                          <li>
+                            <a
+                              href="#%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E8%A7%A3%E6%9E%90%E3%83%84%E3%83%BC%E3%83%AB%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                              >アクセス解析ツールについて</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                              >コメントについて</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E9%81%B5%E5%AE%88"
+                              >プライバシーポリシーの遵守</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                  <button
+                    aria-label="目次ボタン"
+                    class="TocIcon-module--TocIcon--3aHzv style-module--button--3BZx8 style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi style-module--default---u35i"
+                  >
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </nav>
+              <section
+                class="PrivacyPolicy-module--Body--1RILd style-module--body--1kkLX"
+              >
+                <p>
+                  <a href="https://forms.gle/kBXLK6Krgdhruvhf6"
+                    >本ブログに関してのお問い合わせ | Google フォーム</a
+                  >
+                </p>
+                <h2 id="リンクについて" style="position:relative;">
+                  <a
+                    href="#%E3%83%AA%E3%83%B3%E3%82%AF%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                    aria-label="リンクについて permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >リンクについて
+                </h2>
+                <p>
+                  本ブログは基本的にリンクフリーです。
+                  リンクを行う場合の許可や連絡は不要です。
+                  引用元がわかるようにリンクを貼っていただけると嬉しいです。
+                </p>
+                <p>
+                  ただし、インラインフレームの使用や画像の直リンクはご遠慮ください。
+                </p>
+                <h2 id="著作権について" style="position:relative;">
+                  <a
+                    href="#%E8%91%97%E4%BD%9C%E6%A8%A9%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                    aria-label="著作権について permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >著作権について
+                </h2>
+                <p>
+                  本ブログで掲載している文章や画像などにつきましては、無断転載することを禁止します。
+                </p>
+                <p>
+                  本ブログは著作権や肖像権の侵害を目的としたものではありません。
+                  著作権や肖像権に関して問題がございましたら、<a
+                    href="https://forms.gle/kBXLK6Krgdhruvhf6"
+                    >問い合わせフォーム</a
+                  >よりご連絡ください。 迅速に対応いたします。
+                </p>
+                <h2 id="掲載内容について" style="position:relative;">
+                  <a
+                    href="#%E6%8E%B2%E8%BC%89%E5%86%85%E5%AE%B9%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                    aria-label="掲載内容について permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >掲載内容について
+                </h2>
+                <p>
+                  ブログ内の内容、テキスト、画像についての問い合わせは、<a
+                    href="https://forms.gle/kBXLK6Krgdhruvhf6"
+                    >問い合わせフォーム</a
+                  >よりご連絡ください。
+                </p>
+                <h2 id="免責事項" style="position:relative;">
+                  <a
+                    href="#%E5%85%8D%E8%B2%AC%E4%BA%8B%E9%A0%85"
+                    aria-label="免責事項 permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >免責事項
+                </h2>
+                <p>
+                  本ブログに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。
+                  本ブログのコンテンツ・情報について、できる限り正確な情報を提供するように努めておりますが、正確性や安全性を保証するものではありません。
+                  情報が古くなっている場合もあります。
+                </p>
+                <p>
+                  本ブログからリンクやバナーなどによって他のサイトに移動された場合、移動先サイトで提供される情報、サービス等について一切の責任を負いません。
+                </p>
+                <h1 id="個人情報について" style="position:relative;">
+                  <a
+                    href="#%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                    aria-label="個人情報について permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >個人情報について
+                </h1>
+                <h2 id="個人情報の利用目的" style="position:relative;">
+                  <a
+                    href="#%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E3%81%AE%E5%88%A9%E7%94%A8%E7%9B%AE%E7%9A%84"
+                    aria-label="個人情報の利用目的 permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >個人情報の利用目的
+                </h2>
+                <p>
+                  本ブログでは、メールでのお問い合わせ、メールマガジンへの登録などのとき、名前（ハンドルネーム）やメールアドレス等の個人情報をご登録いただく場合がございます。
+                </p>
+                <p>
+                  これらの個人情報は、質問に対する回答や必要な情報を電子メールなどでご連絡する場合に利用させていただくものです。
+                  個人情報をご提供いただくときの目的以外では利用いたしません。
+                </p>
+                <h2 id="個人情報の第三者への開示" style="position:relative;">
+                  <a
+                    href="#%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E3%81%AE%E7%AC%AC%E4%B8%89%E8%80%85%E3%81%B8%E3%81%AE%E9%96%8B%E7%A4%BA"
+                    aria-label="個人情報の第三者への開示 permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >個人情報の第三者への開示
+                </h2>
+                <p>
+                  本ブログでは、個人情報は適切に管理し、以下に該当する場合を除いて第三者に開示することはありません。
+                </p>
+                <ul>
+                  <li>本人のご了解がある場合</li>
+                  <li>法令等への協力のため、開示が必要となる場合</li>
+                </ul>
+                <h2
+                  id="個人情報の開示、訂正、追加、削除、利用停止"
+                  style="position:relative;"
+                >
+                  <a
+                    href="#%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E3%81%AE%E9%96%8B%E7%A4%BA%E3%80%81%E8%A8%82%E6%AD%A3%E3%80%81%E8%BF%BD%E5%8A%A0%E3%80%81%E5%89%8A%E9%99%A4%E3%80%81%E5%88%A9%E7%94%A8%E5%81%9C%E6%AD%A2"
+                    aria-label="個人情報の開示、訂正、追加、削除、利用停止 permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >個人情報の開示、訂正、追加、削除、利用停止
+                </h2>
+                <p>
+                  ご本人からの個人データの開示、訂正、追加、削除、利用停止のご希望の場合には、ご本人であることを確認させていただいた上、速やかに対応させていただきます。
+                  <a href="https://forms.gle/kBXLK6Krgdhruvhf6"
+                    >問い合わせフォーム</a
+                  >からお知らせください。
+                </p>
+                <h1 id="広告について" style="position:relative;">
+                  <a
+                    href="#%E5%BA%83%E5%91%8A%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                    aria-label="広告について permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >広告について
+                </h1>
+                <h2 id="google-adsense-について" style="position:relative;">
+                  <a
+                    href="#google-adsense-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                    aria-label="google adsense について permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >Google AdSense について
+                </h2>
+                <!-- textlint-disable ja-technical-writing/max-kanji-continuous-len -->
+                <p>
+                  本ブログは Google 及び Google
+                  のパートナー（第三者配信事業者）の提供する広告を設置しております。
+                  ユーザーの興味に応じた商品やサービスの広告を表示するため、Cookie
+                  を使用しております。 Cookie
+                  を使用することでお客様のコンピュータを識別できるようになりますが、お客様個人を特定できるものではありません。
+                  Cookie を無効にして、収集を拒否できます。
+                </p>
+                <!-- textlint-enable -->
+                <p>
+                  Cookie を無効にする方法や Google アドセンスに関する詳細は「<a
+                    href="https://policies.google.com/technologies/ads?gl=jp"
+                    title="広告 – ポリシーと規約 – Google"
+                    >広告 – ポリシーと規約 – Google</a
+                  >」をご確認ください。
+                </p>
+                <h2 id="amazon-アソシエイトについて" style="position:relative;">
+                  <a
+                    href="#amazon-%E3%82%A2%E3%82%BD%E3%82%B7%E3%82%A8%E3%82%A4%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                    aria-label="amazon アソシエイトについて permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >Amazon アソシエイトについて
+                </h2>
+                <!-- textlint-disable ja-technical-writing/sentence-length -->
+                <p>
+                  本ブログは、Amazon.co.jp
+                  を宣伝しリンクすることによってサイトが紹介料を獲得できる手段を提供することを目的に設定されたアフィリエイトプログラムである、Amazon
+                  アソシエイト・プログラムの参加者です。
+                </p>
+                <!-- textlint-enable -->
+                <p>
+                  第三者がコンテンツおよび宣伝を提供し、訪問者から直接情報を収集し、訪問者のブラウザに
+                  Cookie を設定したりこれを認識したりする場合があります。
+                </p>
+                <h1 id="その他" style="position:relative;">
+                  <a
+                    href="#%E3%81%9D%E3%81%AE%E4%BB%96"
+                    aria-label="その他 permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >その他
+                </h1>
+                <h2 id="アクセス解析ツールについて" style="position:relative;">
+                  <a
+                    href="#%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E8%A7%A3%E6%9E%90%E3%83%84%E3%83%BC%E3%83%AB%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                    aria-label="アクセス解析ツールについて permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >アクセス解析ツールについて
+                </h2>
+                <p>
+                  本ブログでは、サイトの分析と改善のために Google
+                  によるアクセス解析ツール「Google
+                  アナリティクス」を利用しています。
+                </p>
+                <p>
+                  Google アナリティクスは、トラフィックデータの収集のために
+                  Cookie を使用しております。
+                  トラフィックデータは匿名で収集されており、個人を特定するものではありません。
+                  Cookie を無効にして、収集を拒否できます。
+                </p>
+                <p>
+                  詳しくは「<a
+                    href="https://marketingplatform.google.com/about/analytics/terms/jp/"
+                    title="Google アナリティクス利用規約"
+                    >Google アナリティクス利用規約</a
+                  >」をご覧ください。
+                </p>
+                <h2 id="コメントについて" style="position:relative;">
+                  <a
+                    href="#%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                    aria-label="コメントについて permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >コメントについて
+                </h2>
+                <p>
+                  本ブログへのコメントを残す際に、IP アドレスを収集しています。
+                  これはブログの標準機能としてサポートされている機能で、スパムや荒らしへの対応以外にこの
+                  IP アドレスを使用することはありません。
+                  全てのコメントは管理人が事前にその内容を確認し、承認した上での掲載となります。
+                  あらかじめご了承ください。
+                </p>
+                <h2 id="プライバシーポリシーの遵守" style="position:relative;">
+                  <a
+                    href="#%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E9%81%B5%E5%AE%88"
+                    aria-label="プライバシーポリシーの遵守 permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >プライバシーポリシーの遵守
+                </h2>
+                <p>
+                  本ブログは、個人情報に関して適用される日本の法令を遵守するとともに、本ポリシーの内容を適宜見直しその改善に努めます。
+                </p>
+              </section>
+            </div>
+          </article>
+        </main>
+        <footer
+          class="Footer-module--Footer--IKo1c style-module--footer--9c4_H style-module--footer--1SUYs"
+          id="footer"
+        >
+          <div
+            class="Footer-module--Container--2Nrgw style-module--container--3AqXn"
+          >
+            <nav
+              aria-label="フッタナビゲーション"
+              class="FooterNav-module--Nav--2mlZh style-module--nav--czMli style-module--nav--2YeU6 style-module--nav--2RIKo style-module--navBase--HCXnn style-module--navResetBase--3SAPV style-module--navGapX--29Fw0"
+            >
+              <ul
+                class="FooterNav-module--List--1flOl style-module--list--1A5g7 style-module--navList--v4rzB style-module--navList--OiCxZ"
+              >
+                <li>
+                  <a
+                    aria-current="page"
+                    class="FooterNav-module--Link--19XVo style-module--link--2gjWR style-module--navLink--GVTHv style-module--navLink--3hKW5 style-module--navLinkBase--2fj2N style-module--navLinkResetBase--3iJ7p style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi style-module--alignTextCenterCrossAxis--rB1De"
+                    href="/privacy-policy/"
+                    >プライバシーポリシー</a
+                  >
+                </li>
+              </ul>
+              <ul
+                class="FooterNav-module--List--1flOl style-module--list--1A5g7 style-module--navList--v4rzB style-module--navList--OiCxZ"
+              >
+                <li>
+                  <span
+                    class="FooterNav-module--Link--19XVo style-module--link--2gjWR style-module--navLink--GVTHv style-module--navLink--3hKW5 style-module--navLinkBase--2fj2N style-module--navLinkResetBase--3iJ7p style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi style-module--alignTextCenterCrossAxis--rB1De"
+                    ><label
+                      class="I18nMode-module--I18nMode--20LXx style-module--toggleIcon--2WGvE style-module--alignTextCenter--3QZzC style-module--alignTextCenterMainAxis--2L_MI style-module--alignTextCenterCrossAxis--rB1De"
+                      ><input
+                        aria-label="英語アイコン"
+                        class="I18nMode-module--Checkbox--3wVcx style-module--checkbox--JlgzU"
+                        data-testid="i18nModeCheckbox"
+                        type="checkbox"
+                      /><span
+                        class="I18nMode-module--Icon--NAvhh style-module--icon--32Amx style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi"
+                        >🇺🇸</span
+                      ></label
+                    ></span
+                  >
+                </li>
+              </ul>
+            </nav>
+            <small
+              class="FooterNotice-module--Notice--2YVjT style-module--notice--37NzE style-module--notice--2F2RY style-module--alignTextCenterMainAxis--2L_MI"
+              >©2020-2021<a
+                class="FooterNotice-module--Account--26YeD style-module--account--2o02N"
+                href="https://github.com/kuro-kuroite/"
+                >@kuro-kuroite</a
+              ></small
+            >
+          </div>
+        </footer>
+      </div>
+    </div>
+    <div
+      id="gatsby-announcer"
+      aria-live="assertive"
+      aria-atomic="true"
+      style="position: absolute; top: 0px; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border: 0px;"
+    ></div>
+  </div>
+  <script src="/polyfill.js" nomodule=""></script>
+  <script src="/commons.js"></script>
+  <div id="query-on-demand-indicator-element"></div>
+</body>
+`;
