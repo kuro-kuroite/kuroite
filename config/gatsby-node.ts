@@ -65,6 +65,17 @@ export const createPages: GatsbyNode['createPages'] = async ({
           title
         }
       }
+      privacyPolicy: markdownRemark(
+        frontmatter: { status: { ne: "draft" } }
+        fileAbsolutePath: { regex: "/content/privacy-policy/" }
+      ) {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+        }
+      }
     }
   `);
 
@@ -156,6 +167,30 @@ export const createPages: GatsbyNode['createPages'] = async ({
       },
       path: `/tags/${tag}/`,
     });
+  });
+
+  // NOTE: for privacyPolicy.tsx
+  if (!result.data?.privacyPolicy) {
+    return;
+  }
+
+  const privacyPolicy = result.data.privacyPolicy;
+  const privacyPolicyTemplate = path.resolve(
+    `./src/templates/privacyPolicy.tsx`
+  );
+
+  if (!privacyPolicy.fields?.slug) {
+    reporter.panicOnBuild('no slug');
+
+    return;
+  }
+
+  createPage({
+    component: privacyPolicyTemplate,
+    context: {
+      slug: privacyPolicy.fields.slug,
+    },
+    path: privacyPolicy.fields.slug,
   });
 };
 
