@@ -1,0 +1,23 @@
+/*
+- PrivacyPolicy
+  - Title
+  - ~~Info~~
+  - Container
+    - ~~Toc~~
+    - Body */
+
+.PrivacyPolicy {
+  composes: item from '../../css/domain/blogs/item/style.module.css';
+}
+
+.Title {
+  composes: title from '../../css/domain/blog/page/style.module.css';
+}
+
+.Container {
+  composes: container from '../../css/domain/blog/page/style.module.css';
+}
+
+.Body {
+  composes: body from '../../css/domain/blog/page/style.module.css';
+}

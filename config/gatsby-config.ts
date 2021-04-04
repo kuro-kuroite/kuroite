@@ -59,6 +59,13 @@ const gatsbyConfig: GatsbyConfig = {
     },
     {
       options: {
+        name: 'privacyPolicy',
+        path: path.resolve('./content/privacy-policy'),
+      },
+      resolve: 'gatsby-source-filesystem',
+    },
+    {
+      options: {
         name: 'assets',
         path: path.resolve('./content/assets'),
       },

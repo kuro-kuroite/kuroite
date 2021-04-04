@@ -61,6 +61,17 @@ const useDummy = () => {
           title
         }
       }
+      privacyPolicy: markdownRemark(
+        frontmatter: { status: { ne: "draft" } }
+        fileAbsolutePath: { regex: "/content/privacy-policy/" }
+      ) {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+        }
+      }
     }
   `);
 };
