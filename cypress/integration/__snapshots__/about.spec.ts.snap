@@ -1,0 +1,1323 @@
+exports[`/about/ > ロードした時に，dark modeとlight modeのアクセシビリティを確認する #0`] = `
+<body data-theme="light">
+  <div id="___gatsby">
+    <div tabindex="-1" id="gatsby-focus-wrapper" style="outline: none;">
+      <div
+        class="Layout-module--Container--2G9pG style-module--container--3PyyC style-module--fluidFixedContainer--2yxvz style-module--selection--GwGAU"
+      >
+        <header
+          class="Header-module--Header--2RVH9 style-module--header--1Xeo8"
+        >
+          <nav
+            aria-label="ヘッダナビゲーション"
+            class="HeaderNav-module--Nav--2TeHa style-module--nav--HHN5D style-module--nav--2fXC0 style-module--nav--2RIKo style-module--navBase--HCXnn style-module--navResetBase--3SAPV"
+          >
+            <a
+              aria-label="Kuroite"
+              class="LogoLink-module--Banner--2dr1Y style-module--banner--1VzaQ style-module--banner--129Ru style-module--alignTextCenterCrossAxis--rB1De"
+              data-brand="Kuroite"
+              href="/"
+              ><svg
+                aria-label="Kuroite"
+                height="1em"
+                role="img"
+                viewBox="0 0 52 52"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+                class="LogoLink-module--Icon--1vBHx style-module--icon--36FQM"
+              >
+                <g transform="translate(0,52) scale(0.1,-0.1)">
+                  <path
+                    d="M145 499c-95 -47 -145 -129 -145 -237l0 -67 98 -98 97 -97 66 0
+c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
+-130 135 -60 28 -173 29 -230 0z m197 -95c78 -40 113 -162 69 -241 -56 -99
+-185 -123 -268 -50 -64 56 -81 142 -43 217 44 86 152 119 242 74z"
+                    fill="#e44d26"
+                  ></path>
+                  <circle cx="452%" cy="435%" fill="#dd3a0a" r="95"></circle>
+                </g></svg
+            ></a>
+            <div
+              class="HeaderMenu-module--Menu--2tYBj style-module--menu--2U_lf style-module--menu--lPjGj style-module--navGapX--29Fw0"
+            >
+              <ul
+                class="HeaderMenuPageList-module--List--2xFv1 style-module--navList--20xmI style-module--navList--OiCxZ style-module--navGapX--29Fw0"
+              >
+                <li>
+                  <a
+                    class="HeaderMenuPageItem-module--Link--3ZTg_ style-module--navLink--2pVl8 style-module--navLink--3hKW5 style-module--navLinkBase--2fj2N style-module--navLinkResetBase--3iJ7p style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi style-module--alignTextCenterCrossAxis--rB1De style-module--alignTextCenter--3QZzC style-module--alignTextCenterMainAxis--2L_MI style-module--alignTextCenterCrossAxis--rB1De"
+                    href="/"
+                    >blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    aria-current="page"
+                    class="HeaderMenuPageItem-module--Link--3ZTg_ style-module--navLink--2pVl8 style-module--navLink--3hKW5 style-module--navLinkBase--2fj2N style-module--navLinkResetBase--3iJ7p style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi style-module--alignTextCenterCrossAxis--rB1De style-module--alignTextCenter--3QZzC style-module--alignTextCenterMainAxis--2L_MI style-module--alignTextCenterCrossAxis--rB1De"
+                    href="/about/"
+                    >about</a
+                  >
+                </li>
+              </ul>
+              <ul
+                class="HeaderMenuIconList-module--List--2X9Su style-module--navList--20xmI style-module--navList--OiCxZ style-module--navGapX--29Fw0"
+              >
+                <li
+                  class="HeaderMenuIconList-module--InvisibleSm--3h9As style-module--invisibleSm--1Jv-n"
+                >
+                  <a
+                    aria-label="RSSフィード"
+                    class="RssFeedLink-module--Link--2uMoE style-module--navIconLink--1yMim style-module--icon--36FQM style-module--navLink--2pVl8 style-module--navLink--3hKW5 style-module--navLinkBase--2fj2N style-module--navLinkResetBase--3iJ7p style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi style-module--alignTextCenterCrossAxis--rB1De style-module--alignTextCenter--3QZzC style-module--alignTextCenterMainAxis--2L_MI style-module--alignTextCenterCrossAxis--rB1De"
+                    href="/rss.xml"
+                    ><svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="6.18" cy="17.82" r="2.18"></circle>
+                      <path
+                        d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"
+                      ></path></svg
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    aria-label="GitHubアカウントページ"
+                    class="GitHubLink-module--Link--1XkgK style-module--navIconLink--1yMim style-module--icon--36FQM style-module--navLink--2pVl8 style-module--navLink--3hKW5 style-module--navLinkBase--2fj2N style-module--navLinkResetBase--3iJ7p style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi style-module--alignTextCenterCrossAxis--rB1De style-module--alignTextCenter--3QZzC style-module--alignTextCenterMainAxis--2L_MI style-module--alignTextCenterCrossAxis--rB1De"
+                    href="https://github.com/kuro-kuroite/"
+                    rel="nofollow noopener noreferrer"
+                    target="_blank"
+                    ><svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 16 16"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z"
+                      ></path></svg
+                  ></a>
+                </li>
+                <li>
+                  <span
+                    class="DarkMode-module--Link--2GBnz style-module--navIconLink--1yMim style-module--icon--36FQM style-module--navLink--2pVl8 style-module--navLink--3hKW5 style-module--navLinkBase--2fj2N style-module--navLinkResetBase--3iJ7p style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi style-module--alignTextCenterCrossAxis--rB1De style-module--alignTextCenter--3QZzC style-module--alignTextCenterMainAxis--2L_MI style-module--alignTextCenterCrossAxis--rB1De"
+                    ><label
+                      aria-label="ダークモードリンク"
+                      class="DarkMode-module--DarkMode--20ujG style-module--toggleIcon--2WGvE style-module--alignTextCenter--3QZzC style-module--alignTextCenterMainAxis--2L_MI style-module--alignTextCenterCrossAxis--rB1De"
+                      ><input
+                        aria-label="ダークモードアイコン"
+                        class="DarkMode-module--Checkbox--1iH8T style-module--checkbox--JlgzU"
+                        data-testid="darkModeCheckbox"
+                        type="checkbox"/><svg
+                        fill="currentColor"
+                        height="1em"
+                        viewBox="0 0 20 20"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="DarkMode-module--Icon--VVlyR style-module--icon--32Amx style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi"
+                      >
+                        <path
+                          d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                        ></path></svg></label
+                  ></span>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <main>
+          <article class="About-module--About--1R2Lm style-module--item--3o65B">
+            <div class="">
+              <div
+                class="ProgressBar-module--ProgressBar--1IFsK style-module--item--pVOHs style-module--item--2PYwb style-module--background--3Rp-P style-module--default--3DaCK style-module--background--1pzLA style-module--background--3Rp-P style-module--default--3DaCK"
+                style="width: 0%;"
+              ></div>
+            </div>
+            <h1
+              class="About-module--Title--3NgkC style-module--title--2wnh2 style-module--title--1djjC"
+            >
+              About
+            </h1>
+            <small
+              aria-label="ブログ info"
+              class="BlogInfo-module--BlogInfo--1qWaB style-module--info--27_J5"
+              ><span
+                class="UpdatedAt-module--UpdatedAt--gDdEt style-module--text--2dYga"
+                ><svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="UpdatedAt-module--WithIcon--1lN-I style-module--icon--1s7rL"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79 2.73 2.71 7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58 3.51-3.47 9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"
+                  ></path></svg
+                >05/01/2015</span
+              ><span
+                class="CreatedAt-module--CreatedAt--mkugj style-module--createdAt--2ZN8K style-module--text--2dYga"
+                >(<svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="CreatedAt-module--WithIcon--2l4OR style-module--icon--1s7rL"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path
+                      d="M12.9 6.858l4.242 4.243L7.242 21H3v-4.243l9.9-9.9zm1.414-1.414l2.121-2.122a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414l-2.122 2.121-4.242-4.242z"
+                    ></path>
+                  </g></svg
+                >05/01/2015)</span
+              >
+              <nav
+                aria-label="About タグナビゲーション"
+                class="TagIconList-module--TagIconList--1Rly_ style-module--list--2WXKP style-module--list--2rlgH"
+              >
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  class="TagIconList-module--WithIcon--JDhpK style-module--icon--1NrNW style-module--icon--1s7rL"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"
+                  ></path>
+                </svg>
+                <ul
+                  class="TagIconList-module--IconList--2nZPl style-module--linkList--3xVdB style-module--list--2rlgH"
+                >
+                  <li>
+                    <a
+                      class="TagIcon-module--TagIcon--1XXn1 style-module--iconLink--3K-F4"
+                      href="/tags/About/"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="TagIcon-module--TagIcon--1XXn1 style-module--iconLink--3K-F4"
+                      href="/tags/活動記録/"
+                      >活動記録</a
+                    >
+                  </li>
+                </ul>
+              </nav></small
+            >
+            <div
+              class="About-module--Container--2tXAC style-module--container--1N0GU"
+            >
+              <nav
+                aria-label="目次コンテナ"
+                class="Toc-module--WrappedNav--172uT style-module--wrappedNav--1mSxP style-module--wrappedNav--5Mw4_"
+              >
+                <button
+                  aria-label="目次を隠す"
+                  class="Toc-module--Blind--1yuyQ style-module--blind--D-1eZ"
+                ></button>
+                <div
+                  class="Toc-module--Container--2lR8p style-module--container--3jD1D"
+                >
+                  <h1
+                    class="Toc-module--Title--HXpvp style-module--title--Jo98H"
+                  >
+                    目次
+                  </h1>
+                  <nav
+                    aria-label="目次ナビゲーション"
+                    class="Toc-module--Toc--4Wa-t style-module--item--2_1Aq style-module--wrapTransition--2hKxr style-module--default--3NGIw"
+                  >
+                    <ul>
+                      <li>
+                        <p>
+                          <a
+                            href="#%E3%81%93%E3%81%AE%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                            >このブログについて</a
+                          >
+                        </p>
+                        <ul>
+                          <li>
+                            <a
+                              href="#%E7%9B%AE%E7%9A%84%EF%BC%88%E3%83%A2%E3%83%81%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%EF%BC%89"
+                              >目的（モチベーション）</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#%E8%A8%98%E4%BA%8B%E5%86%85%E5%AE%B9"
+                              >記事内容</a
+                            >
+                          </li>
+                          <li><a href="#%E6%A7%8B%E6%88%90">構成</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p>
+                          <a href="#%E8%87%AA%E5%B7%B1%E7%B4%B9%E4%BB%8B"
+                            >自己紹介</a
+                          >
+                        </p>
+                        <ul>
+                          <li>
+                            <a href="#%E3%82%B9%E3%82%AD%E3%83%AB">スキル</a>
+                          </li>
+                          <li>
+                            <a
+                              href="#%E5%A5%BD%E3%81%8D%E3%81%AA%E3%82%82%E3%81%AE"
+                              >好きなもの</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#%E8%88%88%E5%91%B3%E3%81%8C%E3%81%82%E3%82%8B%E3%82%82%E3%81%AE"
+                              >興味があるもの</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p>
+                          <a href="#%E6%B4%BB%E5%8B%95%E8%A8%98%E9%8C%B2"
+                            >活動記録</a
+                          >
+                        </p>
+                        <ul>
+                          <li>
+                            <a
+                              href="#%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%EF%BC%88sns%EF%BC%89"
+                              >アカウント（SNS）</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#%E9%96%A2%E5%BF%83%E6%8A%80%E8%A1%93%E3%81%AE%E7%8D%B2%E5%BE%97%E5%A0%B4%E6%89%80"
+                              >関心技術の獲得場所</a
+                            >
+                          </li>
+                          <li><a href="#%E5%B1%A5%E6%AD%B4">履歴</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#%E8%AC%9D%E8%BE%9E">謝辞</a></li>
+                    </ul>
+                  </nav>
+                  <button
+                    aria-label="目次ボタン"
+                    class="TocIcon-module--TocIcon--3aHzv style-module--button--3BZx8 style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi style-module--default---u35i"
+                  >
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </nav>
+              <section
+                class="About-module--Body--2Qpyb style-module--body--1kkLX"
+              >
+                <h1 id="このブログについて" style="position:relative;">
+                  <a
+                    href="#%E3%81%93%E3%81%AE%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+                    aria-label="このブログについて permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >このブログについて
+                </h1>
+                <p>
+                  モダンな Web フロントエンドの技術を中心に発信する技術ブログ。
+                </p>
+                <h2 id="目的（モチベーション）" style="position:relative;">
+                  <a
+                    href="#%E7%9B%AE%E7%9A%84%EF%BC%88%E3%83%A2%E3%83%81%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%EF%BC%89"
+                    aria-label="目的（モチベーション） permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >目的（モチベーション）
+                </h2>
+                <ul>
+                  <li>
+                    個人的なアウトプットの場として、自前のブログが欲しかったため
+                  </li>
+                  <li>
+                    UI ライブラリである React
+                    などを使ったポートフォリオを、他の人に自慢したいレベルで作り込みたかったため
+                  </li>
+                  <li>
+                    静的サイトジェネレーター（Gatsby.js）を学習し、短時間で Web
+                    ページ（ブログ）を作成するやり方を身につけるため
+                  </li>
+                </ul>
+                <h2 id="記事内容" style="position:relative;">
+                  <a
+                    href="#%E8%A8%98%E4%BA%8B%E5%86%85%E5%AE%B9"
+                    aria-label="記事内容 permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >記事内容
+                </h2>
+                <p>主に以下の内容を、発信する。</p>
+                <ul>
+                  <li>記事</li>
+                  <li>備忘録</li>
+                  <li>活動記録</li>
+                  <li>Tips</li>
+                  <li>個人的ベストプラクティス</li>
+                  <li>ままならない仕様</li>
+                  <li>ままならない現実</li>
+                </ul>
+                <!-- TODO(MDX): ここにReact, ...のtagをいれる -->
+                <h2 id="構成" style="position:relative;">
+                  <a
+                    href="#%E6%A7%8B%E6%88%90"
+                    aria-label="構成 permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >構成
+                </h2>
+                <p>以下の技術を使い、このブログを構成している。</p>
+                <h3 id="gatsbyjs（react）" style="position:relative;">
+                  <a
+                    href="#gatsbyjs%EF%BC%88react%EF%BC%89"
+                    aria-label="gatsbyjs（react） permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >Gatsby.js（React）
+                </h3>
+                <p>
+                  UI ライブラリの React を使った静的サイトジェネレーター（SSG）
+                </p>
+                <p>
+                  フロントエンド側の知識吸収に集中するため（サーバーサイドをトレードオフ）。
+                  React コンポーネントの実装に集中するため（+α 部分（SEO や PWA
+                  等）を、プラグインや少しのプログラムで実装）
+                </p>
+                <p>
+                  ※ 当時（03/2020）、Next.js で Router の設定が必要であり、また
+                  SSG 以外の学習コストも高いため Gatsby.js を選択。
+                </p>
+                <h3 id="typescript" style="position:relative;">
+                  <a
+                    href="#typescript"
+                    aria-label="typescript permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >TypeScript
+                </h3>
+                <p>JavaScript にトランスパイルする漸進的型付け言語。</p>
+                <p>
+                  デファクトスタンダードであるため（ビルド環境の構築コストをトレードオフ）。
+                  型の補完で、タイプミスを防止するため（型設計の学習コストをトレードオフ）
+                </p>
+                <h3
+                  id="postcss（with-tailwind-css-and-css-modules）"
+                  style="position:relative;"
+                >
+                  <a
+                    href="#postcss%EF%BC%88with-tailwind-css-and-css-modules%EF%BC%89"
+                    aria-label="postcss（with tailwind css and css modules） permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >PostCSS（with Tailwind CSS and CSS Modules）
+                </h3>
+                <p>CSS に変換する JavaScript ライブラリ。</p>
+                <p>
+                  他のライブラリ（Tailwind CSS 等）を PostCSS 環境 1
+                  つにまとめ、Next.js への移行コストを抑えるため。
+                  ポリフィル（ブラウザ間の仕様の差異を吸収、Draft
+                  構文、例えばネスティング等）を使用するため（ビルド環境の構築コストをトレードオフ）
+                </p>
+                <h3 id="tailwind-css" style="position:relative;">
+                  <a
+                    href="#tailwind-css"
+                    aria-label="tailwind css permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >Tailwind CSS
+                </h3>
+                <p>カスタマイズできるユーティリティー CSS フレームワーク。</p>
+                <p>
+                  CSS 内で、厳選された@apply クラスを使用し、一貫した UI
+                  になるため（ビルド環境の構築コストをトレードオフ）。
+                  具体値（10px、100％）を config
+                  にまとめられるため（設定項目の学習コストをトレードオフ）
+                </p>
+                <h3 id="css-modules" style="position:relative;">
+                  <a
+                    href="#css-modules"
+                    aria-label="css modules permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >CSS Modules
+                </h3>
+                <p>CSS セレクターに擬似的な名前空間を提供するライブラリ。</p>
+                <p>
+                  セレクター名が短くなる（他のライブラリ（クラスセレクターを使用）に合わせた余計な設定をトレードオフ）。
+                  composes
+                  構文を使い、共通スタイルを分離できる（ビルド環境の構築コストをトレードオフ）
+                </p>
+                <h3 id="その他" style="position:relative;">
+                  <a
+                    href="#%E3%81%9D%E3%81%AE%E4%BB%96"
+                    aria-label="その他 permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >その他
+                </h3>
+                <ul>
+                  <li>GraphQL</li>
+                  <li>
+                    <p>Redux Toolkit</p>
+                    <ul>
+                      <li>React-i18Next.js</li>
+                    </ul>
+                  </li>
+                  <li>tailwind-theming</li>
+                  <li>
+                    <p>GitHub Actions</p>
+                    <ul>
+                      <li>Renovate</li>
+                      <li>commitlint</li>
+                      <li>textlint</li>
+                      <li>ESLint</li>
+                      <li>
+                        <p>Prettier</p>
+                        <ul>
+                          <li>EditorConfig</li>
+                        </ul>
+                      </li>
+                      <li>stylelint</li>
+                    </ul>
+                  </li>
+                  <li>Netlify</li>
+                  <li>
+                    <p>Test</p>
+                    <ul>
+                      <li>
+                        <p>Jest</p>
+                        <ul>
+                          <li>React Testing Library</li>
+                        </ul>
+                      </li>
+                      <li>Storybook</li>
+                      <li>Cypress</li>
+                    </ul>
+                  </li>
+                </ul>
+                <h4>aside: Kuroite ロゴの由来 v2</h4>
+                <ul>
+                  <li>黒+黒い手+黒いカラスの目（crow eye）をモチーフ</li>
+                  <li>
+                    <p>
+                      何かを手に入れるには何かを捨てなければならないトレードオフの考えを、清濁のある左手（黒い手）として表現
+                    </p>
+                    <ul>
+                      <li>
+                        有害な液体かつ資源でもある黒い石油を手ですくいあげると指の間から石油がたれてしまう光景をモチーフ
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>
+                      ドキュメントの海(Web)から良きやり方（標準）を探し続ける意思を、カラスの目として表現
+                    </p>
+                    <ul>
+                      <li>
+                        カラスがゴミ捨て場から良き餌を探し当てる鋭い目をモチーフ
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>
+                      中心の真円は、PostCSS のマスタを目指し、理想の UI
+                      に寄せるイメージ
+                    </p>
+                    <ul>
+                      <li>真円は、完璧なマスタを目指すイメージ</li>
+                      <li>
+                        中心とのずれは、理想の UI
+                        に寄せるが、完璧を目指さない（可読性と実装しやすさを優先したトレードオフ）
+                      </li>
+                      <li>色は、PostCSS のメインカラー</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>
+                      外側の欠けた円は、HTML5（宣言的な View）、すなわち
+                      TSX（React）に主軸を置くイメージ
+                    </p>
+                    <ul>
+                      <li>
+                        ロゴの中心と外側の欠けた円の中心の一致は、React
+                        関連技術を主軸とするイメージ
+                      </li>
+                      <li>
+                        <p>
+                          欠けた円は、コード分割でテストしやすさを高めるが、カバレッジ
+                          100％を目指さない
+                        </p>
+                        <ul>
+                          <li>
+                            （非純粋や副作用、サービス間の型の不一致を、余分な型生成やモックテストで代用するトレードオフ）
+                          </li>
+                        </ul>
+                      </li>
+                      <li>色は、同系色の HTML5 のカラー</li>
+                    </ul>
+                  </li>
+                </ul>
+                <h1 id="自己紹介" style="position:relative;">
+                  <a
+                    href="#%E8%87%AA%E5%B7%B1%E7%B4%B9%E4%BB%8B"
+                    aria-label="自己紹介 permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >自己紹介
+                </h1>
+                <p>React を得意とする Web Developer。</p>
+                <h2 id="スキル" style="position:relative;">
+                  <a
+                    href="#%E3%82%B9%E3%82%AD%E3%83%AB"
+                    aria-label="スキル permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >スキル
+                </h2>
+                <p>
+                  以下のスキルを得意とする。取消線のスキルは、未完または忘却を表す。
+                </p>
+                <ul>
+                  <li>
+                    <p>Gatsby.js</p>
+                    <ul>
+                      <li><del>GraphQL</del></li>
+                      <li><del>Storybook v6</del></li>
+                      <li><del>Jest</del></li>
+                      <li><del>Cypress</del></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>React</p>
+                    <ul>
+                      <li>Hooks</li>
+                      <li>VFC</li>
+                      <li><del>Redux Toolkit</del></li>
+                      <li>Atomic Design</li>
+                      <li><del>webpack</del></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>TypeScript</p>
+                    <ul>
+                      <li>type</li>
+                      <li><del>npm からライブラリの型を探すこと</del></li>
+                      <li>
+                        <p>ES2015+</p>
+                        <ul>
+                          <li>async、await</li>
+                        </ul>
+                      </li>
+                      <li>Babel</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>PostCSS</p>
+                    <ul>
+                      <li>
+                        <p>CSS Modules</p>
+                        <ul>
+                          <li>composes</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p>Tailwind CSS</p>
+                        <ul>
+                          <li>@apply</li>
+                        </ul>
+                      </li>
+                      <li>BEM</li>
+                      <li>Flexbox</li>
+                      <li><del>SCSS</del></li>
+                      <li><del>Stylus</del></li>
+                    </ul>
+                  </li>
+                  <li>Git</li>
+                  <li>
+                    <p>GitHub</p>
+                    <ul>
+                      <li>Markdown</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>GitHub Actions</p>
+                    <ul>
+                      <li>
+                        <p>Docker</p>
+                        <ul>
+                          <li><del>docker-compose</del></li>
+                          <li>
+                            <p><del>Vagrant</del></p>
+                            <ul>
+                              <li><del>VirtualBox</del></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>npm-scripts</p>
+                    <ul>
+                      <li><del>shell script</del></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><del>Ruby on Rails(v5.1.x)</del></p>
+                    <ul>
+                      <li><del>RSpec</del></li>
+                    </ul>
+                  </li>
+                  <li><del>Python</del></li>
+                </ul>
+                <h2 id="好きなもの" style="position:relative;">
+                  <a
+                    href="#%E5%A5%BD%E3%81%8D%E3%81%AA%E3%82%82%E3%81%AE"
+                    aria-label="好きなもの permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >好きなもの
+                </h2>
+                <ul>
+                  <li>お菓子</li>
+                  <li>ボードゲーム</li>
+                  <li>マリオ</li>
+                  <li>転生したらスライムだった件</li>
+                  <li>Apple</li>
+                  <li>React</li>
+                  <li>Hygen</li>
+                  <li>patch-package</li>
+                </ul>
+                <h2 id="興味があるもの" style="position:relative;">
+                  <a
+                    href="#%E8%88%88%E5%91%B3%E3%81%8C%E3%81%82%E3%82%8B%E3%82%82%E3%81%AE"
+                    aria-label="興味があるもの permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >興味があるもの
+                </h2>
+                <details>
+                  <summary>
+                    技術
+                  </summary>
+                  <div style="display: flex;">
+                    <ul>
+                      <li>
+                        <p>Next.js</p>
+                        <ul>
+                          <li>
+                            SSG（サーバーレス）、SSR + マイクロサービス（XaaS）
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p>React</p>
+                        <ul>
+                          <li>Concurrent Mode</li>
+                          <li>Server Components</li>
+                          <li>React Native、Expo</li>
+                          <li>多対多 Redux</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p>Go</p>
+                        <ul>
+                          <li>並行処理</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p>TypeScript</p>
+                        <ul>
+                          <li>バリデーション</li>
+                          <li>npm-scripts</li>
+                          <li>top-level await</li>
+                          <li>aspida(or GraphQL)</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p>型レベルプログラミング</p>
+                        <ul>
+                          <li>
+                            <p>TypeScript</p>
+                            <ul>
+                              <li>Template literal types</li>
+                              <li>infer</li>
+                              <li>extends</li>
+                            </ul>
+                          </li>
+                          <li>Elm</li>
+                          <li>
+                            <p>Haskell</p>
+                            <ul>
+                              <li>ADT</li>
+                            </ul>
+                          </li>
+                          <li>Swift</li>
+                          <li>JSON</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p>Web</p>
+                        <ul>
+                          <li>Accessibility</li>
+                          <li>SVG</li>
+                          <li><del>styled-components</del></li>
+                          <li><del>deno</del></li>
+                          <li><del>Vue.js</del></li>
+                          <li>
+                            <p>build</p>
+                            <ul>
+                              <li><del>esbuild</del></li>
+                              <li><del>Snowpack</del></li>
+                              <li><del>rome</del></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><del>Raspberry Pi</del></p>
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+
+                <!-- HACK: for details + li -->
+                <br />
+                <ul>
+                  <li>
+                    <p>活動</p>
+                    <ul>
+                      <li>勉強会</li>
+                      <li>記事投稿</li>
+                      <li>動画投稿</li>
+                      <li>ドキュメント翻訳</li>
+                      <li>書籍執筆</li>
+                    </ul>
+                  </li>
+                  <li>ワールドトリガー</li>
+                </ul>
+                <h1 id="活動記録" style="position:relative;">
+                  <a
+                    href="#%E6%B4%BB%E5%8B%95%E8%A8%98%E9%8C%B2"
+                    aria-label="活動記録 permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >活動記録
+                </h1>
+                <h2 id="アカウント（sns）" style="position:relative;">
+                  <a
+                    href="#%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%EF%BC%88sns%EF%BC%89"
+                    aria-label="アカウント（sns） permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >アカウント（SNS）
+                </h2>
+                <ul>
+                  <li>
+                    <a href="https://twitter.com/kuro_kuroite">Twitter</a>
+                  </li>
+                  <li><a href="https://github.com/kuro-kuroite">GitHub</a></li>
+                </ul>
+                <h2 id="関心技術の獲得場所" style="position:relative;">
+                  <a
+                    href="#%E9%96%A2%E5%BF%83%E6%8A%80%E8%A1%93%E3%81%AE%E7%8D%B2%E5%BE%97%E5%A0%B4%E6%89%80"
+                    aria-label="関心技術の獲得場所 permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >関心技術の獲得場所
+                </h2>
+                <!-- 参加イベント・グループ -->
+                <p>主に、以下のサイトや個人ブログから新規技術情報を取得。</p>
+                <ul>
+                  <li>Qiita のトレンド、タグページ</li>
+                  <li>はてなブックマークのテクノロジー、関心 Word 一覧</li>
+                  <li>Twitter のタイムライン</li>
+                </ul>
+                <p>以下の公式ページから、その技術情報の使い方を学習。</p>
+                <ul>
+                  <li>GitHub のリポジトリの README</li>
+                  <li>
+                    <p>npm</p>
+                    <ul>
+                      <li>ライブラリ公式ページの Docs</li>
+                    </ul>
+                  </li>
+                </ul>
+                <h2 id="履歴" style="position:relative;">
+                  <a
+                    href="#%E5%B1%A5%E6%AD%B4"
+                    aria-label="履歴 permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >履歴
+                </h2>
+                <ul>
+                  <li>2017/03-08: 教育メンター（Ruby on Rails コース）</li>
+                  <li>2018/06-02: Node.js（CoffeeScript2 → ES2015+）学習</li>
+                  <li>
+                    2019/03-12: 海外ボランティア（『Thinking in React | React
+                    公式チュートリアル』手書きコーティング）
+                  </li>
+                  <li>
+                    2020/03-05: Gatsby.js の学習を開始（Sketch Top
+                    ページを模写）
+                  </li>
+                  <li>2020/06- : 技術ブログ制作開始</li>
+                </ul>
+                <h1 id="謝辞" style="position:relative;">
+                  <a
+                    href="#%E8%AC%9D%E8%BE%9E"
+                    aria-label="謝辞 permalink"
+                    class="headerAnchor before"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                      ></path></svg></a
+                  >謝辞
+                </h1>
+                <!-- textlint-disable ja-technical-writing/no-exclamation-question-mark -->
+                <p>
+                  Gatsby.js を知ったきっかけは、以下の記事を読んだことです。
+                  パフォーマンスが高く、SEO と PWA もサポートしている React
+                  製の技術ブログが作れるのか。 Gatsby.js 最高、と感動しました!!
+                </p>
+                <!-- textlint-enable -->
+                <!-- textlint-disable ja-technical-writing/ja-no-successive-word -->
+                <ul>
+                  <li>
+                    <a href="https://qiita.com/hppRC/items/00739eaf9ae7fc95c1ca"
+                      >React の最強フレームワーク Gatsby.js
+                      の良さを伝えたい！！</a
+                    >
+                  </li>
+                </ul>
+                <!-- textlint-enable -->
+                <p>
+                  技術ブログ制作において、主に以下の技術ブログやページを参考にさせていただきました。
+                  とくに、<code>gatsby-*.ts</code>の設定や GraphQL
+                  のクエリの書き方、TSX の型付けについて、Gatsby.js
+                  公式ページに書かれていない部分も多く、参考になりました。
+                </p>
+                <ul>
+                  <li><a href="https://dnrsm.dev/">dnrsm.dev</a></li>
+                  <li><a href="https://blog.ojisan.io/">blog.ojisan.io</a></li>
+                  <li>
+                    <a
+                      href="https://qiita.com/Takepepe/items/144209f860fbe4d5e9bb"
+                      >Gatsby.js を完全 TypeScript 化する</a
+                    >
+                  </li>
+                  <li><a href="https://suzukalight.com/">suzukalight</a></li>
+                </ul>
+                <p>その感謝の印として、ここで謝辞を示します。</p>
+                <p>
+                  私と同じように、誰かがこの技術ブログを参考にして、Gatsby.js
+                  で技術ブログを制作してくれる日が来るのを願っています。
+                </p>
+              </section>
+            </div>
+            <div
+              class="Footer-module--Footer--3r3xE style-module--footer--2dfrN style-module--footer--sXF2Z"
+            >
+              <nav
+                aria-label="About フッタナビゲーション"
+                class="Footer-module--Nav--3tT25 style-module--nav--hp6iU style-module--nav--ddYMH"
+              >
+                <ul
+                  class="Footer-module--NavList--36b-h style-module--navList--3UlMZ style-module--navList--lmqTF style-module--navList--OiCxZ style-module--navGapX--29Fw0"
+                >
+                  <li>
+                    <ul
+                      class="Footer-module--NavList--36b-h style-module--navList--3UlMZ style-module--navList--lmqTF style-module--navList--OiCxZ style-module--navGapX--29Fw0"
+                    >
+                      <li>
+                        <a
+                          aria-label="Twitterで共有する"
+                          class="TwitterLink-module--TwitterLink--1UfJ_ style-module--navLink--1-0GS style-module--link--2v5Zx style-module--navLink--3hKW5 style-module--navLinkBase--2fj2N style-module--navLinkResetBase--3iJ7p style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi style-module--alignTextCenterCrossAxis--rB1De"
+                          href="https://twitter.com/intent/tweet?text=About%0ahttp://localhost:8000/about/"
+                          rel="nofollow noopener noreferrer"
+                          target="_blank"
+                          ><svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 24 24"
+                            height="1em"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g>
+                              <path fill="none" d="M0 0h24v24H0z"></path>
+                              <path
+                                d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
+                              ></path>
+                            </g></svg
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          aria-label="Hatenaブックマークで共有する"
+                          class="HatenaBookmarkLink-module--HatenaBookmarkLink--w_a9J style-module--navLink--1-0GS style-module--link--2v5Zx style-module--navLink--3hKW5 style-module--navLinkBase--2fj2N style-module--navLinkResetBase--3iJ7p style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi style-module--alignTextCenterCrossAxis--rB1De"
+                          href="http://b.hatena.ne.jp/add?mode=confirm&amp;title=About&amp;url=http://localhost:8000/about/"
+                          rel="nofollow noopener noreferrer"
+                          target="_blank"
+                          ><svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            aria-label="Hatena Bookmark Icon"
+                            height="1em"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title></title>
+                            <path
+                              d="M20.47 0C22.42 0 24 1.58 24 3.53v16.94c0 1.95-1.58 3.53-3.53 3.53H3.53C1.58 24 0 22.42 0 20.47V3.53C0 1.58 1.58 0 3.53 0h16.94zm-3.705 14.47c-.78 0-1.41.63-1.41 1.41s.63 1.414 1.41 1.414 1.41-.645 1.41-1.425-.63-1.41-1.41-1.41zM8.61 17.247c1.2 0 2.056-.042 2.58-.12.526-.084.976-.222 1.32-.412.45-.232.78-.564 1.02-.99s.36-.915.36-1.48c0-.78-.21-1.403-.63-1.87-.42-.48-.99-.734-1.74-.794.66-.18 1.156-.45 1.456-.81.315-.344.465-.824.465-1.424 0-.48-.103-.885-.3-1.26-.21-.36-.493-.645-.883-.87-.345-.195-.735-.315-1.215-.405-.464-.074-1.29-.12-2.474-.12H5.654v10.486H8.61zm.736-4.185c.705 0 1.185.088 1.44.262.27.18.39.495.39.93 0 .405-.135.69-.42.855-.27.18-.765.254-1.44.254H8.31v-2.297h1.05zm8.656.706v-7.06h-2.46v7.06H18zM8.925 9.08c.71 0 1.185.08 1.432.24.245.16.367.435.367.83 0 .38-.13.646-.39.804-.265.154-.747.232-1.452.232h-.57V9.08h.615z"
+                            ></path></svg
+                        ></a>
+                      </li>
+                      <li>
+                        <span
+                          aria-label="このページのリンクをコピーする"
+                          class="ClipboardLink-module--ClipboardLink--OaXR7 style-module--navLink--1-0GS style-module--link--2v5Zx style-module--navLink--3hKW5 style-module--navLinkBase--2fj2N style-module--navLinkResetBase--3iJ7p style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi style-module--alignTextCenterCrossAxis--rB1De"
+                          ><svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 16 16"
+                            height="1em"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M4.715 6.542L3.343 7.914a3 3 0 104.243 4.243l1.828-1.829A3 3 0 008.586 5.5L8 6.086a1.001 1.001 0 00-.154.199 2 2 0 01.861 3.337L6.88 11.45a2 2 0 11-2.83-2.83l.793-.792a4.018 4.018 0 01-.128-1.287z"
+                            ></path>
+                            <path
+                              d="M5.712 6.96l.167-.167a1.99 1.99 0 01.896-.518 1.99 1.99 0 01.518-.896l.167-.167A3.004 3.004 0 006 5.499c-.22.46-.316.963-.288 1.46z"
+                            ></path>
+                            <path
+                              d="M6.586 4.672A3 3 0 007.414 9.5l.775-.776a2 2 0 01-.896-3.346L9.12 3.55a2 2 0 012.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 00-4.243-4.243L6.586 4.672z"
+                            ></path>
+                            <path
+                              d="M10 9.5a2.99 2.99 0 00.288-1.46l-.167.167a1.99 1.99 0 01-.896.518 1.99 1.99 0 01-.518.896l-.167.167A3.004 3.004 0 0010 9.501z"
+                            ></path></svg
+                        ></span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </article>
+        </main>
+        <footer
+          class="Footer-module--Footer--IKo1c style-module--footer--9c4_H style-module--footer--1SUYs"
+          id="footer"
+        >
+          <div
+            class="Footer-module--Container--2Nrgw style-module--container--3AqXn"
+          >
+            <nav
+              aria-label="フッタナビゲーション"
+              class="FooterNav-module--Nav--2mlZh style-module--nav--czMli style-module--nav--2YeU6 style-module--nav--2RIKo style-module--navBase--HCXnn style-module--navResetBase--3SAPV style-module--navGapX--29Fw0"
+            >
+              <ul
+                class="FooterNav-module--List--1flOl style-module--list--1A5g7 style-module--navList--v4rzB style-module--navList--OiCxZ"
+              >
+                <li>
+                  <a
+                    class="FooterNav-module--Link--19XVo style-module--link--2gjWR style-module--navLink--GVTHv style-module--navLink--3hKW5 style-module--navLinkBase--2fj2N style-module--navLinkResetBase--3iJ7p style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi style-module--alignTextCenterCrossAxis--rB1De"
+                    href="/privacy-policy/"
+                    >プライバシーポリシー</a
+                  >
+                </li>
+              </ul>
+              <ul
+                class="FooterNav-module--List--1flOl style-module--list--1A5g7 style-module--navList--v4rzB style-module--navList--OiCxZ"
+              >
+                <li>
+                  <span
+                    class="FooterNav-module--Link--19XVo style-module--link--2gjWR style-module--navLink--GVTHv style-module--navLink--3hKW5 style-module--navLinkBase--2fj2N style-module--navLinkResetBase--3iJ7p style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi style-module--alignTextCenterCrossAxis--rB1De"
+                    ><label
+                      class="I18nMode-module--I18nMode--20LXx style-module--toggleIcon--2WGvE style-module--alignTextCenter--3QZzC style-module--alignTextCenterMainAxis--2L_MI style-module--alignTextCenterCrossAxis--rB1De"
+                      ><input
+                        aria-label="英語アイコン"
+                        class="I18nMode-module--Checkbox--3wVcx style-module--checkbox--JlgzU"
+                        data-testid="i18nModeCheckbox"
+                        type="checkbox"
+                      /><span
+                        class="I18nMode-module--Icon--NAvhh style-module--icon--32Amx style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi"
+                        >🇺🇸</span
+                      ></label
+                    ></span
+                  >
+                </li>
+              </ul>
+            </nav>
+            <small
+              class="FooterNotice-module--Notice--2YVjT style-module--notice--37NzE style-module--notice--2F2RY style-module--alignTextCenterMainAxis--2L_MI"
+              >©2020-2021<a
+                class="FooterNotice-module--Account--26YeD style-module--account--2o02N"
+                href="https://github.com/kuro-kuroite/"
+                >@kuro-kuroite</a
+              ></small
+            >
+          </div>
+        </footer>
+      </div>
+    </div>
+    <div
+      id="gatsby-announcer"
+      aria-live="assertive"
+      aria-atomic="true"
+      style="position: absolute; top: 0px; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border: 0px;"
+    ></div>
+  </div>
+  <script src="/polyfill.js" nomodule=""></script>
+  <script src="/commons.js"></script>
+  <div id="query-on-demand-indicator-element"></div>
+</body>
+`;
