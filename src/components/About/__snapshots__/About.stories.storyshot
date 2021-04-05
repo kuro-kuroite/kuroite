@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots components/Blog Blog 1`] = `
+exports[`Storyshots components/About About 1`] = `
 <div
   style={
     Object {
@@ -21,7 +21,7 @@ exports[`Storyshots components/Blog Blog 1`] = `
     <div>
       <main>
         <article
-          className="Blog"
+          className="About"
         >
           <div
             className=""
@@ -38,7 +38,7 @@ exports[`Storyshots components/Blog Blog 1`] = `
           <h1
             className="Title"
           >
-            React Gatsby
+            About
           </h1>
           <small
             aria-label="ブログ info"
@@ -101,7 +101,7 @@ exports[`Storyshots components/Blog Blog 1`] = `
               )
             </span>
             <nav
-              aria-label="React Gatsby タグナビゲーション"
+              aria-label="About タグナビゲーション"
               className="TagIconList"
             >
               <svg
@@ -153,11 +153,11 @@ exports[`Storyshots components/Blog Blog 1`] = `
             className="Container"
           >
             <nav
-              aria-label="目次コンテナ"
+              aria-label="Toc container"
               className="WrappedNav"
             >
               <button
-                aria-label="目次を隠す"
+                aria-label="hide the Toc"
                 className="Blind"
                 onClick={[Function]}
               />
@@ -167,10 +167,10 @@ exports[`Storyshots components/Blog Blog 1`] = `
                 <h1
                   className="Title"
                 >
-                  目次
+                  Table of Contents
                 </h1>
                 <nav
-                  aria-label="目次ナビゲーション"
+                  aria-label="Toc navigation"
                   className="Toc"
                   dangerouslySetInnerHTML={
                     Object {
@@ -179,7 +179,7 @@ exports[`Storyshots components/Blog Blog 1`] = `
                   }
                 />
                 <button
-                  aria-label="目次ボタン"
+                  aria-label="Toc button"
                   className="TocIcon"
                   onClick={[Function]}
                 >
@@ -217,7 +217,7 @@ exports[`Storyshots components/Blog Blog 1`] = `
             className="Footer"
           >
             <nav
-              aria-label="ブログフッタナビゲーション"
+              aria-label="about footer navigation"
               className="Nav"
             >
               <ul
@@ -229,9 +229,9 @@ exports[`Storyshots components/Blog Blog 1`] = `
                   >
                     <li>
                       <a
-                        aria-label="Twitterで共有する"
+                        aria-label="share this on Twitter"
                         className="TwitterLink"
-                        href="https://twitter.com/intent/tweet?text=React Gatsby%0ahttp://localhost:6006/"
+                        href="https://twitter.com/intent/tweet?text=About%0ahttp://localhost:6006/"
                         rel="nofollow noopener noreferrer"
                         target="_blank"
                       >
@@ -263,9 +263,9 @@ exports[`Storyshots components/Blog Blog 1`] = `
                     </li>
                     <li>
                       <a
-                        aria-label="Hatenaブックマークで共有する"
+                        aria-label="share this on Hatena Bookmark"
                         className="HatenaBookmarkLink"
-                        href="http://b.hatena.ne.jp/add?mode=confirm&title=React Gatsby&url=http://localhost:6006/"
+                        href="http://b.hatena.ne.jp/add?mode=confirm&title=About&url=http://localhost:6006/"
                         rel="nofollow noopener noreferrer"
                         target="_blank"
                       >
@@ -331,43 +331,6 @@ exports[`Storyshots components/Blog Blog 1`] = `
                 </li>
               </ul>
             </nav>
-            <div
-              className="FooterInfo"
-            >
-              <nav
-                aria-label="ブログページナビゲーション"
-                className="Pager"
-              >
-                <ul
-                  className="PagerList"
-                >
-                  <li>
-                    <a
-                      className="PagerLink"
-                      href="/previous/"
-                      onClick={[Function]}
-                      onMouseEnter={[Function]}
-                      rel="prev"
-                    >
-                      ← 
-                      previous blog title
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="PagerLink"
-                      href="/next/"
-                      onClick={[Function]}
-                      onMouseEnter={[Function]}
-                      rel="next"
-                    >
-                      next blog title
-                       →
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
           </div>
         </article>
       </main>
@@ -386,7 +349,7 @@ exports[`Storyshots components/Blog Blog 1`] = `
     <div>
       <main>
         <article
-          className="Blog"
+          className="About"
         >
           <div
             className=""
@@ -403,7 +366,7 @@ exports[`Storyshots components/Blog Blog 1`] = `
           <h1
             className="Title"
           >
-            React Gatsby
+            About
           </h1>
           <small
             aria-label="ブログ info"
@@ -466,7 +429,7 @@ exports[`Storyshots components/Blog Blog 1`] = `
               )
             </span>
             <nav
-              aria-label="React Gatsby タグナビゲーション"
+              aria-label="About タグナビゲーション"
               className="TagIconList"
             >
               <svg
@@ -518,11 +481,11 @@ exports[`Storyshots components/Blog Blog 1`] = `
             className="Container"
           >
             <nav
-              aria-label="目次コンテナ"
+              aria-label="Toc container"
               className="WrappedNav"
             >
               <button
-                aria-label="目次を隠す"
+                aria-label="hide the Toc"
                 className="Blind"
                 onClick={[Function]}
               />
@@ -532,10 +495,10 @@ exports[`Storyshots components/Blog Blog 1`] = `
                 <h1
                   className="Title"
                 >
-                  目次
+                  Table of Contents
                 </h1>
                 <nav
-                  aria-label="目次ナビゲーション"
+                  aria-label="Toc navigation"
                   className="Toc"
                   dangerouslySetInnerHTML={
                     Object {
@@ -544,7 +507,7 @@ exports[`Storyshots components/Blog Blog 1`] = `
                   }
                 />
                 <button
-                  aria-label="目次ボタン"
+                  aria-label="Toc button"
                   className="TocIcon"
                   onClick={[Function]}
                 >
@@ -582,7 +545,7 @@ exports[`Storyshots components/Blog Blog 1`] = `
             className="Footer"
           >
             <nav
-              aria-label="ブログフッタナビゲーション"
+              aria-label="about footer navigation"
               className="Nav"
             >
               <ul
@@ -594,9 +557,9 @@ exports[`Storyshots components/Blog Blog 1`] = `
                   >
                     <li>
                       <a
-                        aria-label="Twitterで共有する"
+                        aria-label="share this on Twitter"
                         className="TwitterLink"
-                        href="https://twitter.com/intent/tweet?text=React Gatsby%0ahttp://localhost:6006/"
+                        href="https://twitter.com/intent/tweet?text=About%0ahttp://localhost:6006/"
                         rel="nofollow noopener noreferrer"
                         target="_blank"
                       >
@@ -628,9 +591,9 @@ exports[`Storyshots components/Blog Blog 1`] = `
                     </li>
                     <li>
                       <a
-                        aria-label="Hatenaブックマークで共有する"
+                        aria-label="share this on Hatena Bookmark"
                         className="HatenaBookmarkLink"
-                        href="http://b.hatena.ne.jp/add?mode=confirm&title=React Gatsby&url=http://localhost:6006/"
+                        href="http://b.hatena.ne.jp/add?mode=confirm&title=About&url=http://localhost:6006/"
                         rel="nofollow noopener noreferrer"
                         target="_blank"
                       >
@@ -696,43 +659,6 @@ exports[`Storyshots components/Blog Blog 1`] = `
                 </li>
               </ul>
             </nav>
-            <div
-              className="FooterInfo"
-            >
-              <nav
-                aria-label="ブログページナビゲーション"
-                className="Pager"
-              >
-                <ul
-                  className="PagerList"
-                >
-                  <li>
-                    <a
-                      className="PagerLink"
-                      href="/previous/"
-                      onClick={[Function]}
-                      onMouseEnter={[Function]}
-                      rel="prev"
-                    >
-                      ← 
-                      previous blog title
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="PagerLink"
-                      href="/next/"
-                      onClick={[Function]}
-                      onMouseEnter={[Function]}
-                      rel="next"
-                    >
-                      next blog title
-                       →
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
           </div>
         </article>
       </main>
@@ -741,7 +667,7 @@ exports[`Storyshots components/Blog Blog 1`] = `
 </div>
 `;
 
-exports[`Storyshots components/Blog Blog Layout 1`] = `
+exports[`Storyshots components/About About Layout 1`] = `
 <div
   style={
     Object {
@@ -772,9 +698,9 @@ exports[`Storyshots components/Blog Blog Layout 1`] = `
           >
             <a
               aria-current="page"
-              aria-label="Gatsby Blog"
+              aria-label="Gatsby About"
               className="Banner"
-              data-brand="Gatsby Blog"
+              data-brand="Gatsby About"
               href="/"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -941,7 +867,7 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
         </header>
         <main>
           <article
-            className="Blog"
+            className="About"
           >
             <div
               className=""
@@ -958,7 +884,7 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
             <h1
               className="Title"
             >
-              React Gatsby
+              About
             </h1>
             <small
               aria-label="ブログ info"
@@ -1021,7 +947,7 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
                 )
               </span>
               <nav
-                aria-label="React Gatsby タグナビゲーション"
+                aria-label="About タグナビゲーション"
                 className="TagIconList"
               >
                 <svg
@@ -1137,7 +1063,7 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
               className="Footer"
             >
               <nav
-                aria-label="ブログフッタナビゲーション"
+                aria-label="About フッタナビゲーション"
                 className="Nav"
               >
                 <ul
@@ -1151,7 +1077,7 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
                         <a
                           aria-label="Twitterで共有する"
                           className="TwitterLink"
-                          href="https://twitter.com/intent/tweet?text=React Gatsby%0ahttp://localhost:6006/"
+                          href="https://twitter.com/intent/tweet?text=About%0ahttp://localhost:6006/"
                           rel="nofollow noopener noreferrer"
                           target="_blank"
                         >
@@ -1185,7 +1111,7 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
                         <a
                           aria-label="Hatenaブックマークで共有する"
                           className="HatenaBookmarkLink"
-                          href="http://b.hatena.ne.jp/add?mode=confirm&title=React Gatsby&url=http://localhost:6006/"
+                          href="http://b.hatena.ne.jp/add?mode=confirm&title=About&url=http://localhost:6006/"
                           rel="nofollow noopener noreferrer"
                           target="_blank"
                         >
@@ -1251,43 +1177,6 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
                   </li>
                 </ul>
               </nav>
-              <div
-                className="FooterInfo"
-              >
-                <nav
-                  aria-label="ブログページナビゲーション"
-                  className="Pager"
-                >
-                  <ul
-                    className="PagerList"
-                  >
-                    <li>
-                      <a
-                        className="PagerLink"
-                        href="/previous/"
-                        onClick={[Function]}
-                        onMouseEnter={[Function]}
-                        rel="prev"
-                      >
-                        ← 
-                        previous blog title
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="PagerLink"
-                        href="/next/"
-                        onClick={[Function]}
-                        onMouseEnter={[Function]}
-                        rel="next"
-                      >
-                        next blog title
-                         →
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
             </div>
           </article>
         </main>
@@ -1384,9 +1273,9 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
           >
             <a
               aria-current="page"
-              aria-label="Gatsby Blog"
+              aria-label="Gatsby About"
               className="Banner"
-              data-brand="Gatsby Blog"
+              data-brand="Gatsby About"
               href="/"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -1553,7 +1442,7 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
         </header>
         <main>
           <article
-            className="Blog"
+            className="About"
           >
             <div
               className=""
@@ -1570,7 +1459,7 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
             <h1
               className="Title"
             >
-              React Gatsby
+              About
             </h1>
             <small
               aria-label="ブログ info"
@@ -1633,7 +1522,7 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
                 )
               </span>
               <nav
-                aria-label="React Gatsby タグナビゲーション"
+                aria-label="About タグナビゲーション"
                 className="TagIconList"
               >
                 <svg
@@ -1749,7 +1638,7 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
               className="Footer"
             >
               <nav
-                aria-label="ブログフッタナビゲーション"
+                aria-label="About フッタナビゲーション"
                 className="Nav"
               >
                 <ul
@@ -1763,7 +1652,7 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
                         <a
                           aria-label="Twitterで共有する"
                           className="TwitterLink"
-                          href="https://twitter.com/intent/tweet?text=React Gatsby%0ahttp://localhost:6006/"
+                          href="https://twitter.com/intent/tweet?text=About%0ahttp://localhost:6006/"
                           rel="nofollow noopener noreferrer"
                           target="_blank"
                         >
@@ -1797,7 +1686,7 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
                         <a
                           aria-label="Hatenaブックマークで共有する"
                           className="HatenaBookmarkLink"
-                          href="http://b.hatena.ne.jp/add?mode=confirm&title=React Gatsby&url=http://localhost:6006/"
+                          href="http://b.hatena.ne.jp/add?mode=confirm&title=About&url=http://localhost:6006/"
                           rel="nofollow noopener noreferrer"
                           target="_blank"
                         >
@@ -1863,43 +1752,6 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
                   </li>
                 </ul>
               </nav>
-              <div
-                className="FooterInfo"
-              >
-                <nav
-                  aria-label="ブログページナビゲーション"
-                  className="Pager"
-                >
-                  <ul
-                    className="PagerList"
-                  >
-                    <li>
-                      <a
-                        className="PagerLink"
-                        href="/previous/"
-                        onClick={[Function]}
-                        onMouseEnter={[Function]}
-                        rel="prev"
-                      >
-                        ← 
-                        previous blog title
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="PagerLink"
-                        href="/next/"
-                        onClick={[Function]}
-                        onMouseEnter={[Function]}
-                        rel="next"
-                      >
-                        next blog title
-                         →
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
             </div>
           </article>
         </main>
