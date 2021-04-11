@@ -142,18 +142,19 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
             <li class="BlogList-module--Item--3gwP4 style-module--item--2i7bS">
               <article>
                 <a
-                  aria-label="/blog/hello-world/ へのリンク"
+                  aria-label="/blog/getting-started/ へのリンク"
                   class="BlogItem-module--BlogLink--29a0P style-module--link--3A6Oz"
-                  href="/blog/hello-world/"
+                  href="/blog/getting-started/"
                   ><h1
                     class="BlogItem-module--Title--1Fzz- style-module--title--1djjC"
                   >
-                    Hello World
+                    Gatsby.js(React)で、技術ブログを公開
                   </h1>
                   <p
                     class="BlogItem-module--Description--3D5Yh style-module--description--rGI9C"
                   >
-                    Gatsby + Now でサイトを作り直し、ブログ機能をつけました
+                    Gatsby.js(React)で、技術ブログを公開。モダンな Web
+                    フロントエンドの技術を中心に発信する。
                   </p></a
                 ><small
                   aria-label="ブログ info"
@@ -173,7 +174,7 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
                       <path
                         d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79 2.73 2.71 7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58 3.51-3.47 9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"
                       ></path></svg
-                    >05/01/2016</span
+                    >04/11/2021</span
                   ><span
                     class="CreatedAt-module--CreatedAt--mkugj style-module--createdAt--2ZN8K style-module--text--2dYga"
                     >(<svg
@@ -192,10 +193,10 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
                           d="M12.9 6.858l4.242 4.243L7.242 21H3v-4.243l9.9-9.9zm1.414-1.414l2.121-2.122a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414l-2.122 2.121-4.242-4.242z"
                         ></path>
                       </g></svg
-                    >05/01/2016)</span
+                    >04/11/2021)</span
                   >
                   <nav
-                    aria-label="Hello World タグナビゲーション"
+                    aria-label="Gatsby.js(React)で、技術ブログを公開 タグナビゲーション"
                     class="TagIconList-module--TagIconList--1Rly_ style-module--list--2WXKP style-module--list--2rlgH"
                   >
                     <svg
@@ -227,27 +228,6 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
                           class="TagIcon-module--TagIcon--1XXn1 style-module--iconLink--3K-F4"
                           href="/tags/React/"
                           >React</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="TagIcon-module--TagIcon--1XXn1 style-module--iconLink--3K-F4"
-                          href="/tags/TypeScript/"
-                          >TypeScript</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="TagIcon-module--TagIcon--1XXn1 style-module--iconLink--3K-F4"
-                          href="/tags/HelloWorld/"
-                          >HelloWorld</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="TagIcon-module--TagIcon--1XXn1 style-module--iconLink--3K-F4"
-                          href="/tags/Tomato/"
-                          >Tomato</a
                         >
                       </li>
                     </ul>
