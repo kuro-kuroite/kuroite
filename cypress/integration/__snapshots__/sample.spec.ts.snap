@@ -781,8 +781,8 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
                       <a
                         class="FooterInfo-module--PagerLink--1Kg-U style-module--navLink--OGhyV style-module--navLinkBase--2fj2N style-module--navLinkResetBase--3iJ7p style-module--base--3eEya style-module--linkResetBase--LhC0q style-module--buttonResetBase--1tusi"
                         rel="next"
-                        href="/blog/hello-world/"
-                        >Hello World →</a
+                        href="/blog/getting-started/"
+                        >Gatsby.js(React)で、技術ブログを公開 →</a
                       >
                     </li>
                   </ul>
