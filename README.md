@@ -29,6 +29,8 @@
 
 [https://blog.kuroite.dev](https://blog.kuroite.dev)
 
+[<img src="./docs/assets/lighthouse.png" height="100px" alt="lighthouse 結果画像（https://blog.kuroite.dev/blog/how-to-back-up-your-data-fast-ignoring-extraneous-files/）" />](https://blog.kuroite.dev/blog/how-to-back-up-your-data-fast-ignoring-extraneous-files/)
+
 <details>
   <summary>
     記事ページのデモ画像
