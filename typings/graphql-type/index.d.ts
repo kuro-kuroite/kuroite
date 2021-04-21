@@ -2947,6 +2947,11 @@ type SitePageFieldsEnum =
   | 'pluginCreator.pluginOptions.plugins.browserAPIs'
   | 'pluginCreator.pluginOptions.plugins.ssrAPIs'
   | 'pluginCreator.pluginOptions.plugins.pluginFilepath'
+  | 'pluginCreator.pluginOptions.gtagConfig.anonymize_ip'
+  | 'pluginCreator.pluginOptions.gtagConfig.cookie_expires'
+  | 'pluginCreator.pluginOptions.pluginConfig.head'
+  | 'pluginCreator.pluginOptions.pluginConfig.respectDNT'
+  | 'pluginCreator.pluginOptions.trackingIds'
   | 'pluginCreator.pluginOptions.outputPath'
   | 'pluginCreator.pluginOptions.showSpinner'
   | 'pluginCreator.pluginOptions.name'
@@ -2984,11 +2989,6 @@ type SitePageFieldsEnum =
   | 'pluginCreator.pluginOptions.allExtensions'
   | 'pluginCreator.pluginOptions.isTSX'
   | 'pluginCreator.pluginOptions.jsxPragma'
-  | 'pluginCreator.pluginOptions.gtagConfig.anonymize_ip'
-  | 'pluginCreator.pluginOptions.gtagConfig.cookie_expires'
-  | 'pluginCreator.pluginOptions.pluginConfig.head'
-  | 'pluginCreator.pluginOptions.pluginConfig.respectDNT'
-  | 'pluginCreator.pluginOptions.trackingIds'
   | 'pluginCreator.nodeAPIs'
   | 'pluginCreator.browserAPIs'
   | 'pluginCreator.ssrAPIs'
@@ -3191,6 +3191,11 @@ type SitePluginFieldsEnum =
   | 'pluginOptions.plugins.browserAPIs'
   | 'pluginOptions.plugins.ssrAPIs'
   | 'pluginOptions.plugins.pluginFilepath'
+  | 'pluginOptions.gtagConfig.anonymize_ip'
+  | 'pluginOptions.gtagConfig.cookie_expires'
+  | 'pluginOptions.pluginConfig.head'
+  | 'pluginOptions.pluginConfig.respectDNT'
+  | 'pluginOptions.trackingIds'
   | 'pluginOptions.outputPath'
   | 'pluginOptions.showSpinner'
   | 'pluginOptions.name'
@@ -3228,11 +3233,6 @@ type SitePluginFieldsEnum =
   | 'pluginOptions.allExtensions'
   | 'pluginOptions.isTSX'
   | 'pluginOptions.jsxPragma'
-  | 'pluginOptions.gtagConfig.anonymize_ip'
-  | 'pluginOptions.gtagConfig.cookie_expires'
-  | 'pluginOptions.pluginConfig.head'
-  | 'pluginOptions.pluginConfig.respectDNT'
-  | 'pluginOptions.trackingIds'
   | 'nodeAPIs'
   | 'browserAPIs'
   | 'ssrAPIs'
@@ -3346,6 +3346,9 @@ type SitePluginPackageJsonPeerDependenciesFilterListInput = {
 
 type SitePluginPluginOptions = {
   readonly plugins: Maybe<ReadonlyArray<Maybe<SitePluginPluginOptionsPlugins>>>;
+  readonly gtagConfig: Maybe<SitePluginPluginOptionsGtagConfig>;
+  readonly pluginConfig: Maybe<SitePluginPluginOptionsPluginConfig>;
+  readonly trackingIds: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
   readonly outputPath: Maybe<Scalars['String']>;
   readonly showSpinner: Maybe<Scalars['Boolean']>;
   readonly name: Maybe<Scalars['String']>;
@@ -3380,9 +3383,6 @@ type SitePluginPluginOptions = {
   readonly allExtensions: Maybe<Scalars['Boolean']>;
   readonly isTSX: Maybe<Scalars['Boolean']>;
   readonly jsxPragma: Maybe<Scalars['String']>;
-  readonly gtagConfig: Maybe<SitePluginPluginOptionsGtagConfig>;
-  readonly pluginConfig: Maybe<SitePluginPluginOptionsPluginConfig>;
-  readonly trackingIds: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
 };
 
 type SitePluginPluginOptionsFeeds = {
@@ -3403,6 +3403,9 @@ type SitePluginPluginOptionsFeedsFilterListInput = {
 
 type SitePluginPluginOptionsFilterInput = {
   readonly plugins: Maybe<SitePluginPluginOptionsPluginsFilterListInput>;
+  readonly gtagConfig: Maybe<SitePluginPluginOptionsGtagConfigFilterInput>;
+  readonly pluginConfig: Maybe<SitePluginPluginOptionsPluginConfigFilterInput>;
+  readonly trackingIds: Maybe<StringQueryOperatorInput>;
   readonly outputPath: Maybe<StringQueryOperatorInput>;
   readonly showSpinner: Maybe<BooleanQueryOperatorInput>;
   readonly name: Maybe<StringQueryOperatorInput>;
@@ -3437,9 +3440,6 @@ type SitePluginPluginOptionsFilterInput = {
   readonly allExtensions: Maybe<BooleanQueryOperatorInput>;
   readonly isTSX: Maybe<BooleanQueryOperatorInput>;
   readonly jsxPragma: Maybe<StringQueryOperatorInput>;
-  readonly gtagConfig: Maybe<SitePluginPluginOptionsGtagConfigFilterInput>;
-  readonly pluginConfig: Maybe<SitePluginPluginOptionsPluginConfigFilterInput>;
-  readonly trackingIds: Maybe<StringQueryOperatorInput>;
 };
 
 type SitePluginPluginOptionsGtagConfig = {
@@ -3606,6 +3606,22 @@ type LayoutQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
       & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'gitHub'>> }
     )> }> };
 
+type SeoQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type SeoQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
+      Pick<SiteSiteMetadata, 'title' | 'siteUrl' | 'description'>
+      & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'twitter'>> }
+    )> }> };
+
+type RssQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type RssQuery = { readonly allMarkdownRemark: { readonly edges: ReadonlyArray<{ readonly node: (
+        Pick<MarkdownRemark, 'excerpt' | 'html'>
+        & { readonly fields: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'updatedAt' | 'createdAt' | 'description'>> }
+      ) }> } };
+
 type PagesQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -3620,24 +3636,6 @@ type AboutBySlugQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pi
     Pick<MarkdownRemark, 'id' | 'excerpt' | 'html' | 'tableOfContents'>
     & { readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'createdAt' | 'updatedAt' | 'description' | 'tags' | 'userId'>>, readonly fields: Maybe<Pick<MarkdownRemarkFields, 'slug'>> }
   )> };
-
-type BlogPostBySlugQueryVariables = Exact<{
-  slug: Scalars['String'];
-}>;
-
-
-type BlogPostBySlugQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title' | 'siteUrl'>> }>, readonly markdownRemark: Maybe<(
-    Pick<MarkdownRemark, 'id' | 'excerpt' | 'html' | 'tableOfContents'>
-    & { readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'createdAt' | 'updatedAt' | 'description' | 'tags' | 'userId'>>, readonly fields: Maybe<Pick<MarkdownRemarkFields, 'slug'>> }
-  )> };
-
-type RssSiteQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type RssSiteQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
-      Pick<SiteSiteMetadata, 'title' | 'description' | 'siteUrl'>
-      & { site_url: SiteSiteMetadata['siteUrl'] }
-    )> }> };
 
 type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 
@@ -3689,13 +3687,23 @@ type GatsbyImageSharpSizes_noBase64Fragment = Pick<ImageSharpSizes, 'aspectRatio
 
 type GatsbyImageSharpSizes_withWebp_noBase64Fragment = Pick<ImageSharpSizes, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
 
-type RssQueryVariables = Exact<{ [key: string]: never; }>;
+type RssSiteQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type RssQuery = { readonly allMarkdownRemark: { readonly edges: ReadonlyArray<{ readonly node: (
-        Pick<MarkdownRemark, 'excerpt' | 'html'>
-        & { readonly fields: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'updatedAt' | 'createdAt' | 'description'>> }
-      ) }> } };
+type RssSiteQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
+      Pick<SiteSiteMetadata, 'title' | 'description' | 'siteUrl'>
+      & { site_url: SiteSiteMetadata['siteUrl'] }
+    )> }> };
+
+type BlogPostBySlugQueryVariables = Exact<{
+  slug: Scalars['String'];
+}>;
+
+
+type BlogPostBySlugQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title' | 'siteUrl'>> }>, readonly markdownRemark: Maybe<(
+    Pick<MarkdownRemark, 'id' | 'excerpt' | 'html' | 'tableOfContents'>
+    & { readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'createdAt' | 'updatedAt' | 'description' | 'tags' | 'userId'>>, readonly fields: Maybe<Pick<MarkdownRemarkFields, 'slug'>> }
+  )> };
 
 type PrivacyPolicyBySlugQueryVariables = Exact<{
   slug: Scalars['String'];
@@ -3716,13 +3724,5 @@ type TagByTagQuery = { readonly allMarkdownRemark: { readonly edges: ReadonlyArr
         Pick<MarkdownRemark, 'excerpt'>
         & { readonly fields: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'createdAt' | 'updatedAt' | 'description' | 'category' | 'tags'>> }
       ) }> } };
-
-type SeoQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type SeoQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
-      Pick<SiteSiteMetadata, 'title' | 'siteUrl' | 'description'>
-      & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'twitter'>> }
-    )> }> };
 
 }
