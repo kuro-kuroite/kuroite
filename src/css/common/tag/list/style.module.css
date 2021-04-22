@@ -5,9 +5,10 @@
     - ~~iconLink~~ */
 
 .list {
-  @apply flex flex-nowrap overflow-x-auto overflow-y-hidden;
+  @apply flex;
 
-  scrollbar-width: none;
+  /* FYI(overflow-x-hidden): https://csshtml.work/overflow-bad/#overflow-xscroll */
+  @apply flex-nowrap overflow-x-hidden;
 }
 
 .icon {
@@ -21,11 +22,16 @@
 }
 
 .linkList {
-  composes: list;
-
   /* HACK: overflow-y-hidden で、タグの height の一部が隠れないようにするため。アルファベットの文字には、アセンダラインやディセンダラインの高さがある。1em が、これらの高さを含んでいないため。つまり、height 1em と、アルファベットの height は正確に一致しない。 */
 
   /* FYI: https://stackoverflow.com/a/10183902 */
   line-height: 1.1;
   @apply flex space-x-1;
+
+  @apply flex overflow-x-auto;
+
+  scrollbar-width: none;
+
+  /* FYI(overflow-x-hidden): https://csshtml.work/overflow-bad/#overflow-xscroll */
+  @apply whitespace-nowrap;
 }
