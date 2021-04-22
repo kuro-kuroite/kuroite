@@ -1,3 +1,10 @@
+### [1.4.1](https://github.com/kuro-kuroite/kuroite/compare/v1.4.0...v1.4.1) (2021-04-22)
+
+
+### Bug Fixes
+
+* **common,tag-list:** :fire: fix the problem overflow-x-auto can not scroll horizontally ([165f2b5](https://github.com/kuro-kuroite/kuroite/commit/165f2b53bda74ebd0d5c457c8fbccf8176e6031e))
+
 ## [1.4.0](https://github.com/kuro-kuroite/kuroite/compare/v1.3.0...v1.4.0) (2021-04-11)
 
 
