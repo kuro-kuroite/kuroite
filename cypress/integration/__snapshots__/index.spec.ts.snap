@@ -142,6 +142,94 @@ c37 0 83 7 103 15 52 22 111 78 135 130 26 55 29 164 6 219 -22 52 -78 111
             <li class="BlogList-module--Item--3gwP4 style-module--item--2i7bS">
               <article>
                 <a
+                  aria-label="/blog/activity-report-2021-05-03/ へのリンク"
+                  class="BlogItem-module--BlogLink--29a0P style-module--link--3A6Oz"
+                  href="/blog/activity-report-2021-05-03/"
+                  ><h1
+                    class="BlogItem-module--Title--1Fzz- style-module--title--1djjC"
+                  >
+                    活動記録(2021/05/03)
+                  </h1>
+                  <p
+                    class="BlogItem-module--Description--3D5Yh style-module--description--rGI9C"
+                  >
+                    Next.js with Firebase アプリケーション第一段階完成。
+                  </p></a
+                ><small
+                  aria-label="ブログ info"
+                  class="BlogInfo-module--BlogInfo--1qWaB style-module--info--27_J5"
+                  ><span
+                    class="UpdatedAt-module--UpdatedAt--gDdEt style-module--text--2dYga"
+                    ><svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      class="UpdatedAt-module--WithIcon--1lN-I style-module--icon--1s7rL"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79 2.73 2.71 7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58 3.51-3.47 9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"
+                      ></path></svg
+                    >05/03/2021</span
+                  ><span
+                    class="CreatedAt-module--CreatedAt--mkugj style-module--createdAt--2ZN8K style-module--text--2dYga"
+                    >(<svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      class="CreatedAt-module--WithIcon--2l4OR style-module--icon--1s7rL"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g>
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          d="M12.9 6.858l4.242 4.243L7.242 21H3v-4.243l9.9-9.9zm1.414-1.414l2.121-2.122a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414l-2.122 2.121-4.242-4.242z"
+                        ></path>
+                      </g></svg
+                    >05/03/2021)</span
+                  >
+                  <nav
+                    aria-label="活動記録(2021/05/03) タグナビゲーション"
+                    class="TagIconList-module--TagIconList--1Rly_ style-module--list--2WXKP style-module--list--2rlgH"
+                  >
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      class="TagIconList-module--WithIcon--JDhpK style-module--icon--1NrNW style-module--icon--1s7rL"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"
+                      ></path>
+                    </svg>
+                    <ul
+                      class="TagIconList-module--IconList--2nZPl style-module--linkList--3xVdB"
+                    >
+                      <li>
+                        <a
+                          class="TagIcon-module--TagIcon--1XXn1 style-module--iconLink--3K-F4"
+                          href="/tags/活動記録/"
+                          >活動記録</a
+                        >
+                      </li>
+                    </ul>
+                  </nav></small
+                >
+              </article>
+            </li>
+            <li class="BlogList-module--Item--3gwP4 style-module--item--2i7bS">
+              <article>
+                <a
                   aria-label="/blog/safari-supports-gap-property-for-flexbox/ へのリンク"
                   class="BlogItem-module--BlogLink--29a0P style-module--link--3A6Oz"
                   href="/blog/safari-supports-gap-property-for-flexbox/"
