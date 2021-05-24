@@ -1,4 +1,4 @@
-FROM linuxbrew/brew:3.1.5
+FROM linuxbrew/brew:3.1.9
 
 RUN brew install zsh
 SHELL ["zsh", "-c"]
