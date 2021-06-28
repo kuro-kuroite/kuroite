@@ -170,7 +170,7 @@
     "gatsby-remark-autolink-headers": "^2.11.0",
     "gatsby-remark-code-titles": "^1.1.0",
     "gatsby-remark-shiki": "^0.2.0",
-    "husky": "^4.3.8",
+    "husky": "^6.0.0",
     "identity-obj-proxy": "^3.0.0",
     "ink": "^3.0.8",
     "jest": "^26.6.3",
