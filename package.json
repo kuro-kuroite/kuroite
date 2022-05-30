@@ -175,7 +175,7 @@
     "ink": "^3.0.8",
     "jest": "^26.6.3",
     "jsonc-parser": "^3.0.0",
-    "lint-staged": "^10.5.4",
+    "lint-staged": "^12.4.3",
     "netlify-cli": "^3.13.10",
     "npm-check-updates": "^11.3.0",
     "npm-run-all": "^4.1.5",
