@@ -139,7 +139,7 @@
     "codecov": "^3.8.1",
     "commitizen": "^4.2.3",
     "conventional-changelog-conventionalcommits": "^4.5.0",
-    "cypress": "^6.8.0",
+    "cypress": "^9.7.0",
     "cypress-axe": "^0.12.2",
     "cypress-plugin-snapshots": "^1.4.4",
     "cz-conventional-changelog-ja": "^0.0.2",
