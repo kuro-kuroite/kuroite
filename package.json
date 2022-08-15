@@ -218,7 +218,7 @@
     "textlint-rule-terminology": "^2.1.5",
     "textlint-rule-title-case": "^2.0.0",
     "textlint-rule-write-good": "^1.6.2",
-    "ts-jest": "^26.5.4",
+    "ts-jest": "^28.0.8",
     "ts-node": "^9.1.1",
     "tsconfig-paths": "^3.9.0",
     "typed-css-modules": "^0.6.5",
