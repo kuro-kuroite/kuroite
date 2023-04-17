@@ -28533,10 +28533,10 @@ textlint-rule-terminology@^2.1.6:
     strip-json-comments "^3.0.1"
     textlint-rule-helper "^2.1.1"
 
-textlint-rule-title-case@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/textlint-rule-title-case/-/textlint-rule-title-case-2.1.0.tgz#d1c66ff3f5c0cb712879c81a07f14fb712921607"
-  integrity sha512-rDICneCgawZP2A69NYeNDXliUSc/1Jecbb1PNVDn11xhP5L7GHzJVS5b9bjWKB6dtthgsm2AKVRZwGS/MaLWWw==
+textlint-rule-title-case@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/textlint-rule-title-case/-/textlint-rule-title-case-3.0.0.tgz#d0722cb178df49f5d89cd73bdb0000c0a8c39ce2"
+  integrity sha512-cXxSTfaA8COiK7rF/ei7nWfPXEDpcl9Q5ihP0Pg71gJhk7o8p8qCPHrEwui7SXoLohJQRXibRU7Xxp/x9aXUqQ==
   dependencies:
     ap-style-title-case "^1.1.2"
     textlint-util-to-string "^3.1.1"
