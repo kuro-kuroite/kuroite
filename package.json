@@ -182,7 +182,7 @@
     "pastel": "^1.1.1",
     "patch-package": "^6.5.1",
     "postcss": "^8.4.21",
-    "postcss-preset-env": "^6.7.1",
+    "postcss-preset-env": "^8.3.2",
     "postcss-pseudo-classes": "^0.3.0",
     "postcss-scrollbar": "^0.5.1",
     "postinstall-postinstall": "^2.1.0",
