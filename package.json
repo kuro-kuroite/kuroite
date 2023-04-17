@@ -140,7 +140,7 @@
     "commitizen": "^4.3.0",
     "conventional-changelog-conventionalcommits": "^4.6.3",
     "cypress": "^6.9.1",
-    "cypress-axe": "^0.14.0",
+    "cypress-axe": "^1.4.0",
     "cypress-plugin-snapshots": "^1.4.4",
     "cz-conventional-changelog-ja": "^0.0.2",
     "dictionary-en": "^3.2.0",
