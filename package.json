@@ -176,7 +176,7 @@
     "jest": "^26.6.3",
     "jsonc-parser": "^3.2.0",
     "lint-staged": "^10.5.4",
-    "netlify-cli": "^3.39.4",
+    "netlify-cli": "^13.2.2",
     "npm-check-updates": "^11.8.5",
     "npm-run-all": "^4.1.5",
     "pastel": "^1.1.1",
