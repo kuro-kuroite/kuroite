@@ -189,7 +189,7 @@
     "prettier": "2.8.7",
     "reg-cli": "^0.17.7",
     "semantic-release": "^17.4.7",
-    "start-server-and-test": "^1.15.4",
+    "start-server-and-test": "^2.0.0",
     "storybook-a11y-report": "^0.0.19",
     "storybook-addon-pseudo-states-react": "^0.0.1-alpha.19",
     "storycap": "^3.1.9",
