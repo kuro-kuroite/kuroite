@@ -138,7 +138,7 @@
     "babel-plugin-remove-graphql-queries": "^3.15.0",
     "codecov": "^3.8.2",
     "commitizen": "^4.3.0",
-    "conventional-changelog-conventionalcommits": "^4.6.3",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
     "cypress": "^6.9.1",
     "cypress-axe": "^0.14.0",
     "cypress-plugin-snapshots": "^1.4.4",
