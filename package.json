@@ -86,7 +86,7 @@
     "gatsby-source-filesystem": "^2.11.1",
     "gatsby-transformer-remark": "^2.16.1",
     "gatsby-transformer-sharp": "^2.12.1",
-    "i18next": "^19.9.2",
+    "i18next": "^22.4.15",
     "i18next-browser-languagedetector": "^6.1.8",
     "lifts": "^0.1.4",
     "ramda": "^0.29.0",
