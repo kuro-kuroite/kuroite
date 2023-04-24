@@ -192,7 +192,7 @@
     "start-server-and-test": "^1.15.4",
     "storybook-a11y-report": "^0.0.19",
     "storybook-addon-pseudo-states-react": "^0.0.1-alpha.19",
-    "storycap": "^3.1.9",
+    "storycap": "^4.1.1",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-rational-order": "^0.1.2",
