@@ -27,7 +27,8 @@
 
 モダンな Web フロントエンドの技術を中心に発信する技術ブログ。
 
-[https://blog.kuroite.dev](https://blog.kuroite.dev)
+Now [blog](https://6110e97ea0112cda1621b1ba--boring-carson-44c8be.netlify.app/)
+Archived [https://blog.kuroite.dev](https://blog.kuroite.dev)
 
 [<img src="./docs/assets/lighthouse.png" height="100px" alt="lighthouse 結果画像（https://blog.kuroite.dev/blog/how-to-back-up-your-data-fast-ignoring-extraneous-files/）" />](https://blog.kuroite.dev/blog/how-to-back-up-your-data-fast-ignoring-extraneous-files/)
 
